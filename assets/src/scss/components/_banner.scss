@@ -1,0 +1,32 @@
+// --- Banner Component CSS --- //
+
+.hof-banner {
+    border-bottom: 1px solid $c-dark-green;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    .hof-banner__illustration--1 {
+        display: none;
+        position: absolute;
+        bottom: -1rem;
+        left: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+    }
+
+    .hof-banner__illustration--2 {
+        display: none;
+        position: absolute;
+        bottom: -1rem;
+        right: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+    }
+}
+
+// --- End of Component CSS --- //

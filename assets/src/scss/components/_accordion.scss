@@ -1,0 +1,34 @@
+// --- Accordion Component CSS --- //
+
+.hof-accordion {
+    .hof-accordion__item {
+        border-bottom: 1px solid $c-dark-green;
+    }
+
+    .hof-accordion__item--header {
+        cursor: pointer;
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 1.5rem 1rem;
+
+        svg {
+            transform: rotate(45deg);
+            transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
+        }
+
+        &.collapsed {
+            font-weight: 400;
+
+            svg {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    .hof-accordion__item--content {
+        padding: 1rem;
+    }
+}
+
+// --- End of Component CSS --- //

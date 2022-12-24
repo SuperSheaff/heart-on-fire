@@ -1,0 +1,421 @@
+@import "colors", "typography", "variables", "bootstrap";
+
+// --- Global CSS --- //
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $c-light-beige;
+    color: $c-black;
+    font-family: $ff-manrope;
+    font-size: 16px;
+    line-height: 1.25;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #A3AFA5;
+        opacity: 0.4;
+        width: 1px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $c-dark-green;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: $c-light-beige;
+    }
+}
+
+// --- Typography CSS --- //
+
+a {
+    &:hover {
+        color: $c-dark-green;
+    }
+}
+
+h1 {
+    font-family: $ff-p90;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 4rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+h2 {
+    font-family: $ff-p90;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+h3 {
+    font-family: $ff-p90;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+h4 {
+    font-family: $ff-manrope;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+h5 {
+    font-family: $ff-manrope;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.ff-p90 {
+    font-family: $ff-p90;
+}
+
+.ff-manrope {
+    font-family: $ff-manrope;
+}
+
+// --- General CSS --- //
+
+section {
+    padding-bottom: 48px;
+    padding-top: 48px;
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+}
+
+::selection {
+    background-color: $c-light-beige;
+    color: $c-white;
+}
+
+.hof-bg-white {
+    background-color: $c-white;
+}
+
+.hof-bg-light-pink {
+    background-color: $c-light-pink;
+}
+
+.hof-bg-beige {
+    background-color: $c-beige;
+}
+
+.hof-bg-light-beige {
+    background-color: $c-light-beige;
+}
+
+.hof-bg-dark-green {
+    background-color: $c-dark-green;
+}
+
+.hof-color-white {
+    color: $c-white;
+}
+
+.hof-color-light-pink {
+    color: $c-light-pink;
+}
+
+.hof-color-beige {
+    color: $c-beige;
+}
+
+.hof-color-light-beige {
+    color: $c-light-beige;
+}
+
+.hof-color-dark-green {
+    color: $c-dark-green;
+}
+
+.hof-border-top--dark-green {
+    border-top: 1px solid $c-dark-green;
+}
+
+.hof-border-bottom--dark-green {
+    border-bottom: 1px solid $c-dark-green;
+}
+
+// --- Button CSS --- //
+
+.hof-btn {
+    border-radius: 99rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
+
+    svg {
+        transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
+
+        path {
+            transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
+        }
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.btn-with-icon {
+        padding: 8px 24px;
+    }
+}
+
+.hof-btn-dark-green {
+    @extend .hof-btn;
+
+    background-color: $c-dark-green;
+    border: 1px solid $c-dark-green;
+    color: $c-white;
+
+    svg {
+        stroke: $c-white;
+
+        path {
+            stroke: $c-white;
+        }
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $c-dark-green;
+
+        svg {
+            stroke: $c-dark-green;
+
+            path {
+                stroke: $c-dark-green;
+            }
+        }
+    }
+}
+
+.hof-btn-dark-green--outline {
+    @extend .hof-btn;
+
+    background-color: transparent;
+    border: 1px solid $c-dark-green;
+    color: $c-dark-green;
+
+    svg {
+        stroke: $c-dark-green;
+
+        path {
+            stroke: $c-dark-green;
+        }
+    }
+
+    &:hover {
+        background-color: $c-dark-green;
+        color: $c-white;
+
+        svg {
+            stroke: $c-white;
+
+            path {
+                stroke: $c-white;
+            }
+        }
+    }
+}
+
+.hof-btn-white {
+    @extend .hof-btn;
+
+    background-color: $c-white;
+    border: 1px solid $c-white;
+    color: $c-dark-green;
+
+    svg {
+        stroke: $c-dark-green;
+
+        path {
+            stroke: $c-dark-green;
+        }
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $c-white;
+
+        svg {
+            stroke: $c-white;
+
+            path {
+                stroke: $c-white;
+            }
+        }
+    }
+}
+
+.hof-btn-white--outline {
+    @extend .hof-btn;
+
+    background-color: transparent;
+    border: 1px solid $c-white;
+    color: $c-white;
+
+    svg {
+        stroke: $c-white;
+
+        path {
+            stroke: $c-white;
+        }
+    }
+
+    &:hover {
+        background-color: $c-white;
+        color: $c-dark-green;
+
+        svg {
+            stroke: $c-dark-green;
+
+            path {
+                stroke: $c-dark-green;
+            }
+        }
+    }
+}
+
+// --- End of Global CSS --- //
+
+// --- Unordered List CSS --- //
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 0 16px 35px;
+
+    li {
+        margin-bottom: 5px;
+        position: relative;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:after {
+            background-color: $c-light-pink;
+            border-radius: 50%;
+            content: "";
+            height: 10px;
+            left: -20px;
+            position: absolute;
+            top: 6px;
+            width: 10px;
+        }
+    }
+}
+
+// --- End of Unordered List CSS --- //
+
+// --- Ordered List CSS --- //
+
+ol {
+    counter-reset: my-awesome-counter;
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 0 16px 35px;
+
+    li {
+        counter-increment: my-awesome-counter;
+        position: relative;
+
+        &:after {
+            background-color: $c-white;
+            content: "(" counter(my-awesome-counter) ")";
+            height: auto;
+            left: -25px;
+            position: absolute;
+            top: -1px;
+            width: auto;
+        }
+    }
+}
+
+// --- End of Ordered List CSS --- //
+
+// --- Table CSS --- //
+
+table {
+    border-collapse: collapse;
+    color: $c-dark-green !important;
+    margin: 15px 0 35px !important;
+    text-align: center;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 50px !important;
+    }
+
+    thead {
+        background-color: $c-beige;
+
+        th {
+            border: 0;
+            color: $c-dark-green;
+            font-size: 1rem;
+            min-width: 140px;
+            padding: 0.75rem;
+            vertical-align: bottom;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: $c-light-pink;
+            }
+
+            td {
+                border: 0;
+                padding: 0.75rem;
+            }
+        }
+    }
+}
+
+// --- End of Table CSS --- //
