@@ -108,6 +108,7 @@ function heartonfire_acf_get_components()
         'heart-on-fire',
         'image-content',
         'instagram',
+        'services',
         'testimonials'
     );
 
