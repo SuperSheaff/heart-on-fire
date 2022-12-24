@@ -414,13 +414,14 @@ ul {
         }
 
         &:after {
-            background-color: $c-light-pink;
+            background-color: transparent;
+            border: 1px solid $c-white;
             border-radius: 50%;
             content: "";
             height: 10px;
-            left: -20px;
+            left: -24px;
             position: absolute;
-            top: 6px;
+            top: 12px;
             width: 10px;
         }
     }

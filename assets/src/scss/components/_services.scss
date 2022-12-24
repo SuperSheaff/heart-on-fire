@@ -1,0 +1,28 @@
+// --- Services Component CSS --- //
+
+.hof-services {
+    .hof-services--content {
+        font-size: 1.5rem;
+        margin-bottom: 6rem;
+    }
+
+    .hof-services--service { 
+        border-bottom: 1px solid $c-white;
+        color: $c-white;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .hof-services--service-name {
+        color: $c-white;
+        font-family: $ff-p90;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hof-services--service-content {
+        font-size: 1.5rem;
+    }
+}
+
+// --- End of Component CSS --- //
