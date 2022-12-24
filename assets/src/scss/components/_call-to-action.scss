@@ -1,29 +1,14 @@
 // --- CTA Component CSS --- //
 
 .hof-cta-bar {
-    overflow: hidden;
-    padding-bottom: 120px;
-    position: relative;
-
-    .hof-cta-bar__illustration--1 {
-        display: none;
-        position: absolute;
-        bottom: -1rem;
-        left: 2rem;
-
+    .hof-cta-bar__content {
+        color: $c-dark-green;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        
         @include media-breakpoint-up(lg) {
-            display: block;
-        }
-    }
-
-    .hof-cta-bar__illustration--2 {
-        display: none;
-        position: absolute;
-        bottom: -1rem;
-        right: 2rem;
-
-        @include media-breakpoint-up(lg) {
-            display: block;
+            margin-bottom: 4rem;
         }
     }
 }

@@ -1,16 +1,16 @@
 <?php
 
-$compNames = heartonfire_get_the_global_components('call_to_action');
+$compNames = heartonfire_get_the_global_components('heart_on_fire');
 
 $fields = array(
-    'component_call_to_action' => array(
-        'key' => 'component_call_to_action',
-        'name' => 'call_to_action',
-        'label' => 'Call to Action',
+    'component_heart_on_fire' => array(
+        'key' => 'component_heart_on_fire',
+        'name' => 'heart_on_fire',
+        'label' => 'Heart on Fire',
         'display' => 'block',
         'sub_fields' => array(
             array(
-                'key' => 'component_call_to_action_tab_general',
+                'key' => 'component_heart_on_fire_tab_general',
                 'label' => 'General',
                 'name' => '',
                 'type' => 'tab',
@@ -26,9 +26,9 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_call_to_action_enable',
+                'key' => 'component_heart_on_fire_enable',
                 'label' => 'Enable',
-                'name' => 'call_to_action_enable',
+                'name' => 'heart_on_fire_enable',
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
@@ -45,9 +45,9 @@ $fields = array(
                 'ui_off_text' => '',
             ),
             array(
-                'key' => 'component_component_call_to_action_global_component',
+                'key' => 'component_heart_on_fire_global_component',
                 'label' => 'Global Component',
-                'name' => 'component_call_to_action_global_component',
+                'name' => 'heart_on_fire_global_component',
                 'type' => 'select',
                 'instructions' => '',
                 'required' => 0,
@@ -67,11 +67,11 @@ $fields = array(
                 'placeholder' => '',
             ),
             array(
-                'key' => 'component_call_to_action_id',
+                'key' => 'component_heart_on_fire_id',
                 'label' => 'ID',
                 'name' => 'id',
                 'type' => 'text',
-                'instructions' => '',
+                'instructions' => 'Identifier',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -86,11 +86,11 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_call_to_action_class',
+                'key' => 'component_heart_on_fire_class',
                 'label' => 'Classes',
                 'name' => 'class',
                 'type' => 'text',
-                'instructions' => '',
+                'instructions' => 'Additional classes',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -105,7 +105,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_call_to_action_settings',
+                'key' => 'component_heart_on_fire_tab_settings',
                 'label' => 'Settings',
                 'name' => '',
                 'type' => 'tab',
@@ -114,7 +114,7 @@ $fields = array(
                 'conditional_logic' => array(
                     array(
                         array(
-                            'field' => 'component_component_call_to_action_global_component',
+                            'field' => 'component_heart_on_fire_global_component',
                             'operator' => '==',
                             'value' => '',
                         ),
@@ -129,38 +129,12 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_image_content_width',
-                'label' => 'Image Content Width',
-                'name' => 'width',
-                'type' => 'select',
-                'instructions' => '',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'multiple'      => 0,
-                'allow_null'    => 0,
-                'wrapper' => array(
-                    'width' => '100',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'choices'       => array(
-                    '10'    => '10 Column',
-                    '8'     => '8 Column',
-                    '6'     => '6 Column',
-                ),
-                'default_value' => '8',
-                'ui'            => 0,
-                'ajax'          => 0,
-                'placeholder'   => '',
-                'return_format' => 'value'
-            ),
-            array(
-                'key' => 'component_call_to_action_heading',
-                'label' => 'Heading',
+                'key' => 'component_heart_on_fire_heading',
+                'label' => 'Heading (H2)',
                 'name' => 'heading',
                 'type' => 'text',
                 'instructions' => '',
-                'required' => 1,
+                'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
                     'width' => '50',
@@ -171,10 +145,10 @@ $fields = array(
                 'placeholder' => '',
                 'prepend' => '',
                 'append' => '',
-                'maxlength' => 155,
+                'maxlength' => 150,
             ),
             array(
-                'key' => 'component_call_to_action_content',
+                'key' => 'component_heart_on_fire_content',
                 'label' => 'Content',
                 'name' => 'content',
                 'type' => 'wysiwyg',
@@ -182,7 +156,7 @@ $fields = array(
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '',
+                    'width' => '50',
                     'class' => '',
                     'id' => '',
                 ),
@@ -193,19 +167,28 @@ $fields = array(
                 'delay' => 0,
             ),
             array(
-                'key' => 'component_call_to_action_primary_cta',
-                'label' => 'Primary CTA',
-                'name' => 'primary_cta',
-                'type' => 'link',
-                'instructions' => '',
-                'required' => 0,
+                'key' => 'component_heart_on_fire_image',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'instructions' => 'File size must be less or equal to 2MB',
+                'required' => 1,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '',
+                    'width' => '50',
                     'class' => '',
                     'id' => '',
                 ),
-                'return_format' => 'array',
+                'return_format' => 'url',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => 'jpg,bmp,gif,png',
             ),
         ),
         'min' => '',

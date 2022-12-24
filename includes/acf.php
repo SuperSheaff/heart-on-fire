@@ -102,12 +102,12 @@ function heartonfire_acf_get_components()
 {
     // Available default components
     $components = array(
-        'accordion',
         'banner',
-        'call_to_action',
-        'categories',
+        'call-to-action',
+        'heart-on-fire',
         'image-content',
-        'instagram'
+        'instagram',
+        'testimonials'
     );
 
     return $components;

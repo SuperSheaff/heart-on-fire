@@ -73,7 +73,7 @@
                 <div class="d-flex flex-column">
                     <form action="https://byablo.us8.list-manage.com/subscribe/post?u=966a983115dc44d6768748ad7&amp;id=711248dc13&amp;f_id=007403e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate d-flex flex-column" target="_blank" novalidate>
                         
-                        <input type="email" value="" placeholder="Email Address" name="EMAIL" class="hof-footer__lower--input required email mb-3" id="mce-EMAIL" required>
+                        <input type="email" value="" placeholder="Email Address" name="EMAIL" class="hof-footer__lower--input required email text-center text-lg-left mb-3" id="mce-EMAIL" required>
                         
                         <span id="mce-EMAIL-HELPERTEXT" class="hof-footer__lower--text helper_text"></span>
                         <div id="mce-responses" class="clear foot">

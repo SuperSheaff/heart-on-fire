@@ -1,0 +1,54 @@
+// --- Testimonials Component CSS --- //
+
+.hof-testimonials {
+    background-color: $c-beige;
+
+    .hof-testimonial-carousel--item {
+        text-align: center;
+    }
+
+    .hof-testimonial-carousel--content,
+    .hof-testimonial-carousel--role {
+        font-size: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .hof-testimonial-carousel--name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 2rem;
+        
+        @include media-breakpoint-up(lg) {
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+    }
+
+    .owl-dots {
+        margin-top: 2rem;
+        text-align: center;
+        
+        @include media-breakpoint-up(lg) {
+            margin-top: 3rem;
+        }
+
+        .owl-dot {
+            border: 1px solid $c-dark-green;
+            border-radius: 99rem;
+            height: 1rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            width: 1rem;
+
+            &.active {
+                background-color: $c-dark-green;
+            }
+        }
+    }
+}
+
+// --- End of Component CSS --- //

@@ -1,16 +1,16 @@
 <?php
 
-$compNames = heartonfire_get_the_global_components('accordion');
+$compNames = heartonfire_get_the_global_components('call_to_action');
 
 $fields = array(
-    'component_accordion' => array(
-        'key' => 'component_accordion',
-        'name' => 'accordion',
-        'label' => 'Accordion',
+    'component_call_to_action' => array(
+        'key' => 'component_call_to_action',
+        'name' => 'call_to_action',
+        'label' => 'Call to Action',
         'display' => 'block',
         'sub_fields' => array(
             array(
-                'key' => 'component_accordion_tab_general',
+                'key' => 'component_call_to_action_tab_general',
                 'label' => 'General',
                 'name' => '',
                 'type' => 'tab',
@@ -26,9 +26,9 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_accordion_enable',
+                'key' => 'component_call_to_action_enable',
                 'label' => 'Enable',
-                'name' => 'accordion_enable',
+                'name' => 'call_to_action_enable',
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
@@ -45,9 +45,9 @@ $fields = array(
                 'ui_off_text' => '',
             ),
             array(
-                'key' => 'component_accordion_global_component',
+                'key' => 'component_component_call_to_action_global_component',
                 'label' => 'Global Component',
-                'name' => 'accordion_global_component',
+                'name' => 'component_call_to_action_global_component',
                 'type' => 'select',
                 'instructions' => '',
                 'required' => 0,
@@ -67,11 +67,11 @@ $fields = array(
                 'placeholder' => '',
             ),
             array(
-                'key' => 'component_accordion_id',
+                'key' => 'component_call_to_action_id',
                 'label' => 'ID',
                 'name' => 'id',
                 'type' => 'text',
-                'instructions' => 'Identifier',
+                'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -86,11 +86,11 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_accordion_class',
+                'key' => 'component_call_to_action_class',
                 'label' => 'Classes',
                 'name' => 'class',
                 'type' => 'text',
-                'instructions' => 'Additional classes',
+                'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -105,7 +105,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_accordion_tab_settings',
+                'key' => 'component_call_to_action_settings',
                 'label' => 'Settings',
                 'name' => '',
                 'type' => 'tab',
@@ -114,7 +114,7 @@ $fields = array(
                 'conditional_logic' => array(
                     array(
                         array(
-                            'field' => 'component_accordion_global_component',
+                            'field' => 'component_component_call_to_action_global_component',
                             'operator' => '==',
                             'value' => '',
                         ),
@@ -129,77 +129,38 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_accordion_heading',
-                'label' => 'Accordion Heading',
-                'name' => 'heading',
-                'type' => 'text',
+                'key' => 'component_call_to_action_content',
+                'label' => 'Content',
+                'name' => 'content',
+                'type' => 'wysiwyg',
                 'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '50',
+                    'width' => '',
                     'class' => '',
                     'id' => '',
                 ),
                 'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => 150,
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+                'delay' => 0,
             ),
             array(
-                'key' => 'component_accordion_items',
-                'label' => 'Accordions',
-                'name' => 'accordion_items',
-                'type' => 'repeater',
+                'key' => 'component_call_to_action_primary_cta',
+                'label' => 'Primary CTA',
+                'name' => 'primary_cta',
+                'type' => 'link',
                 'instructions' => '',
-                'required' => 1,
+                'required' => 0,
                 'conditional_logic' => 0,
-                'sub_fields' => array(
-                    array(
-                        'key' => 'component_accordion_item_title',
-                        'label' => 'Accordion Title',
-                        'name' => 'title',
-                        'type' => 'text',
-                        'instructions' => '',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '50',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => 60,
-                    ),
-                    array(
-                        'key' => 'component_accordion_item_description',
-                        'label' => 'Description',
-                        'name' => 'description',
-                        'type' => 'wysiwyg',
-                        'instructions' => '',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '100',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'tabs' => 'all',
-                        'toolbar' => 'full',
-                        'media_upload' => 1,
-                        'delay' => 0,
-                    ),
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
                 ),
-                'min' => 0,
-                'max' => 0,
-                'layout' => 'block',
-                'button_label' => 'Add Accordion',
-                'collapsed' => ''
+                'return_format' => 'array',
             ),
         ),
         'min' => '',

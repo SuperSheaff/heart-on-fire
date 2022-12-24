@@ -2941,7 +2941,8 @@
     text-align: center !important;
   }
 
-  h1 {
+  h1,
+  .h1 {
     font-size: 6rem;
     margin-bottom: 2rem;
   }
@@ -2981,16 +2982,75 @@
     width: auto;
   }
 
-  .hof-cta-bar .hof-cta-bar__illustration--1 {
-    display: block;
+  .hof-cta-bar .hof-cta-bar__content {
+    margin-bottom: 4rem;
   }
 
-  .hof-cta-bar .hof-cta-bar__illustration--2 {
-    display: block;
+  .hof-heart-on-fire .hof-heart-on-fire__content {
+    width: 50%;
   }
 
-  .hof-categories .hof-banner__illustration--2 {
-    display: block;
+  .hof-image-content .hof-image-content--height {
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 900px;
+  }
+
+  .hof-image-content .hof-image-content--left .hof-image-content__content {
+    padding-left: 6rem;
+  }
+
+  .hof-image-content .hof-image-content--right .hof-image-content__content {
+    padding-right: 6rem;
+  }
+
+  .hof-image-content .hof-image-content--image {
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    width: 50%;
+  }
+
+  .hof-image-content .hof-image-content--image.hof-image-content--left {
+    left: 0;
+  }
+
+  .hof-image-content .hof-image-content--image.hof-image-content--right {
+    right: 0;
+  }
+
+  .hof-instagram .hof-instagram--container {
+    flex-wrap: nowrap;
+  }
+
+  .hof-instagram .hof-instagram--heading {
+    padding-bottom: 0;
+    padding-top: 0;
+    transform: rotate(270deg);
+  }
+
+  .hof-instagram .hof-instagram--box-1 {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  .hof-instagram .hof-instagram--box {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  .hof-testimonials .hof-testimonial-carousel--content,
+  .hof-testimonials .hof-testimonial-carousel--role {
+    font-size: 1.5rem;
+  }
+
+  .hof-testimonials .hof-testimonial-carousel--name {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .hof-testimonials .owl-dots {
+    margin-top: 3rem;
   }
 
   .hof-nav__upper {

@@ -41,7 +41,8 @@ a {
     }
 }
 
-h1 {
+h1, 
+.h1 {
     font-family: $ff-p90;
     font-size: 3rem;
     font-weight: 400;
@@ -122,7 +123,7 @@ section {
 }
 
 ::selection {
-    background-color: $c-light-beige;
+    background-color: $c-black;
     color: $c-white;
 }
 
@@ -315,6 +316,64 @@ section {
 
             path {
                 stroke: $c-dark-green;
+            }
+        }
+    }
+}
+
+.hof-btn-black {
+    @extend .hof-btn;
+
+    background-color: $c-black;
+    border: 1px solid $c-black;
+    color: $c-white;
+
+    svg {
+        stroke: $c-white;
+
+        path {
+            stroke: $c-white;
+        }
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $c-black;
+
+        svg {
+            stroke: $c-black;
+
+            path {
+                stroke: $c-black;
+            }
+        }
+    }
+}
+
+.hof-btn-black--outline {
+    @extend .hof-btn;
+
+    background-color: transparent;
+    border: 1px solid $c-black;
+    color: $c-black;
+
+    svg {
+        stroke: $c-black;
+
+        path {
+            stroke: $c-black;
+        }
+    }
+
+    &:hover {
+        background-color: $c-black;
+        color: $c-white;
+
+        svg {
+            stroke: $c-white;
+
+            path {
+                stroke: $c-white;
             }
         }
     }

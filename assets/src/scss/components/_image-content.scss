@@ -1,9 +1,61 @@
 // --- Image Content Component CSS --- //
 
 .hof-image-content {
-    &.hof-bg-dark-green {
-        color: $c-white !important;
+    background-color: $c-light-green;
+    position: relative;
+    
+    .hof-image-content--height {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 0;
+            padding-top: 0;
+            height: 900px;
+        }
     }
+
+    .hof-image-content__content {
+        font-size: 1.5rem;
+    }
+    
+    .hof-image-content--left {
+        .hof-image-content__content {
+            @include media-breakpoint-up(lg) {
+                padding-left: 6rem;
+            }
+        }
+    }
+
+    .hof-image-content--right {
+        .hof-image-content__content {
+            @include media-breakpoint-up(lg) {
+                padding-right: 6rem;
+            }
+        }
+    }
+
+    .hof-image-content--image {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            bottom: 0;
+            height: 100%;
+            position: absolute;
+            width: 50%;
+    
+            &.hof-image-content--left {
+                left: 0;
+            }
+        
+            &.hof-image-content--right {
+                right: 0;
+            }
+        }
+    }
+
 }
 
 // --- End of Component CSS --- //

@@ -8009,7 +8009,7 @@ pre code {
   margin-left: auto;
 }
 
-.row, .hof-categories .hof-categories__child {
+.row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -0.75rem;
@@ -13813,7 +13813,7 @@ a:hover {
   color: #444C3D;
 }
 
-h1 {
+h1, .h1 {
   font-family: "Perfectly Nineties";
   font-size: 3rem;
   font-weight: 400;
@@ -13862,12 +13862,12 @@ section {
 }
 
 ::-moz-selection {
-  background-color: #FCF4E5;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
 ::selection {
-  background-color: #FCF4E5;
+  background-color: #000000;
   color: #FFFFFF;
 }
 
@@ -13919,7 +13919,7 @@ section {
   border-bottom: 1px solid #444C3D;
 }
 
-.hof-btn, .hof-btn-dark-green, .hof-btn-dark-green--outline, .hof-btn-white, .hof-btn-white--outline {
+.hof-btn, .hof-btn-dark-green, .hof-btn-dark-green--outline, .hof-btn-white, .hof-btn-white--outline, .hof-btn-black, .hof-btn-black--outline {
   border-radius: 0;
   cursor: pointer;
   display: inline-block;
@@ -13931,19 +13931,19 @@ section {
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
-.hof-btn svg, .hof-btn-dark-green svg, .hof-btn-dark-green--outline svg, .hof-btn-white svg, .hof-btn-white--outline svg {
+.hof-btn svg, .hof-btn-dark-green svg, .hof-btn-dark-green--outline svg, .hof-btn-white svg, .hof-btn-white--outline svg, .hof-btn-black svg, .hof-btn-black--outline svg {
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
-.hof-btn svg path, .hof-btn-dark-green svg path, .hof-btn-dark-green--outline svg path, .hof-btn-white svg path, .hof-btn-white--outline svg path {
+.hof-btn svg path, .hof-btn-dark-green svg path, .hof-btn-dark-green--outline svg path, .hof-btn-white svg path, .hof-btn-white--outline svg path, .hof-btn-black svg path, .hof-btn-black--outline svg path {
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
-.hof-btn:hover, .hof-btn-dark-green:hover, .hof-btn-dark-green--outline:hover, .hof-btn-white:hover, .hof-btn-white--outline:hover {
+.hof-btn:hover, .hof-btn-dark-green:hover, .hof-btn-dark-green--outline:hover, .hof-btn-white:hover, .hof-btn-white--outline:hover, .hof-btn-black:hover, .hof-btn-black--outline:hover {
   text-decoration: none;
 }
 
-.hof-btn.btn-with-icon, .btn-with-icon.hof-btn-dark-green, .btn-with-icon.hof-btn-dark-green--outline, .btn-with-icon.hof-btn-white, .btn-with-icon.hof-btn-white--outline {
+.hof-btn.btn-with-icon, .btn-with-icon.hof-btn-dark-green, .btn-with-icon.hof-btn-dark-green--outline, .btn-with-icon.hof-btn-white, .btn-with-icon.hof-btn-white--outline, .btn-with-icon.hof-btn-black, .btn-with-icon.hof-btn-black--outline {
   padding: 8px 24px;
 }
 
@@ -14055,6 +14055,60 @@ section {
   stroke: #444C3D;
 }
 
+.hof-btn-black {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+}
+
+.hof-btn-black svg {
+  stroke: #FFFFFF;
+}
+
+.hof-btn-black svg path {
+  stroke: #FFFFFF;
+}
+
+.hof-btn-black:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.hof-btn-black:hover svg {
+  stroke: #000000;
+}
+
+.hof-btn-black:hover svg path {
+  stroke: #000000;
+}
+
+.hof-btn-black--outline {
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.hof-btn-black--outline svg {
+  stroke: #000000;
+}
+
+.hof-btn-black--outline svg path {
+  stroke: #000000;
+}
+
+.hof-btn-black--outline:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.hof-btn-black--outline:hover svg {
+  stroke: #FFFFFF;
+}
+
+.hof-btn-black--outline:hover svg path {
+  stroke: #FFFFFF;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -14133,35 +14187,6 @@ table tbody tr td {
   padding: 0.75rem;
 }
 
-.hof-accordion .hof-accordion__item {
-  border-bottom: 1px solid #444C3D;
-}
-
-.hof-accordion .hof-accordion__item--header {
-  cursor: pointer;
-  display: flex;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 1.5rem 1rem;
-}
-
-.hof-accordion .hof-accordion__item--header svg {
-  transform: rotate(45deg);
-  transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-}
-
-.hof-accordion .hof-accordion__item--header.collapsed {
-  font-weight: 400;
-}
-
-.hof-accordion .hof-accordion__item--header.collapsed svg {
-  transform: rotate(0deg);
-}
-
-.hof-accordion .hof-accordion__item--content {
-  padding: 1rem;
-}
-
 .hof-banner {
   overflow: hidden;
   position: relative;
@@ -14192,115 +14217,123 @@ table tbody tr td {
   z-index: 1;
 }
 
-.hof-cta-bar {
-  overflow: hidden;
-  padding-bottom: 120px;
+.hof-cta-bar .hof-cta-bar__content {
+  color: #444C3D;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.hof-heart-on-fire .hof-heart-on-fire__heading {
+  margin-bottom: 2rem;
+}
+
+.hof-heart-on-fire .hof-heart-on-fire__content {
+  font-size: 24px;
+}
+
+.hof-image-content {
+  background-color: #CBC69C;
   position: relative;
 }
 
-.hof-cta-bar .hof-cta-bar__illustration--1 {
-  display: none;
-  position: absolute;
-  bottom: -1rem;
-  left: 2rem;
+.hof-image-content .hof-image-content--height {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-.hof-cta-bar .hof-cta-bar__illustration--2 {
-  display: none;
-  position: absolute;
-  bottom: -1rem;
-  right: 2rem;
+.hof-image-content .hof-image-content__content {
+  font-size: 1.5rem;
 }
 
-.hof-categories .hof-categories__parents {
-  margin-bottom: 80px;
-}
-
-.hof-categories .hof-categories__parent {
-  cursor: pointer;
-  display: flex;
-  opacity: 0.4;
-  transition: 0.4s cubic-bezier(0.6, 0.6, 0.6, 1);
-}
-
-.hof-categories .hof-categories__parent.active {
-  opacity: 1;
-}
-
-.hof-categories .hof-categories__child {
-  cursor: -webkit-grab;
-  cursor: grab;
-  display: none;
-  flex-wrap: nowrap;
-  padding-bottom: 80px;
-  overflow-x: scroll;
-}
-
-.hof-categories .hof-categories__child.active {
-  display: flex;
-}
-
-.hof-categories .hof-categories__child::-webkit-scrollbar {
-  height: 3px;
-}
-
-.hof-categories .hof-categories__child::-webkit-scrollbar-track {
-  background: #A3AFA5;
-  opacity: 0.4;
-  height: 1px;
-}
-
-.hof-categories .hof-categories__child::-webkit-scrollbar-thumb {
-  background: #444C3D;
-}
-
-.hof-categories .hof-categories__child::-webkit-scrollbar-thumb:hover {
-  background: #FCF4E5;
-}
-
-.hof-categories .hof-categories__child img {
-  height: 445px;
+.hof-image-content .hof-image-content--image {
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-.hof-categories .hof-categories__child .hof-categories__child--item .hof-categories__child--item-button {
-  bottom: 0;
-  display: none;
-  left: 0;
-  padding: 1rem;
-  position: absolute;
+.hof-instagram {
+  overflow: hidden;
+}
+
+.hof-instagram .hof-instagram--container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hof-instagram .hof-instagram--heading {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.hof-instagram .hof-instagram--box-1 {
+  background-color: #DED6C6;
+  display: flex;
+  height: auto;
+  overflow: hidden;
   width: 100%;
 }
 
-.hof-categories .hof-categories__child .hof-categories__child--item:hover h5 {
-  font-weight: 600;
-}
-
-.hof-categories .hof-categories__child .hof-categories__child--item:hover .hof-categories__child--item-button {
+.hof-instagram .hof-instagram--box {
+  background-color: #DED6C6;
   display: flex;
+  height: 50vw;
+  overflow: hidden;
+  width: 50vw;
 }
 
-.hof-categories .hof-banner__illustration--2 {
-  display: none;
-  position: absolute;
-  bottom: -1rem;
-  right: 2rem;
+.hof-instagram .hof-instagram--box img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: 0.2s cubic-bezier(0.6, 0.6, 0.6, 1);
+  width: 100%;
 }
 
-.hof-image-content.hof-bg-dark-green {
-  color: #FFFFFF !important;
+.hof-instagram .hof-instagram--box:hover img {
+  transform: scale(1.1);
 }
 
-.hof-instagram {
-  border-top: 1px solid #A3AFA5;
+.hof-testimonials {
+  background-color: #DED6C6;
 }
 
-.hof-instagram .hof-btn-dark-green--outline {
-  font-family: "Perfectly Nineties";
-  font-size: 40px;
-  padding: 10px 16px;
+.hof-testimonials .hof-testimonial-carousel--item {
+  text-align: center;
+}
+
+.hof-testimonials .hof-testimonial-carousel--content,
+.hof-testimonials .hof-testimonial-carousel--role {
+  font-size: 1rem;
+}
+
+.hof-testimonials .hof-testimonial-carousel--name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.hof-testimonials .owl-dots {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.hof-testimonials .owl-dots .owl-dot {
+  border: 1px solid #444C3D;
+  border-radius: 99rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 1rem;
+}
+
+.hof-testimonials .owl-dots .owl-dot.active {
+  background-color: #444C3D;
 }
 
 header .hof-btn-dark-green,
@@ -16740,7 +16773,7 @@ header .hof-btn-dark-green--outline {
   .text-lg-center {
     text-align: center !important;
   }
-  h1 {
+  h1, .h1 {
     font-size: 6rem;
     margin-bottom: 2rem;
   }
@@ -16772,14 +16805,61 @@ header .hof-btn-dark-green--outline {
     display: block;
     width: auto;
   }
-  .hof-cta-bar .hof-cta-bar__illustration--1 {
-    display: block;
+  .hof-cta-bar .hof-cta-bar__content {
+    margin-bottom: 4rem;
   }
-  .hof-cta-bar .hof-cta-bar__illustration--2 {
-    display: block;
+  .hof-heart-on-fire .hof-heart-on-fire__content {
+    width: 50%;
   }
-  .hof-categories .hof-banner__illustration--2 {
-    display: block;
+  .hof-image-content .hof-image-content--height {
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 900px;
+  }
+  .hof-image-content .hof-image-content--left .hof-image-content__content {
+    padding-left: 6rem;
+  }
+  .hof-image-content .hof-image-content--right .hof-image-content__content {
+    padding-right: 6rem;
+  }
+  .hof-image-content .hof-image-content--image {
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    width: 50%;
+  }
+  .hof-image-content .hof-image-content--image.hof-image-content--left {
+    left: 0;
+  }
+  .hof-image-content .hof-image-content--image.hof-image-content--right {
+    right: 0;
+  }
+  .hof-instagram .hof-instagram--container {
+    flex-wrap: nowrap;
+  }
+  .hof-instagram .hof-instagram--heading {
+    padding-bottom: 0;
+    padding-top: 0;
+    transform: rotate(270deg);
+  }
+  .hof-instagram .hof-instagram--box-1 {
+    height: 20vw;
+    width: 20vw;
+  }
+  .hof-instagram .hof-instagram--box {
+    height: 20vw;
+    width: 20vw;
+  }
+  .hof-testimonials .hof-testimonial-carousel--content,
+  .hof-testimonials .hof-testimonial-carousel--role {
+    font-size: 1.5rem;
+  }
+  .hof-testimonials .hof-testimonial-carousel--name {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  .hof-testimonials .owl-dots {
+    margin-top: 3rem;
   }
   .hof-nav__upper {
     padding-bottom: 32px;
