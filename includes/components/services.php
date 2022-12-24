@@ -130,7 +130,7 @@ $fields = array(
             ),
             array(
                 'key' => 'component_services_heading',
-                'label' => 'Heading',
+                'label' => 'Heading (H1)',
                 'name' => 'heading',
                 'type' => 'text',
                 'instructions' => '',

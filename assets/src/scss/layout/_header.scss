@@ -41,4 +41,82 @@ header {
     padding-top: 16px;
 }
 
+.hof-navigation {
+    background-color: $c-dark-green;
+    height: 100vh;
+    left: -105vw;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    opacity: 0;
+    z-index: 100;
+
+    &.open {
+        animation-name: fadeIn;
+        -webkit-animation-name: fadeIn;
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+
+        left: 0;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+      
+        to {
+            opacity: 1.1;
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+      
+        to {
+            opacity: 1;
+        }
+    }
+
+    .hof-navigation__upper,
+    .hof-navigation__lower {
+        padding-bottom: 16px;
+        padding-top: 16px;
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 32px;
+            padding-top: 32px;
+        }
+    }
+
+    .hof-navigation__middle--link {
+        color: $c-white;
+        display: inline-block;
+        font-size: 4rem;
+        font-family: $ff-p90;
+        margin-bottom: 2rem;
+        transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 6rem;
+        }
+
+        &:hover {
+            color: $c-pink;
+            text-decoration: none;
+        }
+    }
+}
+
+.hof-navigation--close,
+.hof-navigation--open {
+    cursor: pointer;
+}
+
 // --- End of Header Section CSS --- //

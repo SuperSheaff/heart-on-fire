@@ -19,6 +19,8 @@
                 <a href="<?php echo get_home_url(); ?>" class="my-auto hof-header__nav--logo">
                     <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo.svg'); ?>
                 </a>
+
+                <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-burger.svg'); ?>
                 
             </div>
         </div>

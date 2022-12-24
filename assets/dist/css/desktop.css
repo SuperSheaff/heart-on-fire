@@ -2977,8 +2977,11 @@
   }
 
   .hof-banner .hof-banner--image {
+    bottom: 0;
     height: 100%;
     display: block;
+    position: absolute;
+    right: 0;
     width: auto;
   }
 
@@ -3060,6 +3063,16 @@
 
   .hof-header__nav--logo svg {
     height: 64px;
+  }
+
+  .hof-navigation .hof-navigation__upper,
+  .hof-navigation .hof-navigation__lower {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  .hof-navigation .hof-navigation__middle--link {
+    font-size: 6rem;
   }
 
   .hof-footer .hof-footer__upper--logo svg {
