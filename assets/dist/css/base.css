@@ -14154,7 +14154,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #A3AFA5;
+  background: #FCF4E5;
   opacity: 0.4;
   width: 1px;
 }
@@ -14175,18 +14175,18 @@ h1 {
   font-family: "Perfectly Nineties";
   font-size: 3rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-family: "Perfectly Nineties";
+  font-family: "Manrope";
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.25rem;
 }
 
 h3 {
-  font-family: "Perfectly Nineties";
+  font-family: "Manrope";
   font-size: 1.75rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -14282,10 +14282,10 @@ section {
 .hof-btn-dark-green--outline,
 .hof-btn-white,
 .hof-btn-white--outline {
-  border-radius: 99rem;
+  border-radius: 0;
   cursor: pointer;
   display: inline-block;
-  padding: 16px 24px;
+  padding: 8px 32px;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
@@ -14368,15 +14368,15 @@ section {
 
 .hof-btn-dark-green--outline:hover {
   background-color: #444C3D;
-  color: #FFFFFF;
+  color: #FCF4E5;
 }
 
 .hof-btn-dark-green--outline:hover svg {
-  stroke: #FFFFFF;
+  stroke: #FCF4E5;
 }
 
 .hof-btn-dark-green--outline:hover svg path {
-  stroke: #FFFFFF;
+  stroke: #FCF4E5;
 }
 
 .hof-btn-white {
@@ -14541,24 +14541,33 @@ table tbody tr td {
 }
 
 .hof-banner {
-  border-bottom: 1px solid #444C3D;
   overflow: hidden;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
-.hof-banner .hof-banner__illustration--1 {
-  display: none;
-  position: absolute;
-  bottom: -1rem;
-  left: 2rem;
+.hof-banner .hof-banner--height {
+  display: flex;
+  height: calc(100vh - 80px);
+  position: relative;
 }
 
-.hof-banner .hof-banner__illustration--2 {
-  display: none;
+.hof-banner .container {
+  position: relative;
+  z-index: 10;
+}
+
+.hof-banner .hof-banner--image {
+  border-radius: 99rem 0 0 0;
+  bottom: 0;
+  height: auto;
+  max-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   position: absolute;
-  bottom: -1rem;
-  right: 2rem;
+  right: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .hof-cta-bar {
@@ -14684,12 +14693,12 @@ header .hof-btn-dark-green--outline {
 }
 
 .hof-nav__upper {
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
-.hof-header__nav--logo {
-  height: 32px;
+.hof-header__nav--logo svg {
+  height: 48px;
 }
 
 .hof-nav__lower {
@@ -14698,16 +14707,14 @@ header .hof-btn-dark-green--outline {
   padding-top: 16px;
 }
 
-footer .hof-btn-white,
-footer .hof-btn-white--outline {
-  font-size: 16px;
-  font-weight: 700;
-}
-
 .hof-footer {
   overflow: hidden;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.hof-footer .hof-footer__upper {
+  margin-bottom: 3rem;
 }
 
 .hof-footer a.hof-footer__link--privacy:hover {
@@ -14724,66 +14731,43 @@ footer .hof-btn-white--outline {
   text-decoration: none;
 }
 
-.hof-footer .hof-footer__upper,
-.hof-footer .hof-footer__middle {
-  margin-bottom: 80px;
+.hof-footer .hof-footer__upper--logo svg {
+  height: 48px;
 }
 
-.hof-footer .hof-footer__link {
-  color: #FFFFFF;
-}
-
-.hof-footer .hof-footer__link--big {
-  color: #F8D1CE;
-  font-family: "Perfectly Nineties";
-  font-size: 3rem;
-  font-weight: 400;
-  padding-left: 0;
+.hof-footer .hof-footer__upper--socials a {
+  padding-bottom: 0;
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
-.hof-footer .hof-footer__link--big:hover {
-  padding-left: 0.5rem;
-  text-decoration: none;
+.hof-footer .hof-footer__upper--socials a:hover {
+  padding-bottom: 0.5rem;
 }
 
-.hof-footer .hof-footer__heading {
-  color: #F8D1CE;
-  font-family: "Perfectly Nineties";
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 1.25rem;
-}
-
-.hof-footer .hof-footer__link {
-  color: #F8D1CE;
-  font-family: "Manrope";
-  font-size: 1.25rem;
-  font-weight: 400;
+.hof-footer .hof-footer__lower--text {
+  color: #FFFFFF;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.hof-footer .hof-footer__disclaimer {
-  color: #DED6C6;
-  font-family: "Manrope";
-  font-size: 1rem;
-  margin-bottom: 0;
-  opacity: 0.7;
+.hof-footer .hof-footer__lower--input {
+  background-color: #444C3D;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding: 8px 32px;
 }
 
-.hof-footer .hof-footer__link--privacy {
-  color: #DED6C6;
-  font-family: "Manrope";
-  font-size: 1.25rem;
-  margin-bottom: 0;
-  margin-right: 80px;
-  opacity: 0.7;
+.hof-footer .hof-footer__lower--input::-moz-placeholder {
+  color: #FFFFFF;
 }
 
-.hof-footer .hof-footer__illustration {
-  bottom: -2rem;
-  position: absolute;
-  right: 2rem;
+.hof-footer .hof-footer__lower--input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.hof-footer .hof-footer__lower--input::placeholder {
+  color: #FFFFFF;
 }
 
 @media (max-width: 575.98px) {

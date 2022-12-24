@@ -1,30 +1,40 @@
 // --- Banner Component CSS --- //
 
 .hof-banner {
-    border-bottom: 1px solid $c-dark-green;
     overflow: hidden;
     position: relative;
-    text-align: center;
+    text-align: left;
 
-    .hof-banner__illustration--1 {
-        display: none;
-        position: absolute;
-        bottom: -1rem;
-        left: 2rem;
-
+    .hof-banner--height {
+        display: flex;
+        height: calc(100vh - 80px);
+        position: relative;
+        
         @include media-breakpoint-up(lg) {
-            display: block;
+            height: calc(100vh - 128px);
         }
     }
 
-    .hof-banner__illustration--2 {
-        display: none;
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    .hof-banner--image {
+        border-radius: 99rem 0 0 0;
+        bottom: 0;
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
         position: absolute;
-        bottom: -1rem;
-        right: 2rem;
+        right: 0;
+        width: 100%;
+        z-index: 1;
 
         @include media-breakpoint-up(lg) {
+            height: 100%;
             display: block;
+            width: auto;
         }
     }
 }

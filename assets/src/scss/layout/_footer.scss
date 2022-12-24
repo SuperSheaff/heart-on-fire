@@ -1,17 +1,13 @@
 // --- Footer Section CSS --- //
 
-footer {
-    .hof-btn-white,
-    .hof-btn-white--outline {
-        font-size: 16px;
-        font-weight: 700;
-    }
-}
-
 .hof-footer {
     overflow: hidden;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+
+    .hof-footer__upper {
+        margin-bottom: 3rem;
+    }
 
     a {
         &.hof-footer__link--privacy {
@@ -31,66 +27,43 @@ footer {
         }
     }
 
-    .hof-footer__upper,
-    .hof-footer__middle {
-        margin-bottom: 80px;
+    .hof-footer__upper--logo {
+        svg {
+            height: 48px;
+            
+            @include media-breakpoint-up(lg) {
+                height: 64px;
+            }
+        } 
     }
 
-    .hof-footer__link {
-        color: $c-white;
-    }
+    .hof-footer__upper--socials {
+        a {
+            padding-bottom: 0;
+            transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 
-    .hof-footer__link--big {
-        color: $c-light-pink;
-        font-family: $ff-p90;
-        font-size: 3rem;
-        font-weight: 400;
-        padding-left: 0;
-        transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-
-        &:hover {
-            padding-left: 0.5rem;
-            text-decoration: none;
+            &:hover {
+                padding-bottom: 0.5rem;
+            }
         }
     }
 
-    .hof-footer__heading {
-        color: $c-light-pink;
-        font-family: $ff-p90;
-        font-size: 32px;
-        font-weight: 400;
-        margin-bottom: 1.25rem;
-    }
-
-    .hof-footer__link {
-        color: $c-light-pink;
-        font-family: $ff-manrope;
-        font-size: 1.25rem;
-        font-weight: 400;
+    .hof-footer__lower--text {
+        color: $c-white;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
-    .hof-footer__disclaimer {
-        color: $c-beige;
-        font-family: $ff-manrope;
-        font-size: 1rem;
-        margin-bottom: 0;
-        opacity: 0.7;
-    }
+    .hof-footer__lower--input {
+        background-color: $c-dark-green;
+        border: 1px solid $c-white;
+        color: $c-white;
+        font-size: 24px;
+        padding: 8px 32px;
 
-    .hof-footer__link--privacy {
-        color: $c-beige;
-        font-family: $ff-manrope;
-        font-size: 1.25rem;
-        margin-bottom: 0;
-        margin-right: 80px;
-        opacity: 0.7;
-    }
-
-    .hof-footer__illustration {
-        bottom: -2rem;
-        position: absolute;
-        right: 2rem;
+        &::placeholder {
+            color: $c-white;
+        }
     }
 }
 

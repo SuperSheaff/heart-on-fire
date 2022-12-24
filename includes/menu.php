@@ -16,7 +16,7 @@
             <div class="d-flex justify-content-between">
 
                 <?php /* Upper Nav Logo */ ?>
-                <a href="<?php echo get_home_url(); ?>" class="my-auto hof-nav__upper--logo">
+                <a href="<?php echo get_home_url(); ?>" class="my-auto hof-header__nav--logo">
                     <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo.svg'); ?>
                 </a>
                 

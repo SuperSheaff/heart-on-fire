@@ -19,7 +19,7 @@ body {
     }
     
     &::-webkit-scrollbar-track {
-        background: #A3AFA5;
+        background: $c-light-beige;
         opacity: 0.4;
         width: 1px;
     }
@@ -45,28 +45,28 @@ h1 {
     font-family: $ff-p90;
     font-size: 3rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     @include media-breakpoint-up(lg) {
-        font-size: 4rem;
-        margin-bottom: 1.25rem;
+        font-size: 6rem;
+        margin-bottom: 2rem;
     }
 }
 
 h2 {
-    font-family: $ff-p90;
+    font-family: $ff-manrope;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1.25rem;
 
     @include media-breakpoint-up(lg) {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-bottom: 1.5rem;
     }
 }
 
 h3 {
-    font-family: $ff-p90;
+    font-family: $ff-manrope;
     font-size: 1.75rem;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -177,10 +177,10 @@ section {
 // --- Button CSS --- //
 
 .hof-btn {
-    border-radius: 99rem;
+    border-radius: 0;
     cursor: pointer;
     display: inline-block;
-    padding: 16px 24px;
+    padding: 8px 32px;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
@@ -250,13 +250,13 @@ section {
 
     &:hover {
         background-color: $c-dark-green;
-        color: $c-white;
+        color: $c-light-beige;
 
         svg {
-            stroke: $c-white;
+            stroke: $c-light-beige;
 
             path {
-                stroke: $c-white;
+                stroke: $c-light-beige;
             }
         }
     }

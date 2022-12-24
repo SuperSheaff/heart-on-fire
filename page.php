@@ -16,7 +16,7 @@ get_header();
 ?>
 
     <?php /* Page for components */ ?>
-    <div id="primary" class="content-area d-none d-lg-block">
+    <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <?php
             if (have_posts()) :

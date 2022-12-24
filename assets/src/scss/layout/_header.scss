@@ -16,12 +16,23 @@ header {
 }
 
 .hof-nav__upper {
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
 }
 
 .hof-header__nav--logo {
-    height: 32px;
+    svg {
+        height: 48px;
+        
+        @include media-breakpoint-up(lg) {
+            height: 64px;
+        }
+    }
 }
 
 .hof-nav__lower {

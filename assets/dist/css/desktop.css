@@ -2942,12 +2942,12 @@
   }
 
   h1 {
-    font-size: 4rem;
-    margin-bottom: 1.25rem;
+    font-size: 6rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
   }
 
@@ -2971,12 +2971,14 @@
     padding-top: 80px;
   }
 
-  .hof-banner .hof-banner__illustration--1 {
-    display: block;
+  .hof-banner .hof-banner--height {
+    height: calc(100vh - 128px);
   }
 
-  .hof-banner .hof-banner__illustration--2 {
+  .hof-banner .hof-banner--image {
+    height: 100%;
     display: block;
+    width: auto;
   }
 
   .hof-cta-bar .hof-cta-bar__illustration--1 {
@@ -2989,6 +2991,19 @@
 
   .hof-categories .hof-banner__illustration--2 {
     display: block;
+  }
+
+  .hof-nav__upper {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  .hof-header__nav--logo svg {
+    height: 64px;
+  }
+
+  .hof-footer .hof-footer__upper--logo svg {
+    height: 64px;
   }
 }
 
