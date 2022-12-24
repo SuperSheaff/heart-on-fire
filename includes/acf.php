@@ -104,6 +104,7 @@ function heartonfire_acf_get_components()
     $components = array(
         'banner',
         'call-to-action',
+        'contact',
         'heart-on-fire',
         'image-content',
         'instagram',

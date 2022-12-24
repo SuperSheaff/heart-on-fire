@@ -14109,6 +14109,21 @@ section {
   stroke: #FFFFFF;
 }
 
+.hof-contact label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.hof-form-control {
+  background-color: transparent;
+  border: 1px solid #444C3D;
+  font-size: 1rem;
+  padding: 12px 8px;
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -14222,6 +14237,14 @@ table tbody tr td {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 3rem;
+}
+
+.hof-contact {
+  font-size: 24px;
+}
+
+.hof-contact a {
+  color: #444C3D;
 }
 
 .hof-heart-on-fire .hof-heart-on-fire__heading {
