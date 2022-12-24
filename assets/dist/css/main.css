@@ -14211,6 +14211,7 @@ table tbody tr td {
 
 .hof-banner .hof-banner--height {
   display: flex;
+  flex-direction: column;
   height: calc(100vh - 80px);
   position: relative;
 }
@@ -14222,13 +14223,10 @@ table tbody tr td {
 
 .hof-banner .hof-banner--image {
   border-radius: 99rem 0 0 0;
-  bottom: 0;
   height: auto;
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  right: 0;
   width: 100%;
   z-index: 1;
 }
@@ -14407,6 +14405,72 @@ header .hof-btn-dark-green--outline {
   border-bottom: 1px solid #444C3D;
   padding-bottom: 16px;
   padding-top: 16px;
+}
+
+.hof-navigation {
+  background-color: #444C3D;
+  height: 100vh;
+  left: -105vw;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  opacity: 0;
+  z-index: 100;
+}
+
+.hof-navigation.open {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  left: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1.1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hof-navigation .hof-navigation__upper,
+.hof-navigation .hof-navigation__lower {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.hof-navigation .hof-navigation__middle--link {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 4rem;
+  font-family: "Perfectly Nineties";
+  margin-bottom: 2rem;
+  transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
+}
+
+.hof-navigation .hof-navigation__middle--link:hover {
+  color: #DB9995;
+  text-decoration: none;
+}
+
+.hof-navigation--close,
+.hof-navigation--open {
+  cursor: pointer;
 }
 
 .hof-footer {
@@ -16848,8 +16912,11 @@ header .hof-btn-dark-green--outline {
     height: calc(100vh - 128px);
   }
   .hof-banner .hof-banner--image {
+    bottom: 0;
     height: 100%;
     display: block;
+    position: absolute;
+    right: 0;
     width: auto;
   }
   .hof-cta-bar .hof-cta-bar__content {
@@ -16914,6 +16981,14 @@ header .hof-btn-dark-green--outline {
   }
   .hof-header__nav--logo svg {
     height: 64px;
+  }
+  .hof-navigation .hof-navigation__upper,
+  .hof-navigation .hof-navigation__lower {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  .hof-navigation .hof-navigation__middle--link {
+    font-size: 6rem;
   }
   .hof-footer .hof-footer__upper--logo svg {
     height: 64px;

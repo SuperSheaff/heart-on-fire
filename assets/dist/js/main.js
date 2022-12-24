@@ -20685,5 +20685,14 @@ $(document).ready(function () {
         }
     }
   })
+
+  // navigation
+  $('.hof-navigation--open').click(function () {
+    $('.hof-navigation').addClass('open');
+  })
+
+  $('.hof-navigation--close').click(function () {
+    $('.hof-navigation').removeClass('open');
+  })
   
 });
