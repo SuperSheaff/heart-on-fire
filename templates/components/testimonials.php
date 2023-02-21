@@ -34,7 +34,9 @@
                             </div>
                             <div class="col-lg-7 order-lg-1 text-left">
                                 <div class="hof-testimonial-carousel--name"><?php echo $testimonialName; ?></div>
-                                <div class="hof-testimonial-carousel--role"><?php echo $testimonialRole; ?></div>
+                                <div class="hof-testimonial-carousel--role mb-3">
+                                    <em><?php echo $testimonialRole; ?></em>
+                                </div>
                                 <div class="hof-testimonial-carousel--content"><?php echo $testimonialContent; ?></div>
                             </div>
                         </div>  
