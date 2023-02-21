@@ -111,6 +111,7 @@ function heartonfire_acf_get_components()
         'image-content',
         'instagram',
         'services',
+        'team',
         'testimonials'
     );
 
