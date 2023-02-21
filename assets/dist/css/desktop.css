@@ -2009,6 +2009,10 @@
   table {
     margin-bottom: 50px !important;
   }
+
+  .hof-services .hof-services--image {
+    height: 100%;
+  }
 }
 
 @media (min-width: 992px) {

@@ -8,48 +8,69 @@
     //Settings.
     $heading            = heartonfire_get_the_field_values($globalComponent, 'services', 'heading');
     $content            = heartonfire_get_the_field_values($globalComponent, 'services', 'content');
+    $layout             = heartonfire_get_the_field_values($globalComponent, 'services', 'layout');
+    $image              = heartonfire_get_the_field_values($globalComponent, 'services', 'image');
+    $cta                = heartonfire_get_the_field_values($globalComponent, 'services', 'cta');
+    $bgColor            = heartonfire_get_the_field_values($globalComponent, 'services', 'background_color');
     $services           = heartonfire_get_the_field_values($globalComponent, 'services', 'services_repeater');
+
+    $imageColumnClass   = '';
+    $contentColumnClass = '';
+
+    switch ($layout) {
+        case 'image-left':
+            $imageColumnClass   = 'order-lg-1';
+            $contentColumnClass = 'order-lg-2 offset-lg-1';
+            break;
+
+        case 'image-right':
+            $imageColumnClass   = 'order-lg-2 offset-lg-1';
+            $contentColumnClass = 'order-lg-1';
+            break;
+    }
 ?>
 
 <?php if ($enableComponent): ?>
-    <section id="<?php echo $componentId; ?>" class="hof-services <?php echo $componentClass; ?>">
+    
+    <section id="<?php echo $componentId; ?>" class="hof-services hof-color-dark-green <?php echo $bgColor; ?> <?php echo $componentClass; ?>">
         <div class="container">
             <div class="row">
-
-                <div class="col-lg-6 hof-color-dark-green">
-
-                    <?php if ($heading) : ?>
-                        <h1 class="hof-services--heading">
-                            <?php echo $heading; ?>
-                        </h1>
-                    <?php endif; ?>
-
-                    <?php if ($content) : ?>
-                        <div class="hof-services--content">
-                            <?php echo $content; ?>
+                <div class="col-lg-5 <?php echo $imageColumnClass; ?> mb-4 mb-lg-0">
+                    <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-services--image">
+                </div>
+                <div class="col-lg-6 <?php echo $contentColumnClass; ?> my-auto">
+                    <div class="hof-services__content">
+                        <?php if ($heading) : ?>
+                            <h2 class="hof-services--heading">
+                                <?php echo $heading; ?>
+                            </h2>
+                        <?php endif; ?>
+                        <div class="mb-3 mb-lg-4">
+                            <?php if ($content) : ?>
+                                <?php echo $content; ?>
+                            <?php endif; ?>
                         </div>
-                    <?php endif; ?>
+                        <div class="row">
+                            <?php foreach ($services as $key => $service) :
+                                $serviceName    = $service['name'];
+                                $serviceContent = $service['content'];
+                                ?>
+                                <div class="col-lg-6 mb-3">    
+                                    <p>
+                                        <strong class="hof-services--service-name"><?php echo $serviceName; ?>: </strong>
+                                        <?php echo $serviceContent; ?>
+                                    </p>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <?php if ($cta) : ?>
+                            <a href="<?php echo $cta['url']; ?>" class="hof-btn-dark-green mt-4" target="<?php echo $cta['target']; ?>">
+                                <?php echo $cta['title']; ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="hof-services <?php echo $componentClass; ?> hof-bg-dark-green">
-        <div class="container">
-            <div class="row">
-
-                <?php foreach ($services as $key => $service) :
-                    $serviceName    = $service['name'];
-                    $serviceContent = $service['content'];
-                    ?>
-
-                    <div class="col-lg-5 <?php if ($key % 2 != 0) { echo 'offset-lg-2'; } ?> hof-services--service">    
-                        <div class="hof-services--service-name"><?php echo $serviceName; ?></div>
-                        <div class="hof-services--service-content"><?php echo $serviceContent; ?></div>
-                    </div>
-
-                <?php endforeach; ?>
-            </div>
-
         </div>
     </section>
 <?php endif; ?>

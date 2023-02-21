@@ -29,10 +29,7 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-image-content py-0 <?php echo $componentClass; ?>">
-
         <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-image-content--image <?php echo $imageColumnClass; ?>">
-
-
         <div class="container">
             <div class="row hof-image-content--height">
                 <div class="col-lg-6 <?php echo $contentColumnClass; ?> my-auto">
@@ -49,6 +46,5 @@
                 </div>
             </div>
         </div>
-
     </section>
 <?php endif; ?>

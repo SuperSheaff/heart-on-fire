@@ -14245,6 +14245,10 @@ section {
   background-color: #FCF4E5;
 }
 
+.hof-bg-light-green {
+  background-color: #CBC69C;
+}
+
 .hof-bg-dark-green {
   background-color: #444C3D;
 }
@@ -14708,27 +14712,23 @@ table tbody tr td {
   transform: scale(1.1);
 }
 
-.hof-services .hof-services--content {
-  font-size: 1.5rem;
-  margin-bottom: 6rem;
+.hof-services {
+  position: relative;
 }
 
-.hof-services .hof-services--service {
-  border-bottom: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.hof-services .hof-services--service-name {
-  color: #FFFFFF;
+.hof-services .hof-services--heading {
   font-family: "Perfectly Nineties";
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
-.hof-services .hof-services--service-content {
-  font-size: 1.5rem;
+.hof-services .hof-services__content {
+  font-size: 1rem;
+}
+
+.hof-services .hof-services--image {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 256px;
+  width: 100%;
 }
 
 .hof-testimonials {

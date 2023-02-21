@@ -1,27 +1,24 @@
 // --- Services Component CSS --- //
 
 .hof-services {
-    .hof-services--content {
-        font-size: 1.5rem;
-        margin-bottom: 6rem;
+    position: relative;
+    
+    .hof-services--heading {
+        font-family: $ff-p90;
     }
 
-    .hof-services--service { 
-        border-bottom: 1px solid $c-white;
-        color: $c-white;
-        margin-bottom: 1.5rem;
-        padding-bottom: 1.5rem;
+    .hof-services__content {
+        font-size: 1rem;
     }
     
-    .hof-services--service-name {
-        color: $c-white;
-        font-family: $ff-p90;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
+    .hof-services--image {
+        object-fit: cover;
+        height: 256px;
+        width: 100%;
 
-    .hof-services--service-content {
-        font-size: 1.5rem;
+        @include media-breakpoint-up(md) {
+            height: 100%;
+        }
     }
 }
 

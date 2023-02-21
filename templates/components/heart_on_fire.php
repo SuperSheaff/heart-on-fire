@@ -13,12 +13,8 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-heart-on-fire <?php echo $componentClass; ?>">
-
-
-
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-8 my-auto hof-color-dark-green">
                     <?php if ($heading) : ?>
                         <h2 class="hof-heart-on-fire__heading h1">
@@ -31,12 +27,10 @@
                         <?php endif; ?>
                     </div>
                 </div>
-
                 <div class="col-lg-4 my-auto">
                     <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-heart-on-fire--image w-100">
                 </div>
             </div>
         </div>
-
     </section>
 <?php endif; ?>
