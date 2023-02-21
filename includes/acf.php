@@ -107,6 +107,7 @@ function heartonfire_acf_get_components()
         'contact',
         'general-content',
         'heart-on-fire',
+        'icon-content',
         'image-content',
         'instagram',
         'services',
