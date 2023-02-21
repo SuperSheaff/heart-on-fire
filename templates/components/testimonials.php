@@ -14,7 +14,7 @@
     <section id="<?php echo $componentId; ?>" class="hof-testimonials hof-color-dark-green <?php echo $componentClass; ?>">
         <div class="container">
             <?php if ($heading) : ?>
-                <h2 class="hof-testimonials--heading text-center h1">
+                <h2 class="hof-testimonials--heading text-left h1">
                     <?php echo $heading; ?>
                 </h2>
             <?php endif; ?>
@@ -30,7 +30,7 @@
                     <div class="hof-testimonial-carousel--item">
                         <div class="row">
                             <div class="col-lg-4 offset-lg-1 mb-3 mb-lg-0 order-lg-2">
-                                <img src="<?php echo $teamImage; ?>" alt="<?php echo $teamName; ?>" class="img-fluid">
+                                <img src="<?php echo $testimonialImage; ?>" alt="<?php echo $testimonialName; ?>" class="img-fluid">
                             </div>
                             <div class="col-lg-7 order-lg-1 text-left">
                                 <div class="hof-testimonial-carousel--content"><?php echo $testimonialContent; ?></div>
