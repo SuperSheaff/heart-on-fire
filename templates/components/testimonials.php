@@ -32,8 +32,8 @@
                             <div class="col-lg-4 offset-lg-1 mb-3 mb-lg-0 order-lg-2">
                                 <img src="<?php echo $teamImage; ?>" alt="<?php echo $teamName; ?>" class="img-fluid">
                             </div>
-                            <div class="col-lg-7">
-                                <div class="hof-testimonial-carousel--content order-lg-1"><?php echo $testimonialContent; ?></div>
+                            <div class="col-lg-7 order-lg-1 text-left">
+                                <div class="hof-testimonial-carousel--content"><?php echo $testimonialContent; ?></div>
                                 <div class="hof-testimonial-carousel--name"><?php echo $testimonialName; ?></div>
                                 <div class="hof-testimonial-carousel--role"><?php echo $testimonialRole; ?></div>
                             </div>
