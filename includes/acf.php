@@ -105,6 +105,7 @@ function heartonfire_acf_get_components()
         'banner',
         'call-to-action',
         'contact',
+        'general-content',
         'heart-on-fire',
         'image-content',
         'instagram',
