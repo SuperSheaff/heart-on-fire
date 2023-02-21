@@ -14235,6 +14235,24 @@ table tbody tr td {
   z-index: 1;
 }
 
+.hof-blog a {
+  color: #444C3D;
+}
+
+.hof-blog .hof-blog__card--top img {
+  height: 256px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.hof-blog .hof-blog__card img {
+  height: 256px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .hof-cta-bar .hof-cta-bar__content {
   color: #444C3D;
   font-size: 1.5rem;
