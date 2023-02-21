@@ -19,9 +19,9 @@
                     $iconTitle      = $icon['title'];
                     $iconContent    = $icon['content'];
                     ?>
-                    <div class="col-md-6 col-lg-3 mx-auto mb-3 d-flex flex-column text-center">    
-                        <img src="<?php echo $image; ?>" alt="<?php echo $iconTitle; ?>" class="mx-auto mb-3">
-                        <h3 class="mx-auto mb-3"><?php echo $iconTitle; ?></h3>
+                    <div class="col-md-6 col-lg-3 mx-auto mb-3 d-flex flex-column text-center hof-color-dark-green">    
+                        <img src="<?php echo $iconImage; ?>" alt="<?php echo $iconTitle; ?>" class="mx-auto mb-3">
+                        <h3 class="mx-auto mb-3 ff-p90"><?php echo $iconTitle; ?></h3>
                         <div class="hof-icon-content--content mx-auto">
                             <?php echo $iconContent; ?>
                         </div>
