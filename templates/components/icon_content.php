@@ -15,9 +15,9 @@
         <div class="container">
             <div class="row">
                 <?php foreach ($icons as $key => $icon) :
-                    $iconImage      = $service['image'];
-                    $iconTitle      = $service['title'];
-                    $iconContent    = $service['content'];
+                    $iconImage      = $icon['image'];
+                    $iconTitle      = $icon['title'];
+                    $iconContent    = $icon['content'];
                     ?>
                     <div class="col-md-6 col-lg-4 mb-3 d-flex flex-column text-center">    
                         <img src="<?php echo $image; ?>" alt="<?php echo $iconTitle; ?>" class="mx-auto mb-3">
