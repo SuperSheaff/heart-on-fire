@@ -20,10 +20,10 @@
                     $teamTitle      = $team['title'];
                     $teamContent    = $team['content'];
                     ?>
-                    <div class="col-md-6 mx-auto mb-3 hof-color-dark-green">    
+                    <div class="col-md-5 mx-auto mb-3 hof-color-dark-green">    
                         <img src="<?php echo $teamImage; ?>" alt="<?php echo $teamName; ?>" class="img-fluid mb-3">
-                        <h2 class="mx-auto mb-3 ff-p90"><?php echo $teamName; ?></h3>
-                        <h2 class="mx-auto mb-3 ff-p90"><?php echo $teamTitle; ?></h3>
+                        <h2 class="mx-auto mb-0 ff-p90"><?php echo $teamName; ?></h3>
+                        <h2 class="mx-auto mb-4 ff-p90"><em><?php echo $teamTitle; ?></em></h3>
                         <div class="hof-team--content mx-auto">
                             <?php echo $teamContent; ?>
                         </div>
