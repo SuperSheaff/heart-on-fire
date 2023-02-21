@@ -22,7 +22,7 @@ get_header();
                 while (have_posts()) :
                     the_post();
                     ?>
-                        <section>
+                        <section class="hof-color-dark-green">
                             <div class="container">
                                 <?php
                                     if (is_single()) {

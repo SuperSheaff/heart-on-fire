@@ -15,7 +15,6 @@
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-banner py-0 <?php echo $componentClass; ?>">
         <div class="hof-banner--height">
-
             <div class="container hof-color-dark-green mb-auto my-lg-auto">
                 <?php if ($heading) : ?>
                     <h1>
@@ -33,11 +32,9 @@
                     </a>
                 <?php endif; ?>
             </div>
-
             <?php if ($image) : ?>
                 <img src="<?php echo $image; ?>" alt="Hero Image" class="hof-banner--image">
             <?php endif; ?>
-            
         </div>
     </section>
 <?php endif; ?>
