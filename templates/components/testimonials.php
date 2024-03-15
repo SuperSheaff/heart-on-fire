@@ -11,34 +11,38 @@
 ?>
 
 <?php if ($enableComponent): ?>
-    <section id="<?php echo $componentId; ?>" class="hof-testimonials <?php echo $componentClass; ?>">
+    <section id="<?php echo $componentId; ?>" class="hof-testimonials hof-color-dark-green <?php echo $componentClass; ?>">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-lg-auto hof-color-dark-green">
+            <?php if ($heading) : ?>
+                <h2 class="hof-testimonials--heading text-left h1">
+                    <?php echo $heading; ?>
+                </h2>
+            <?php endif; ?>
 
-                    <?php if ($heading) : ?>
-                        <h2 class="hof-testimonials--heading text-center h1">
-                            <?php echo $heading; ?>
-                        </h2>
-                    <?php endif; ?>
+            <div class="owl-carousel hof-testimonial-carousel">
+                <?php foreach ($testimonials as $key => $testimonial) :
+                    $testimonialImage   = $testimonial['image'];
+                    $testimonialContent = $testimonial['content'];
+                    $testimonialName    = $testimonial['name'];
+                    $testimonialRole    = $testimonial['role'];
+                    ?>
 
-                    <div class="owl-carousel hof-testimonial-carousel">
-                        <?php foreach ($testimonials as $key => $testimonial) :
-                            $testimonialContent = $testimonial['content'];
-                            $testimonialName    = $testimonial['name'];
-                            $testimonialRole    = $testimonial['role'];
-                            ?>
-
-                            <div class="hof-testimonial-carousel--item">    
-                                <div class="hof-testimonial-carousel--content"><?php echo $testimonialContent; ?></div>
-                                <div class="hof-testimonial-carousel--name"><?php echo $testimonialName; ?></div>
-                                <div class="hof-testimonial-carousel--role"><?php echo $testimonialRole; ?></div>
+                    <div class="hof-testimonial-carousel--item">
+                        <div class="row">
+                            <div class="col-lg-3 offset-lg-1 mb-3 mb-lg-0 order-lg-2">
+                                <img src="<?php echo $testimonialImage; ?>" alt="<?php echo $testimonialName; ?>" class="img-fluid">
                             </div>
-
-                        <?php endforeach; ?>
+                            <div class="col-lg-7 order-lg-1 text-left">
+                                <div class="hof-testimonial-carousel--name"><?php echo $testimonialName; ?></div>
+                                <div class="hof-testimonial-carousel--role mb-3">
+                                    <em><?php echo $testimonialRole; ?></em>
+                                </div>
+                                <div class="hof-testimonial-carousel--content"><?php echo $testimonialContent; ?></div>
+                            </div>
+                        </div>  
                     </div>
 
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

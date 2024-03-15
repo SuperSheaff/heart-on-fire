@@ -1,16 +1,16 @@
 <?php
 
-$compNames = heartonfire_get_the_global_components('testimonials');
+$compNames = heartonfire_get_the_global_components('team');
 
 $fields = array(
-    'component_testimonials' => array(
-        'key' => 'component_testimonials',
-        'name' => 'testimonials',
-        'label' => 'Testimonials',
+    'component_team' => array(
+        'key' => 'component_team',
+        'name' => 'team',
+        'label' => 'Team',
         'display' => 'block',
         'sub_fields' => array(
             array(
-                'key' => 'component_testimonials_tab_general',
+                'key' => 'component_team_tab_general',
                 'label' => 'General',
                 'name' => '',
                 'type' => 'tab',
@@ -26,9 +26,9 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_testimonials_enable',
+                'key' => 'component_team_enable',
                 'label' => 'Enable',
-                'name' => 'testimonials_enable',
+                'name' => 'team_enable',
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
@@ -45,9 +45,9 @@ $fields = array(
                 'ui_off_text' => '',
             ),
             array(
-                'key' => 'component_testimonials_global_component',
+                'key' => 'component_team_global_component',
                 'label' => 'Global Component',
-                'name' => 'testimonials_global_component',
+                'name' => 'team_global_component',
                 'type' => 'select',
                 'instructions' => '',
                 'required' => 0,
@@ -67,7 +67,7 @@ $fields = array(
                 'placeholder' => '',
             ),
             array(
-                'key' => 'component_testimonials_id',
+                'key' => 'component_team_id',
                 'label' => 'ID',
                 'name' => 'id',
                 'type' => 'text',
@@ -86,7 +86,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_testimonials_class',
+                'key' => 'component_team_class',
                 'label' => 'Classes',
                 'name' => 'class',
                 'type' => 'text',
@@ -105,7 +105,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_testimonials_tab_settings',
+                'key' => 'component_team_tab_settings',
                 'label' => 'Settings',
                 'name' => '',
                 'type' => 'tab',
@@ -114,7 +114,7 @@ $fields = array(
                 'conditional_logic' => array(
                     array(
                         array(
-                            'field' => 'component_testimonials_global_component',
+                            'field' => 'component_team_global_component',
                             'operator' => '==',
                             'value' => '',
                         ),
@@ -129,35 +129,43 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_testimonials_heading',
-                'label' => 'Heading',
-                'name' => 'heading',
-                'type' => 'text',
+                'key' => 'component_team_background_color',
+                'label' => 'Icon Content Background Color',
+                'name' => 'background_color',
+                'type' => 'select',
                 'instructions' => '',
                 'required' => 1,
                 'conditional_logic' => 0,
+                'multiple'      => 0,
+                'allow_null'    => 0,
                 'wrapper' => array(
-                    'width' => '50',
+                    'width' => '25',
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => 60,
+                'choices'       => array(
+                    'hof-bg-light-beige'   => 'Light Beige',
+                    'hof-bg-beige'         => 'Beige',
+                    'hof-bg-light-green'   => 'Light Green',
+                    'hof-bg-light-pink'    => 'Light Pink',
+                ),
+                'default_value' => 'hof-bg-light-beige',
+                'ui'            => 0,
+                'ajax'          => 0,
+                'placeholder'   => '',
+                'return_format' => 'value'
             ),
             array(
-                'key' => 'component_testimonials_repeater',
-                'label' => 'Testimonials Repeater',
-                'name' => 'testimonials_repeater',
+                'key' => 'component_team_repeater',
+                'label' => 'Team Member Repeater',
+                'name' => 'team_repeater',
                 'type' => 'repeater',
                 'instructions' => '',
                 'required' => 1,
                 'conditional_logic' => 0,
                 'sub_fields' => array(
                     array(
-                        'key' => 'component_testimonial_image',
+                        'key' => 'component_team_image',
                         'label' => 'Image',
                         'name' => 'image',
                         'type' => 'image',
@@ -181,27 +189,8 @@ $fields = array(
                         'mime_types' => 'jpg,bmp,gif,png',
                     ),
                     array(
-                        'key' => 'component_testimonial_content',
-                        'label' => 'Testimonial Content',
-                        'name' => 'content',
-                        'type' => 'wysiwyg',
-                        'instructions' => '',
-                        'required' => 0,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '100',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => '',
-                        'tabs' => 'all',
-                        'toolbar' => 'full',
-                        'media_upload' => 1,
-                        'delay' => 0,
-                    ),
-                    array(
-                        'key' => 'component_testimonial_name',
-                        'label' => 'Testimonial Name',
+                        'key' => 'component_team_name',
+                        'label' => 'Team Member Name',
                         'name' => 'name',
                         'type' => 'text',
                         'instructions' => '',
@@ -219,9 +208,9 @@ $fields = array(
                         'maxlength' => 60,
                     ),
                     array(
-                        'key' => 'component_testimonial_role',
-                        'label' => 'Testimonial Role',
-                        'name' => 'role',
+                        'key' => 'component_team_title',
+                        'label' => 'Team Member Title',
+                        'name' => 'title',
                         'type' => 'text',
                         'instructions' => '',
                         'required' => 1,
@@ -237,10 +226,29 @@ $fields = array(
                         'append' => '',
                         'maxlength' => 60,
                     ),
+                    array(
+                        'key' => 'component_team_content',
+                        'label' => 'Team Member Content',
+                        'name' => 'content',
+                        'type' => 'wysiwyg',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '100',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'tabs' => 'all',
+                        'toolbar' => 'full',
+                        'media_upload' => 1,
+                        'delay' => 0,
+                    ),
                 ),
                 'min' => 0,
                 'layout' => 'block',
-                'button_label' => 'Add Testimonial',
+                'button_label' => 'Add Team Member',
                 'collapsed' => ''
             ),
         ),
