@@ -14141,7 +14141,7 @@ body {
 }
 
 body {
-  background-color: #FCF4E5;
+  background-color: #F5F3F0;
   color: #000000;
   font-family: "Manrope";
   font-size: 16px;
@@ -14175,6 +14175,7 @@ h1,
   font-family: "Perfectly Nineties";
   font-size: 3rem;
   font-weight: 400;
+  line-height: 1;
   margin-bottom: 1.5rem;
 }
 
@@ -14201,9 +14202,17 @@ h4 {
 
 h5 {
   font-family: "Manrope";
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+
+.hof-tagline {
+  font-family: "Manrope";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-transform: uppercase;
 }
 
 .ff-p90 {
@@ -14214,9 +14223,20 @@ h5 {
   font-family: "Manrope";
 }
 
-section {
+.container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.container.hof-padding {
   padding-bottom: 48px;
   padding-top: 48px;
+}
+
+.row {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  width: 100%;
 }
 
 ::-moz-selection {
@@ -14238,7 +14258,7 @@ section {
 }
 
 .hof-bg-beige {
-  background-color: #DED6C6;
+  background-color: #E8E5DE;
 }
 
 .hof-bg-light-beige {
@@ -14262,7 +14282,7 @@ section {
 }
 
 .hof-color-beige {
-  color: #DED6C6;
+  color: #E8E5DE;
 }
 
 .hof-color-light-beige {
@@ -14271,6 +14291,10 @@ section {
 
 .hof-color-dark-green {
   color: #444C3D;
+}
+
+.hof-color-brown {
+  color: #372120;
 }
 
 .hof-border-top--dark-green {
@@ -14284,6 +14308,7 @@ section {
 .hof-btn,
 .hof-btn-dark-green,
 .hof-btn-dark-green--outline,
+.hof-btn-brown--outline,
 .hof-btn-white,
 .hof-btn-white--outline,
 .hof-btn-black,
@@ -14302,6 +14327,7 @@ section {
 .hof-btn svg,
 .hof-btn-dark-green svg,
 .hof-btn-dark-green--outline svg,
+.hof-btn-brown--outline svg,
 .hof-btn-white svg,
 .hof-btn-white--outline svg,
 .hof-btn-black svg,
@@ -14312,6 +14338,7 @@ section {
 .hof-btn svg path,
 .hof-btn-dark-green svg path,
 .hof-btn-dark-green--outline svg path,
+.hof-btn-brown--outline svg path,
 .hof-btn-white svg path,
 .hof-btn-white--outline svg path,
 .hof-btn-black svg path,
@@ -14322,6 +14349,7 @@ section {
 .hof-btn:hover,
 .hof-btn-dark-green:hover,
 .hof-btn-dark-green--outline:hover,
+.hof-btn-brown--outline:hover,
 .hof-btn-white:hover,
 .hof-btn-white--outline:hover,
 .hof-btn-black:hover,
@@ -14332,6 +14360,7 @@ section {
 .hof-btn.btn-with-icon,
 .btn-with-icon.hof-btn-dark-green,
 .btn-with-icon.hof-btn-dark-green--outline,
+.btn-with-icon.hof-btn-brown--outline,
 .btn-with-icon.hof-btn-white,
 .btn-with-icon.hof-btn-white--outline,
 .btn-with-icon.hof-btn-black,
@@ -14391,6 +14420,33 @@ section {
 
 .hof-btn-dark-green--outline:hover svg path {
   stroke: #FCF4E5;
+}
+
+.hof-btn-brown--outline {
+  background-color: transparent;
+  border: 1px solid #372120;
+  color: #372120;
+}
+
+.hof-btn-brown--outline svg {
+  stroke: #372120;
+}
+
+.hof-btn-brown--outline svg path {
+  stroke: #372120;
+}
+
+.hof-btn-brown--outline:hover {
+  background-color: #372120;
+  color: #F5F3F0;
+}
+
+.hof-btn-brown--outline:hover svg {
+  stroke: #F5F3F0;
+}
+
+.hof-btn-brown--outline:hover svg path {
+  stroke: #F5F3F0;
 }
 
 .hof-btn-white {
@@ -14574,7 +14630,7 @@ table {
 }
 
 table thead {
-  background-color: #DED6C6;
+  background-color: #E8E5DE;
 }
 
 table thead th {
@@ -14604,23 +14660,8 @@ table tbody tr td {
 .hof-banner .hof-banner--height {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 80px);
+  height: calc(100vh);
   position: relative;
-}
-
-.hof-banner .container {
-  position: relative;
-  z-index: 10;
-}
-
-.hof-banner .hof-banner--image {
-  border-radius: 99rem 0 0 0;
-  height: auto;
-  max-height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
-  z-index: 1;
 }
 
 .hof-blog a {
@@ -14702,7 +14743,7 @@ table tbody tr td {
 }
 
 .hof-instagram .hof-instagram--box-1 {
-  background-color: #DED6C6;
+  background-color: #E8E5DE;
   display: flex;
   height: auto;
   overflow: hidden;
@@ -14710,7 +14751,7 @@ table tbody tr td {
 }
 
 .hof-instagram .hof-instagram--box {
-  background-color: #DED6C6;
+  background-color: #E8E5DE;
   display: flex;
   height: 50vw;
   overflow: hidden;
@@ -14728,6 +14769,19 @@ table tbody tr td {
 
 .hof-instagram .hof-instagram--box:hover img {
   transform: scale(1.1);
+}
+
+.hof-partners .hof-partners-logo-col {
+  flex: 0 0 20%;
+  max-width: 20%;
+  position: relative;
+  width: 100%;
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.hof-partners .hof-partners-logo-col img {
+  mix-blend-mode: darken;
 }
 
 .hof-services {
@@ -14750,7 +14804,7 @@ table tbody tr td {
 }
 
 .hof-testimonials {
-  background-color: #DED6C6;
+  background-color: #E8E5DE;
 }
 
 .hof-testimonials .hof-testimonial-carousel--item {
@@ -14787,6 +14841,12 @@ table tbody tr td {
   background-color: #444C3D;
 }
 
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
 header .hof-btn-dark-green,
 header .hof-btn-dark-green--outline {
   font-size: 16px;
@@ -14801,6 +14861,15 @@ header .hof-btn-dark-green--outline {
 .hof-nav__upper {
   padding-bottom: 16px;
   padding-top: 16px;
+}
+
+.hof-nav__upper .hof-nav__upper--link {
+  color: #372120;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-left: 96px;
+  text-transform: uppercase;
 }
 
 .hof-header__nav--logo svg {

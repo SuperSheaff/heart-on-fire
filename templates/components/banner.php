@@ -14,27 +14,33 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-banner py-0 <?php echo $componentClass; ?>">
-        <div class="hof-banner--height">
-            <div class="container hof-color-dark-green mb-auto my-lg-auto">
-                <?php if ($heading) : ?>
-                    <h1>
-                        <?php echo $heading; ?>
-                    </h1>
-                <?php endif; ?>
-                <?php if ($subheading) : ?>
-                    <h2 class="mb-4">
-                        <?php echo $subheading; ?>
-                    </h2>
-                <?php endif; ?>
-                <?php if ($cta) : ?>
-                    <a href="<?php echo $cta['url']; ?>" class="hof-btn-dark-green--outline" target="<?php echo $cta['target']; ?>">
-                        <?php echo $cta['title']; ?>
-                    </a>
-                <?php endif; ?>
+        <div class="container hof-bg-beige d-flex h-100">
+
+            <div class="row">
+                <div class="col-lg-6 px-lg-0">
+                    <?php if ($image) : ?>
+                        <img src="<?php echo $image; ?>" alt="Hero Image" class="hof-banner--image">
+                    <?php endif; ?>
+                </div>
+                <div class="col-lg-6 hof-color-brown my-lg-auto">
+                    <?php if ($heading) : ?>
+                        <h1 class="mb-4">
+                            <?php echo $heading; ?>
+                        </h1>
+                    <?php endif; ?>
+                    <?php if ($subheading) : ?>
+                        <h5 class="mb-4">
+                            <?php echo $subheading; ?>
+                        </h5>
+                    <?php endif; ?>
+                    <?php if ($cta) : ?>
+                        <a href="<?php echo $cta['url']; ?>" class="hof-btn-brown--outline" target="<?php echo $cta['target']; ?>">
+                            <?php echo $cta['title']; ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
             </div>
-            <?php if ($image) : ?>
-                <img src="<?php echo $image; ?>" alt="Hero Image" class="hof-banner--image">
-            <?php endif; ?>
+
         </div>
     </section>
 <?php endif; ?>

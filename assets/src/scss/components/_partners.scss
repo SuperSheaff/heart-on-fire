@@ -1,0 +1,18 @@
+// --- Partners Component CSS --- //
+
+.hof-partners {
+    .hof-partners-logo-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+        position: relative;
+        width: 100%;
+        padding-left: .75rem;
+        padding-right: .75rem;
+
+        img {
+            mix-blend-mode: darken;
+        }
+    }
+}
+
+// --- End of Component CSS --- //

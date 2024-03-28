@@ -1,7 +1,7 @@
 @media (min-width: 576px) {
   .container,
   .container-sm {
-    max-width: 540px;
+    max-width: 576px;
   }
 
   .col-sm {
@@ -1086,7 +1086,7 @@
   .container,
   .container-sm,
   .container-md {
-    max-width: 720px;
+    max-width: 768px;
   }
 
   .col-md {
@@ -2020,7 +2020,7 @@
   .container-sm,
   .container-md,
   .container-lg {
-    max-width: 960px;
+    max-width: 992px;
   }
 
   .col-lg {
@@ -2947,7 +2947,7 @@
 
   h1,
   .h1 {
-    font-size: 6rem;
+    font-size: 92px;
     margin-bottom: 2rem;
   }
 
@@ -2967,26 +2967,17 @@
   }
 
   h5 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
-  section {
-    padding-bottom: 80px;
-    padding-top: 80px;
+  .container.hof-padding {
+    padding-bottom: 64px;
+    padding-top: 64px;
   }
 
   .hof-banner .hof-banner--height {
-    height: calc(100vh - 128px);
-  }
-
-  .hof-banner .hof-banner--image {
-    bottom: 0;
-    height: 100%;
-    display: block;
-    position: absolute;
-    right: 0;
-    width: auto;
+    height: calc(100vh);
   }
 
   .hof-cta-bar .hof-cta-bar__content {
@@ -3090,7 +3081,7 @@
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1136px;
+    max-width: 1200px;
   }
 
   .col-xl {
@@ -4022,7 +4013,7 @@
   .container-lg,
   .container-xl,
   .container-xxl {
-    max-width: 1376px;
+    max-width: 1440px;
   }
 
   .col-xxl {
