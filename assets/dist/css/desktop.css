@@ -2010,6 +2010,12 @@
     margin-bottom: 50px !important;
   }
 
+  .hof-partners .hof-partners-logo-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: unset;
+  }
+
   .hof-services .hof-services--image {
     height: 100%;
   }
@@ -2947,7 +2953,7 @@
 
   h1,
   .h1 {
-    font-size: 92px;
+    font-size: 5.5rem;
     margin-bottom: 2rem;
   }
 
@@ -2971,13 +2977,14 @@
     margin-bottom: 1rem;
   }
 
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .container.hof-padding {
     padding-bottom: 64px;
     padding-top: 64px;
-  }
-
-  .hof-banner .hof-banner--height {
-    height: calc(100vh);
   }
 
   .hof-cta-bar .hof-cta-bar__content {
@@ -3151,7 +3158,9 @@
     max-width: 41.66667%;
   }
 
-  .col-xl-6 {
+  .col-xl-6,
+  .hof-banner .hof-banner--img-col,
+  .hof-banner .hof-banner--text-col {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -4003,6 +4012,47 @@
 
   .text-xl-center {
     text-align: center !important;
+  }
+
+  .hof-banner .hof-banner--height {
+    height: calc(100vh);
+  }
+
+  .hof-banner .hof-banner--row {
+    display: flex;
+    height: unset;
+    min-height: unset;
+  }
+
+  .hof-banner .hof-banner--img-col {
+    display: block;
+    height: 100%;
+    left: unset;
+    position: relative;
+    top: unset;
+    width: 100%;
+  }
+
+  .hof-banner .hof-banner--image-desktop {
+    display: block;
+  }
+
+  .hof-banner .hof-banner--image-mobile {
+    display: none;
+  }
+
+  .hof-banner .hof-banner--text-col {
+    bottom: unset;
+    left: unset;
+    padding: unset;
+    position: relative;
+    text-align: left;
+    width: unset;
+  }
+
+  .hof-partners .hof-partners-logo-col {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }
 

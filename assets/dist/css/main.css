@@ -7926,7 +7926,7 @@ mark,
   content: "\2014\00A0";
 }
 
-.img-fluid {
+.img-fluid, .hof-partners .hof-partners-logo-col img {
   max-width: 100%;
   height: auto;
 }
@@ -8031,7 +8031,7 @@ pre code {
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
-.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .hof-banner .hof-banner--img-col, .hof-banner .hof-banner--text-col, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl,
 .col-xxl-auto {
   position: relative;
@@ -13844,7 +13844,7 @@ h4 {
 
 h5 {
   font-family: "Manrope";
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -13866,8 +13866,8 @@ h5 {
 }
 
 .container {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .container.hof-padding {
@@ -13875,19 +13875,13 @@ h5 {
   padding-top: 48px;
 }
 
-.row {
-  margin-left: -2rem;
-  margin-right: -2rem;
-  width: 100%;
-}
-
 ::-moz-selection {
-  background-color: #000000;
+  background-color: #372120;
   color: #FFFFFF;
 }
 
 ::selection {
-  background-color: #000000;
+  background-color: #372120;
   color: #FFFFFF;
 }
 
@@ -14271,6 +14265,43 @@ table tbody tr td {
   position: relative;
 }
 
+.hof-banner .hof-banner--row {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hof-banner .hof-banner--img-col {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hof-banner .hof-banner--image-desktop {
+  display: none;
+}
+
+.hof-banner .hof-banner--image-mobile {
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
+.hof-banner .hof-banner--text-col {
+  background-color: #E8E5DE;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
 .hof-blog a {
   color: #444C3D;
 }
@@ -14379,12 +14410,13 @@ table tbody tr td {
 }
 
 .hof-partners .hof-partners-logo-col {
-  flex: 0 0 20%;
-  max-width: 20%;
   position: relative;
   width: 100%;
   padding-left: .75rem;
   padding-right: .75rem;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  margin: auto;
 }
 
 .hof-partners .hof-partners-logo-col img {
@@ -16246,6 +16278,11 @@ header .hof-btn-dark-green--outline {
   table {
     margin-bottom: 50px !important;
   }
+  .hof-partners .hof-partners-logo-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: unset;
+  }
   .hof-services .hof-services--image {
     height: 100%;
   }
@@ -16970,7 +17007,7 @@ header .hof-btn-dark-green--outline {
     text-align: center !important;
   }
   h1, .h1 {
-    font-size: 92px;
+    font-size: 5.5rem;
     margin-bottom: 2rem;
   }
   h2 {
@@ -16989,12 +17026,13 @@ header .hof-btn-dark-green--outline {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .container.hof-padding {
     padding-bottom: 64px;
     padding-top: 64px;
-  }
-  .hof-banner .hof-banner--height {
-    height: calc(100vh);
   }
   .hof-cta-bar .hof-cta-bar__content {
     margin-bottom: 4rem;
@@ -17130,7 +17168,7 @@ header .hof-btn-dark-green--outline {
     flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
-  .col-xl-6 {
+  .col-xl-6, .hof-banner .hof-banner--img-col, .hof-banner .hof-banner--text-col {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -17788,6 +17826,40 @@ header .hof-btn-dark-green--outline {
   }
   .text-xl-center {
     text-align: center !important;
+  }
+  .hof-banner .hof-banner--height {
+    height: calc(100vh);
+  }
+  .hof-banner .hof-banner--row {
+    display: flex;
+    height: unset;
+    min-height: unset;
+  }
+  .hof-banner .hof-banner--img-col {
+    display: block;
+    height: 100%;
+    left: unset;
+    position: relative;
+    top: unset;
+    width: 100%;
+  }
+  .hof-banner .hof-banner--image-desktop {
+    display: block;
+  }
+  .hof-banner .hof-banner--image-mobile {
+    display: none;
+  }
+  .hof-banner .hof-banner--text-col {
+    bottom: unset;
+    left: unset;
+    padding: unset;
+    position: relative;
+    text-align: left;
+    width: unset;
+  }
+  .hof-partners .hof-partners-logo-col {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }
 

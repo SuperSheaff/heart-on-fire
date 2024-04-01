@@ -11,12 +11,80 @@
         height: calc(100vh);
         position: relative;
         
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
             height: calc(100vh);
         }
     }
 
-    .hof-banner--image {
+    .hof-banner--row {
+        min-height: 100vh;
+        width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            display: flex;            
+            height: unset;
+            min-height: unset;
+        }
+    }
+
+    .hof-banner--img-col {
+        @extend .col-xl-6;
+
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            display: block;
+            height: 100%;
+            left: unset;
+            position: relative;
+            top: unset;
+            width: 100%;
+        }
+    }
+
+    .hof-banner--image-desktop {
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+            display: block;
+        }
+    }
+
+    .hof-banner--image-mobile {
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            display: none;
+        }
+    }
+
+    .hof-banner--text-col {
+        @extend .col-xl-6;
+        
+        background-color: $c-beige;
+        bottom: 0;
+        left: 0;
+        padding: 2rem 1rem;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            bottom: unset;
+            left: unset;
+            padding: unset;
+            position: relative;
+            text-align: left;
+            width: unset;
+        }
     }
 }
 

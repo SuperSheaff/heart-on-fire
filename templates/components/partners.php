@@ -16,7 +16,7 @@
         <div class="container hof-bg-beige hof-padding">
 
             <?php if ($tagline) : ?>
-                <p class="hof-tagline text-center mb-4">
+                <p class="hof-tagline hof-color-brown text-center mb-4">
                     <?php echo $tagline; ?>
                 </p>
             <?php endif; ?>
@@ -25,7 +25,7 @@
                 <?php foreach ($partners as $partner) :
                     $partnerImage    = $partner['image'];
                     ?>
-                    <div class="hof-partners-logo-col col-3 mb-3">    
+                    <div class="hof-partners-logo-col mb-3">    
                         <img src="<?php echo $partnerImage; ?>" alt="Partner Logo" class="hof-partners--logo ">
                     </div>
                 <?php endforeach; ?>

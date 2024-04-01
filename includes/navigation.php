@@ -1,7 +1,7 @@
 <?php
 
     $primaryMenu        = heartonfire_generate_nav_menu('menu-primary');
-    $socialMedia    = get_field('settings_social_media', 'options');
+    $socialMedia        = get_field('settings_social_media', 'options');
 
 ?>
 

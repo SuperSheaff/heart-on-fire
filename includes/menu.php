@@ -21,7 +21,7 @@
                 </a>
 
                 <?php /* Upper Nav Links */ ?>
-                <div class="d-flex my-auto">
+                <div class="d-none d-xl-flex my-auto">
                     <?php foreach ($primaryMenu as $index => $item) : ?>
                         <a href="<?php echo $item['url']; ?>" class="hof-nav__upper--link">
                             <?php echo $item['title']; ?>
@@ -32,4 +32,5 @@
             </div>
         </div>
     </div>
+
 </nav>

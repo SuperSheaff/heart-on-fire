@@ -7987,7 +7987,8 @@ mark,
   content: "\2014\00A0";
 }
 
-.img-fluid {
+.img-fluid,
+.hof-partners .hof-partners-logo-col img {
   max-width: 100%;
   height: auto;
 }
@@ -8150,6 +8151,8 @@ pre code {
 .col-xl-4,
 .col-xl-5,
 .col-xl-6,
+.hof-banner .hof-banner--img-col,
+.hof-banner .hof-banner--text-col,
 .col-xl-7,
 .col-xl-8,
 .col-xl-9,
@@ -14202,7 +14205,7 @@ h4 {
 
 h5 {
   font-family: "Manrope";
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -14224,8 +14227,8 @@ h5 {
 }
 
 .container {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .container.hof-padding {
@@ -14233,19 +14236,13 @@ h5 {
   padding-top: 48px;
 }
 
-.row {
-  margin-left: -2rem;
-  margin-right: -2rem;
-  width: 100%;
-}
-
 ::-moz-selection {
-  background-color: #000000;
+  background-color: #372120;
   color: #FFFFFF;
 }
 
 ::selection {
-  background-color: #000000;
+  background-color: #372120;
   color: #FFFFFF;
 }
 
@@ -14664,6 +14661,43 @@ table tbody tr td {
   position: relative;
 }
 
+.hof-banner .hof-banner--row {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hof-banner .hof-banner--img-col {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hof-banner .hof-banner--image-desktop {
+  display: none;
+}
+
+.hof-banner .hof-banner--image-mobile {
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+}
+
+.hof-banner .hof-banner--text-col {
+  background-color: #E8E5DE;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 1rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
 .hof-blog a {
   color: #444C3D;
 }
@@ -14772,12 +14806,13 @@ table tbody tr td {
 }
 
 .hof-partners .hof-partners-logo-col {
-  flex: 0 0 20%;
-  max-width: 20%;
   position: relative;
   width: 100%;
   padding-left: .75rem;
   padding-right: .75rem;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  margin: auto;
 }
 
 .hof-partners .hof-partners-logo-col img {
