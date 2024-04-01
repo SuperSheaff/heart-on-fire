@@ -3029,19 +3029,20 @@
   }
 
   .hof-instagram .hof-instagram--heading {
-    padding-bottom: 0;
-    padding-top: 0;
+    left: 0;
+    padding: 3rem;
+    top: 0;
     transform: rotate(270deg);
   }
 
   .hof-instagram .hof-instagram--box-1 {
-    height: 20vw;
-    width: 20vw;
+    padding-top: 20%;
+    width: 20%;
   }
 
   .hof-instagram .hof-instagram--box {
-    height: 20vw;
-    width: 20vw;
+    padding-top: 20%;
+    width: 20%;
   }
 
   .hof-testimonials .hof-testimonial-carousel--content,

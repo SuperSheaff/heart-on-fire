@@ -14371,29 +14371,47 @@ table tbody tr td {
 .hof-instagram .hof-instagram--container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .hof-instagram .hof-instagram--heading {
+  color: #372120;
   font-size: 1.5rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
 .hof-instagram .hof-instagram--box-1 {
-  background-color: #E8E5DE;
-  display: flex;
-  height: auto;
-  overflow: hidden;
+  background-color: #F5F3F0;
+  padding-top: 50%;
+  position: relative;
   width: 100%;
+}
+
+.hof-instagram .hof-instagram--box-1 .hof-instagram--box-inner {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .hof-instagram .hof-instagram--box {
   background-color: #E8E5DE;
-  display: flex;
-  height: 50vw;
+  padding-top: 50%;
+  position: relative;
+  width: 50%;
+}
+
+.hof-instagram .hof-instagram--box .hof-instagram--box-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  width: 50vw;
 }
 
 .hof-instagram .hof-instagram--box img {
@@ -17067,17 +17085,18 @@ header .hof-btn-dark-green--outline {
     flex-wrap: nowrap;
   }
   .hof-instagram .hof-instagram--heading {
-    padding-bottom: 0;
-    padding-top: 0;
+    left: 0;
+    padding: 3rem;
+    top: 0;
     transform: rotate(270deg);
   }
   .hof-instagram .hof-instagram--box-1 {
-    height: 20vw;
-    width: 20vw;
+    padding-top: 20%;
+    width: 20%;
   }
   .hof-instagram .hof-instagram--box {
-    height: 20vw;
-    width: 20vw;
+    padding-top: 20%;
+    width: 20%;
   }
   .hof-testimonials .hof-testimonial-carousel--content,
   .hof-testimonials .hof-testimonial-carousel--role {
