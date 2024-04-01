@@ -1,5 +1,6 @@
 @media (min-width: 576px) {
   .container,
+  .hof-container,
   .container-sm {
     max-width: 576px;
   }
@@ -298,6 +299,7 @@
   }
 
   .navbar-expand-sm > .container,
+  .navbar-expand-sm > .hof-container,
   .navbar-expand-sm > .container-fluid,
   .navbar-expand-sm > .container-sm,
   .navbar-expand-sm > .container-md,
@@ -1084,6 +1086,7 @@
 
 @media (min-width: 768px) {
   .container,
+  .hof-container,
   .container-sm,
   .container-md {
     max-width: 768px;
@@ -1328,6 +1331,7 @@
   }
 
   .navbar-expand-md > .container,
+  .navbar-expand-md > .hof-container,
   .navbar-expand-md > .container-fluid,
   .navbar-expand-md > .container-sm,
   .navbar-expand-md > .container-md,
@@ -2023,6 +2027,7 @@
 
 @media (min-width: 992px) {
   .container,
+  .hof-container,
   .container-sm,
   .container-md,
   .container-lg {
@@ -2268,6 +2273,7 @@
   }
 
   .navbar-expand-lg > .container,
+  .navbar-expand-lg > .hof-container,
   .navbar-expand-lg > .container-fluid,
   .navbar-expand-lg > .container-sm,
   .navbar-expand-lg > .container-md,
@@ -2963,8 +2969,8 @@
   }
 
   h3 {
-    font-size: 2rem;
-    margin-bottom: 1.25rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 
   h4 {
@@ -2977,12 +2983,14 @@
     margin-bottom: 1rem;
   }
 
-  .container {
+  .hof-section-padding-x,
+  .hof-section-padding {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  .container.hof-padding {
+  .hof-section-padding-y,
+  .hof-section-padding {
     padding-bottom: 64px;
     padding-top: 64px;
   }
@@ -2993,35 +3001,6 @@
 
   .hof-heart-on-fire .hof-heart-on-fire__content {
     width: 50%;
-  }
-
-  .hof-image-content .hof-image-content--height {
-    padding-bottom: 0;
-    padding-top: 0;
-    height: 900px;
-  }
-
-  .hof-image-content .hof-image-content--left .hof-image-content__content {
-    padding-left: 6rem;
-  }
-
-  .hof-image-content .hof-image-content--right .hof-image-content__content {
-    padding-right: 6rem;
-  }
-
-  .hof-image-content .hof-image-content--image {
-    bottom: 0;
-    height: 100%;
-    position: absolute;
-    width: 50%;
-  }
-
-  .hof-image-content .hof-image-content--image.hof-image-content--left {
-    left: 0;
-  }
-
-  .hof-image-content .hof-image-content--image.hof-image-content--right {
-    right: 0;
   }
 
   .hof-instagram .hof-instagram--container {
@@ -3085,6 +3064,7 @@
 
 @media (min-width: 1200px) {
   .container,
+  .hof-container,
   .container-sm,
   .container-md,
   .container-lg,
@@ -3333,6 +3313,7 @@
   }
 
   .navbar-expand-xl > .container,
+  .navbar-expand-xl > .hof-container,
   .navbar-expand-xl > .container-fluid,
   .navbar-expand-xl > .container-sm,
   .navbar-expand-xl > .container-md,
@@ -4043,6 +4024,7 @@
   }
 
   .hof-banner .hof-banner--text-col {
+    background-color: unset;
     bottom: unset;
     left: unset;
     padding: unset;
@@ -4059,6 +4041,7 @@
 
 @media (min-width: 1440px) {
   .container,
+  .hof-container,
   .container-sm,
   .container-md,
   .container-lg,
@@ -4306,6 +4289,7 @@
   }
 
   .navbar-expand-xxl > .container,
+  .navbar-expand-xxl > .hof-container,
   .navbar-expand-xxl > .container-fluid,
   .navbar-expand-xxl > .container-sm,
   .navbar-expand-xxl > .container-md,

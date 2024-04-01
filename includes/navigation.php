@@ -9,7 +9,7 @@
 
     <?php /* Upper Navigation */ ?>
     <div class="hof-navigation__upper">
-        <div class="container">
+        <div class="hof-section-padding-x">
             <div class="d-flex justify-content-between">
 
                 <?php /* Upper Nav Logo */ ?>
@@ -25,7 +25,7 @@
 
     <?php /* Middle Navigation */ ?>
     <div class="hof-navigation__middle my-auto">
-        <div class="container px-lg-0">
+        <div class="">
             <div class="d-flex flex-column">
 
                 <?php foreach ($primaryMenu as $index => $item) : ?>

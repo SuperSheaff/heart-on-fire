@@ -6,45 +6,50 @@
     $globalComponent    = get_sub_field('component_image_content_global_component');
 
     //Settings.
-    $layout             = heartonfire_get_the_field_values($globalComponent, 'image_content', 'layout');
-    $image              = heartonfire_get_the_field_values($globalComponent, 'image_content', 'image');
+    $tagline            = heartonfire_get_the_field_values($globalComponent, 'image_content', 'tagline');
+    $heading            = heartonfire_get_the_field_values($globalComponent, 'image_content', 'heading');
     $content            = heartonfire_get_the_field_values($globalComponent, 'image_content', 'content');
     $cta                = heartonfire_get_the_field_values($globalComponent, 'image_content', 'cta');
-
-    $imageColumnClass   = '';
-    $contentColumnClass = '';
-
-    switch ($layout) {
-        case 'image-left':
-            $imageColumnClass   = 'hof-image-content--left';
-            $contentColumnClass = 'hof-image-content--left offset-lg-6';
-            break;
-
-        case 'image-right':
-            $imageColumnClass   = 'hof-image-content--right';
-            $contentColumnClass = 'hof-image-content--right';
-            break;
-    }
+    $image              = heartonfire_get_the_field_values($globalComponent, 'image_content', 'image');
+ 
 ?>
 
 <?php if ($enableComponent): ?>
-    <section id="<?php echo $componentId; ?>" class="hof-image-content py-0 <?php echo $componentClass; ?>">
-        <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-image-content--image <?php echo $imageColumnClass; ?>">
-        <div class="container">
-            <div class="row hof-image-content--height">
-                <div class="col-lg-6 <?php echo $contentColumnClass; ?> my-auto">
-                    <div class="hof-image-content__content">
-                        <?php if ($content) : ?>
-                            <?php echo $content; ?>
-                        <?php endif; ?>
-                        <?php if ($cta) : ?>
-                            <a href="<?php echo $cta['url']; ?>" class="hof-btn-black--outline mt-4" target="<?php echo $cta['target']; ?>">
-                                <?php echo $cta['title']; ?>
-                            </a>
-                        <?php endif; ?>
-                    </div>
+    <section id="<?php echo $componentId; ?>" class="hof-image-content <?php echo $componentClass; ?>">
+        <div class="hof-section-padding">
+            <div class="row">
+
+                <div class="col-12 col-xl-5 offset-xl-1 my-xl-auto mb-4 mb-xl-0 text-center text-xl-left">
+
+                    <?php if ($tagline) : ?>
+                        <p class="hof-tagline hof-color-brown">
+                            <?php echo $tagline; ?>
+                        </p>
+                    <?php endif; ?>
+
+                    <?php if ($heading) : ?>
+                        <h3 class="hof-color-brown">
+                            <?php echo $heading; ?>
+                        </h3>
+                    <?php endif; ?>
+
+                    <?php if ($content) : ?>
+                        <?php echo $content; ?>
+                    <?php endif; ?>
+
+                    <?php if ($cta) : ?>
+                        <a href="<?php echo $cta['url']; ?>" class="hof-btn-brown--outline mt-4" target="<?php echo $cta['target']; ?>">
+                            <?php echo $cta['title']; ?>
+                        </a>
+                    <?php endif; ?>
                 </div>
+
+                <div class="col-12 col-xl-4 offset-xl-1">
+                    <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-image-content--image img-fluid <?php echo $imageColumnClass; ?>">
+                </div>
+
             </div>
         </div>
+
     </section>
 <?php endif; ?>

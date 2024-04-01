@@ -13,7 +13,7 @@
 <?php if ($enableComponent): ?>
     
     <section id="<?php echo $componentId; ?>" class="hof-partners <?php echo $componentClass; ?>">
-        <div class="container hof-bg-beige hof-padding">
+        <div class="hof-section-padding">
 
             <?php if ($tagline) : ?>
                 <p class="hof-tagline hof-color-brown text-center mb-4">

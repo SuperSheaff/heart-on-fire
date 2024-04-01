@@ -78,6 +78,7 @@
         width: 100%;
 
         @include media-breakpoint-up(xl) {
+            background-color: unset;
             bottom: unset;
             left: unset;
             padding: unset;

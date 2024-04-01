@@ -18,20 +18,22 @@ get_header();
     <?php /* Page for components */ ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <?php
-            if (have_posts()) :
-                while (have_posts()) :
-                    the_post();
-                    if (have_rows('components')) {
-                        while (have_rows('components')) {
-                            the_row();
-                            $layoutName = get_row_layout();
-                            get_template_part('/templates/components/' . $layoutName);
+            <div class="hof-container hof-bg-light-pink">
+                <?php
+                if (have_posts()) :
+                    while (have_posts()) :
+                        the_post();
+                        if (have_rows('components')) {
+                            while (have_rows('components')) {
+                                the_row();
+                                $layoutName = get_row_layout();
+                                get_template_part('/templates/components/' . $layoutName);
+                            }
                         }
-                    }
-                endwhile;
-            endif;
-            ?>
+                    endwhile;
+                endif;
+                ?>
+            </div>
         </main>
     </div>
 

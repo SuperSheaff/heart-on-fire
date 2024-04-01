@@ -56,7 +56,7 @@ h1,
 }
 
 h2 {
-    font-family: $ff-manrope;
+    font-family: $ff-p90;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1.25rem;
@@ -68,14 +68,14 @@ h2 {
 }
 
 h3 {
-    font-family: $ff-manrope;
-    font-size: 1.75rem;
+    font-family: $ff-p90;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1rem;
 
     @include media-breakpoint-up(lg) {
-        font-size: 2rem;
-        margin-bottom: 1.25rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -108,7 +108,16 @@ h5 {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.5rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
+}
+
+.hof-large-p {
+    font-family: $ff-manrope;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1rem;
 }
 
 .ff-p90 {
@@ -121,10 +130,15 @@ h5 {
 
 // --- General CSS --- //
 
-section {
+
+.hof-container {
+    @extend .container;
+
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.container {
+.hof-section-padding-x {
     padding-left: 16px;
     padding-right: 16px;
 
@@ -132,21 +146,25 @@ section {
         padding-left: 32px;
         padding-right: 32px;
     }
+}
 
-    &.hof-padding {
-        padding-bottom: 48px;
-        padding-top: 48px;
+.hof-section-padding-y {
+    padding-bottom: 32px;
+    padding-top: 32px;
 
-        @include media-breakpoint-up(lg) {
-            padding-bottom: 64px;
-            padding-top: 64px;
-        }
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 64px;
+        padding-top: 64px;
     }
 }
 
+.hof-section-padding {
+    @extend .hof-section-padding-x;
+    @extend .hof-section-padding-y;
+}
+
 ::selection {
-    background-color: $c-brown;
-    color: $c-white;
+    background-color: rgba($color: #DB9995, $alpha: 0.25);
 }
 
 .hof-bg-white {
@@ -173,8 +191,16 @@ section {
     background-color: $c-dark-green;
 }
 
+.hof-bg-brown {
+    background-color: $c-brown;
+}
+
+.hof-bg-dark-brown {
+    background-color: $c-dark-brown;
+}
+
 .hof-color-white {
-    color: $c-white;
+    color: $c-chalk-white;
 }
 
 .hof-color-light-pink {

@@ -14,42 +14,38 @@
 ?>
 
 <?php if ($enableComponent): ?>
-    <section id="<?php echo $componentId; ?>" class="hof-banner py-0 <?php echo $componentClass; ?>">
-        <div class="container hof-bg-beige px-0">
+    <section id="<?php echo $componentId; ?>" class="hof-banner <?php echo $componentClass; ?>">
+        <div class="hof-banner--row position-relative">
 
-            <div class="hof-banner--row position-relative">
+            <div class="hof-banner--img-col px-0">
+                <?php if ($imageDesktop) : ?>
+                    <img src="<?php echo $imageDesktop; ?>" alt="Hero Image - Desktop" class="hof-banner--image-desktop">
+                <?php endif; ?>
 
-                <div class="hof-banner--img-col px-0">
-                    <?php if ($imageDesktop) : ?>
-                        <img src="<?php echo $imageDesktop; ?>" alt="Hero Image - Desktop" class="hof-banner--image-desktop">
-                    <?php endif; ?>
+                <?php if ($imageMobile) : ?>
+                    <img src="<?php echo $imageMobile; ?>" alt="Hero Image - Mobile" class="hof-banner--image-mobile">
+                <?php endif; ?>
 
-                    <?php if ($imageMobile) : ?>
-                        <img src="<?php echo $imageMobile; ?>" alt="Hero Image - Mobile" class="hof-banner--image-mobile">
-                    <?php endif; ?>
-
-                </div>
-
-                <div class="hof-banner--text-col col-xl-6 hof-color-brown my-xl-auto">
-                    <?php if ($heading) : ?>
-                        <h1 class="mb-4">
-                            <?php echo $heading; ?>
-                        </h1>
-                    <?php endif; ?>
-                    <?php if ($subheading) : ?>
-                        <h5 class="mb-4">
-                            <?php echo $subheading; ?>
-                        </h5>
-                    <?php endif; ?>
-                    <?php if ($cta) : ?>
-                        <a href="<?php echo $cta['url']; ?>" class="hof-btn-brown--outline" target="<?php echo $cta['target']; ?>">
-                            <?php echo $cta['title']; ?>
-                        </a>
-                    <?php endif; ?>
-                </div>
-                
             </div>
 
+            <div class="hof-banner--text-col col-xl-6 hof-color-brown my-xl-auto">
+                <?php if ($heading) : ?>
+                    <h1 class="mb-4">
+                        <?php echo $heading; ?>
+                    </h1>
+                <?php endif; ?>
+                <?php if ($subheading) : ?>
+                    <h5 class="mb-4">
+                        <?php echo $subheading; ?>
+                    </h5>
+                <?php endif; ?>
+                <?php if ($cta) : ?>
+                    <a href="<?php echo $cta['url']; ?>" class="hof-btn-brown--outline" target="<?php echo $cta['target']; ?>">
+                        <?php echo $cta['title']; ?>
+                    </a>
+                <?php endif; ?>
+            </div>
+            
         </div>
     </section>
 <?php endif; ?>

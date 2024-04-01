@@ -1,9 +1,26 @@
 // --- Footer Section CSS --- //
 
 .hof-footer {
+
+    .hof-footer--link-heading {
+        color: $c-chalk-white;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    .hof-footer--link,
+    .hof-footer--text {
+        color: $c-beige;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.hof-footer {
     overflow: hidden;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
 
     .hof-footer__upper {
         margin-bottom: 3rem;
