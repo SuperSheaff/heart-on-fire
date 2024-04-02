@@ -13970,6 +13970,7 @@ h5 {
   font-weight: 500;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
@@ -14620,65 +14621,46 @@ header .hof-btn-dark-green--outline {
   margin-bottom: 1.25rem;
 }
 
-.hof-footer {
-  overflow: hidden;
-}
-
-.hof-footer .hof-footer__upper {
-  margin-bottom: 3rem;
-}
-
-.hof-footer a.hof-footer__link--privacy:hover {
-  text-decoration: none;
-}
-
-.hof-footer a.hof-footer__link {
-  padding-left: 0;
-  transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-}
-
-.hof-footer a.hof-footer__link:hover {
-  padding-left: 0.5rem;
-  text-decoration: none;
-}
-
-.hof-footer .hof-footer__upper--logo svg {
-  height: 48px;
-}
-
-.hof-footer .hof-footer__upper--socials a {
-  padding-bottom: 0;
-  transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-}
-
-.hof-footer .hof-footer__upper--socials a:hover {
-  padding-bottom: 0.5rem;
-}
-
-.hof-footer .hof-footer__lower--text {
-  color: #FFFFFF;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .hof-footer .hof-footer__lower--input {
-  background-color: #444C3D;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  font-size: 24px;
-  padding: 8px 32px;
+  background-color: #291918;
+  border: 1px solid #F5F3F0;
+  color: #F5F3F0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  padding: 0.5rem 1rem;
 }
 
 .hof-footer .hof-footer__lower--input::-moz-placeholder {
-  color: #FFFFFF;
+  color: #F5F3F0;
 }
 
 .hof-footer .hof-footer__lower--input:-ms-input-placeholder {
-  color: #FFFFFF;
+  color: #F5F3F0;
 }
 
 .hof-footer .hof-footer__lower--input::placeholder {
-  color: #FFFFFF;
+  color: #F5F3F0;
+}
+
+.hof-footer .hof-footer__lower--btn-container {
+  height: 38px;
+  position: relative;
+  width: 38px;
+}
+
+.hof-footer .hof-footer__lower--btn {
+  border: none;
+  height: 38px;
+  width: 38px;
+}
+
+.hof-footer .hof-footer__lower--btn-icon {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
@@ -17113,9 +17095,6 @@ header .hof-btn-dark-green--outline {
   }
   .hof-navigation .hof-navigation__middle--link {
     font-size: 6rem;
-  }
-  .hof-footer .hof-footer__upper--logo svg {
-    height: 64px;
   }
 }
 

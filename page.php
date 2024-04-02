@@ -18,7 +18,7 @@ get_header();
     <?php /* Page for components */ ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <div class="hof-container hof-bg-light-pink">
+            <div class="hof-container hof-bg-beige">
                 <?php
                 if (have_posts()) :
                     while (have_posts()) :

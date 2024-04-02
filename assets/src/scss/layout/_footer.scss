@@ -17,70 +17,39 @@
         line-height: 1.25;
         margin-bottom: 1.25rem;
     }
-}
-
-.hof-footer {
-    overflow: hidden;
-
-    .hof-footer__upper {
-        margin-bottom: 3rem;
-    }
-
-    a {
-        &.hof-footer__link--privacy {
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-        &.hof-footer__link {
-            padding-left: 0;
-            transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-    
-            &:hover {
-                padding-left: 0.5rem;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .hof-footer__upper--logo {
-        svg {
-            height: 48px;
-            
-            @include media-breakpoint-up(lg) {
-                height: 64px;
-            }
-        } 
-    }
-
-    .hof-footer__upper--socials {
-        a {
-            padding-bottom: 0;
-            transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-
-            &:hover {
-                padding-bottom: 0.5rem;
-            }
-        }
-    }
-
-    .hof-footer__lower--text {
-        color: $c-white;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
 
     .hof-footer__lower--input {
-        background-color: $c-dark-green;
-        border: 1px solid $c-white;
-        color: $c-white;
-        font-size: 24px;
-        padding: 8px 32px;
+        background-color: $c-dark-brown;
+        border: 1px solid $c-chalk-white;
+        color: $c-chalk-white;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+        padding: 0.5rem 1rem;
 
         &::placeholder {
-            color: $c-white;
+            color: $c-chalk-white;
         }
+        
+    }
+    .hof-footer__lower--btn-container {
+        height: 38px;
+        position: relative;
+        width: 38px;
+    }
+
+    .hof-footer__lower--btn {
+        border: none;
+        height: 38px;
+        width: 38px;
+    }
+
+    .hof-footer__lower--btn-icon {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
     }
 }
 

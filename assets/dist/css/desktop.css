@@ -3056,10 +3056,6 @@
   .hof-navigation .hof-navigation__middle--link {
     font-size: 6rem;
   }
-
-  .hof-footer .hof-footer__upper--logo svg {
-    height: 64px;
-  }
 }
 
 @media (min-width: 1200px) {
