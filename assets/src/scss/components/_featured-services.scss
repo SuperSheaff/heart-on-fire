@@ -1,0 +1,40 @@
+// --- Featured Services Component CSS --- //
+
+.hof-featured-services {
+
+    .hof-featured-services__box {
+        height: 368px;
+        margin-bottom: 1rem;
+        position: relative;
+        width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+            height: 768px;
+        }
+
+        .hof-featured-services__box--img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+
+        .hof-featured-services__box--title {
+            color: $c-chalk-white;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.5rem;
+            left: 0;
+            position: absolute;
+            text-align: center;
+            top: 5rem;
+            padding: 1rem 4rem;
+            width: 100%;
+
+            
+        }
+    }
+}
+
+// --- End of Component CSS --- //

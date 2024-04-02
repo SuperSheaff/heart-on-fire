@@ -106,6 +106,7 @@ function heartonfire_acf_get_components()
         'blog',
         'call-to-action',
         'contact',
+        'featured-services',
         'general-content',
         'heart-on-fire',
         'icon-content',

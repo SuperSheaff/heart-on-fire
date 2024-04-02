@@ -2025,13 +2025,13 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container,
   .hof-container,
   .container-sm,
   .container-md,
   .container-lg {
-    max-width: 992px;
+    max-width: 1024px;
   }
 
   .col-lg {
@@ -4027,6 +4027,11 @@
     position: relative;
     text-align: left;
     width: unset;
+  }
+
+  .hof-featured-services .hof-featured-services__box {
+    margin-bottom: 0;
+    height: 768px;
   }
 
   .hof-partners .hof-partners-logo-col {
