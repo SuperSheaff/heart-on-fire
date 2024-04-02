@@ -20671,7 +20671,7 @@ $(document).ready(function () {
 
   $('.hof-testimonial-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:32,
     dots:true,
     responsive:{
         0:{

@@ -2010,6 +2010,10 @@
     text-align: center !important;
   }
 
+  .hof-navigation-offset {
+    padding-top: 128px;
+  }
+
   table {
     margin-bottom: 50px !important;
   }
@@ -2963,8 +2967,10 @@
     margin-bottom: 2rem;
   }
 
-  h2 {
-    font-size: 3rem;
+  h2,
+  .h2 {
+    font-size: 4rem;
+    line-height: 1;
     margin-bottom: 1.5rem;
   }
 
@@ -3003,6 +3009,15 @@
     width: 50%;
   }
 
+  .hof-image-full .hof-image-full--img {
+    height: 640px;
+  }
+
+  .hof-image-split .hof-image-split--img {
+    height: 640px;
+    width: 50%;
+  }
+
   .hof-instagram .hof-instagram--container {
     flex-wrap: nowrap;
   }
@@ -3024,18 +3039,8 @@
     width: 20%;
   }
 
-  .hof-testimonials .hof-testimonial-carousel--content,
-  .hof-testimonials .hof-testimonial-carousel--role {
-    font-size: 1.5rem;
-  }
-
-  .hof-testimonials .hof-testimonial-carousel--name {
-    margin-top: 3rem;
-    font-size: 2rem;
-  }
-
   .hof-testimonials .owl-dots {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .hof-nav__upper {

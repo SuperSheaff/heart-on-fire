@@ -13821,7 +13821,7 @@ h1, .h1 {
   margin-bottom: 1.5rem;
 }
 
-h2 {
+h2, .h2 {
   font-family: "Perfectly Nineties";
   font-size: 2rem;
   font-weight: 400;
@@ -13887,6 +13887,10 @@ h5 {
 .hof-section-padding-y, .hof-section-padding {
   padding-bottom: 32px;
   padding-top: 32px;
+}
+
+.hof-navigation-offset {
+  padding-top: 80px;
 }
 
 ::-moz-selection {
@@ -14393,6 +14397,24 @@ table tbody tr td {
   font-size: 24px;
 }
 
+.hof-image-full .hof-image-full--img {
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
+.hof-image-split .hof-image-split--img {
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+
 .hof-instagram {
   overflow: hidden;
 }
@@ -14489,42 +14511,26 @@ table tbody tr td {
   width: 100%;
 }
 
-.hof-testimonials {
-  background-color: #E8E5DE;
-}
-
 .hof-testimonials .hof-testimonial-carousel--item {
-  text-align: center;
-}
-
-.hof-testimonials .hof-testimonial-carousel--content,
-.hof-testimonials .hof-testimonial-carousel--role {
-  font-size: 1rem;
-}
-
-.hof-testimonials .hof-testimonial-carousel--name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0;
-  margin-top: 2rem;
+  text-align: left;
 }
 
 .hof-testimonials .owl-dots {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .hof-testimonials .owl-dots .owl-dot {
-  border: 1px solid #444C3D;
+  border: 2px solid #372120;
   border-radius: 99rem;
-  height: 1rem;
+  height: 0.75rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  width: 1rem;
+  width: 0.75rem;
 }
 
 .hof-testimonials .owl-dots .owl-dot.active {
-  background-color: #444C3D;
+  background-color: #372120;
 }
 
 header {
@@ -16317,6 +16323,9 @@ header .hof-btn-dark-green--outline {
   .text-md-center {
     text-align: center !important;
   }
+  .hof-navigation-offset {
+    padding-top: 128px;
+  }
   table {
     margin-bottom: 50px !important;
   }
@@ -17052,8 +17061,9 @@ header .hof-btn-dark-green--outline {
     font-size: 5.5rem;
     margin-bottom: 2rem;
   }
-  h2 {
-    font-size: 3rem;
+  h2, .h2 {
+    font-size: 4rem;
+    line-height: 1;
     margin-bottom: 1.5rem;
   }
   h3 {
@@ -17082,6 +17092,13 @@ header .hof-btn-dark-green--outline {
   .hof-heart-on-fire .hof-heart-on-fire__content {
     width: 50%;
   }
+  .hof-image-full .hof-image-full--img {
+    height: 640px;
+  }
+  .hof-image-split .hof-image-split--img {
+    height: 640px;
+    width: 50%;
+  }
   .hof-instagram .hof-instagram--container {
     flex-wrap: nowrap;
   }
@@ -17099,16 +17116,8 @@ header .hof-btn-dark-green--outline {
     padding-top: 20%;
     width: 20%;
   }
-  .hof-testimonials .hof-testimonial-carousel--content,
-  .hof-testimonials .hof-testimonial-carousel--role {
-    font-size: 1.5rem;
-  }
-  .hof-testimonials .hof-testimonial-carousel--name {
-    margin-top: 3rem;
-    font-size: 2rem;
-  }
   .hof-testimonials .owl-dots {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .hof-nav__upper {
     padding-bottom: 32px;

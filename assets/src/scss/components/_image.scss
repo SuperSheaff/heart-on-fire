@@ -1,0 +1,30 @@
+// --- Image Components CSS --- //
+
+.hof-image-full {
+    .hof-image-full--img {
+        height: 320px;   
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            height: 640px;   
+        }
+    }
+}
+
+.hof-image-split {
+    .hof-image-split--img {
+        height: 320px;   
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            height: 640px;   
+            width: 50%;
+        }
+    }
+}
+
+// --- End of Component CSS --- //

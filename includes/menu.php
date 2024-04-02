@@ -18,7 +18,13 @@
 
                     <?php /* Upper Nav Logo */ ?>
                     <a href="<?php echo get_home_url(); ?>" class="my-auto hof-header__nav--logo">
-                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg'); ?>
+                        <?php 
+                            if (is_front_page()) {
+                                echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg');
+                            } else {
+                                echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo.svg');
+                            }
+                        ?>
                     </a>
 
                     <?php /* Upper Nav Links */ ?>

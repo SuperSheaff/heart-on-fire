@@ -1,16 +1,16 @@
 <?php
 
-$compNames = heartonfire_get_the_global_components('general_content');
+$compNames = heartonfire_get_the_global_components('banner_simple');
 
 $fields = array(
-    'component_general_content' => array(
-        'key' => 'component_general_content',
-        'name' => 'general_content',
-        'label' => 'General Content',
+    'component_banner_simple' => array(
+        'key' => 'component_banner_simple',
+        'name' => 'banner_simple',
+        'label' => 'Banner Simple',
         'display' => 'block',
         'sub_fields' => array(
             array(
-                'key' => 'component_general_content_tab_general',
+                'key' => 'component_banner_simple_tab_general',
                 'label' => 'General',
                 'name' => '',
                 'type' => 'tab',
@@ -26,9 +26,9 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_general_content_enable',
+                'key' => 'component_banner_simple_enable',
                 'label' => 'Enable',
-                'name' => 'general_content_enable',
+                'name' => 'banner_simple_enable',
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
@@ -45,9 +45,9 @@ $fields = array(
                 'ui_off_text' => '',
             ),
             array(
-                'key' => 'component_general_content_global_component',
+                'key' => 'component_banner_simple_global_component',
                 'label' => 'Global Component',
-                'name' => 'general_content_global_component',
+                'name' => 'banner_simple_global_component',
                 'type' => 'select',
                 'instructions' => '',
                 'required' => 0,
@@ -67,7 +67,7 @@ $fields = array(
                 'placeholder' => '',
             ),
             array(
-                'key' => 'component_general_content_id',
+                'key' => 'component_banner_simple_id',
                 'label' => 'ID',
                 'name' => 'id',
                 'type' => 'text',
@@ -86,7 +86,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_general_content_class',
+                'key' => 'component_banner_simple_class',
                 'label' => 'Classes',
                 'name' => 'class',
                 'type' => 'text',
@@ -105,7 +105,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_general_content_tab_settings',
+                'key' => 'component_banner_simple_tab_settings',
                 'label' => 'Settings',
                 'name' => '',
                 'type' => 'tab',
@@ -114,7 +114,7 @@ $fields = array(
                 'conditional_logic' => array(
                     array(
                         array(
-                            'field' => 'component_general_content_global_component',
+                            'field' => 'component_banner_simple_global_component',
                             'operator' => '==',
                             'value' => '',
                         ),
@@ -129,50 +129,22 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_general_col_width',
-                'label' => 'Column Width',
-                'name' => 'layout',
-                'type' => 'select',
+                'key' => 'component_banner_simple_heading',
+                'label' => 'Heading (H1)',
+                'name' => 'heading',
+                'type' => 'text',
                 'instructions' => '',
-                'required' => 1,
+                'required' => 0,
                 'conditional_logic' => 0,
-                'multiple'      => 0,
-                'allow_null'    => 0,
                 'wrapper' => array(
                     'width' => '100',
                     'class' => '',
                     'id' => '',
                 ),
-                'choices'       => array(
-                    'col-lg-6'  => 'Width - 6',
-                    'col-lg-8'  => 'Width - 8',
-                    'col-lg-10' => 'Width - 10',
-                    'col-lg-12' => 'Width - 12',
-                ),
-                'default_value' => 'col-width-12',
-                'ui'            => 0,
-                'ajax'          => 0,
-                'placeholder'   => '',
-                'return_format' => 'value'
-            ),
-            array(
-                'key' => 'component_general_content_content',
-                'label' => 'Content',
-                'name' => 'content',
-                'type' => 'wysiwyg',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '50',
-                    'class' => '',
-                    'id' => '',
-                ),
                 'default_value' => '',
-                'tabs' => 'all',
-                'toolbar' => 'full',
-                'media_upload' => 1,
-                'delay' => 0,
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
             ),
         ),
         'min' => '',
