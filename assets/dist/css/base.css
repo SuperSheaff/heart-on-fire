@@ -14210,7 +14210,7 @@ h4 {
 
 h5 {
   font-family: "Manrope";
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -14825,6 +14825,16 @@ table tbody tr td {
   -o-object-position: center;
   object-position: center;
   width: 100%;
+}
+
+.hof-icon-content .hof-icon-content--icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.hof-values .hof-values--icon {
+  height: 4rem;
+  width: 4rem;
 }
 
 .hof-instagram {

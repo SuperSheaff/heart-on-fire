@@ -1,16 +1,16 @@
 <?php
 
-$compNames = heartonfire_get_the_global_components('icon_content');
+$compNames = heartonfire_get_the_global_components('values');
 
 $fields = array(
-    'component_icon_content' => array(
-        'key' => 'component_icon_content',
-        'name' => 'icon_content',
-        'label' => 'Icon Content',
+    'component_values' => array(
+        'key' => 'component_values',
+        'name' => 'values',
+        'label' => 'Values',
         'display' => 'block',
         'sub_fields' => array(
             array(
-                'key' => 'component_icon_content_tab_general',
+                'key' => 'component_values_tab_general',
                 'label' => 'General',
                 'name' => '',
                 'type' => 'tab',
@@ -26,9 +26,9 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_icon_content_enable',
+                'key' => 'component_values_enable',
                 'label' => 'Enable',
-                'name' => 'icon_content_enable',
+                'name' => 'values_enable',
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
@@ -45,9 +45,9 @@ $fields = array(
                 'ui_off_text' => '',
             ),
             array(
-                'key' => 'component_icon_content_global_component',
+                'key' => 'component_values_global_component',
                 'label' => 'Global Component',
-                'name' => 'icon_content_global_component',
+                'name' => 'values_global_component',
                 'type' => 'select',
                 'instructions' => '',
                 'required' => 0,
@@ -67,7 +67,7 @@ $fields = array(
                 'placeholder' => '',
             ),
             array(
-                'key' => 'component_icon_content_id',
+                'key' => 'component_values_id',
                 'label' => 'ID',
                 'name' => 'id',
                 'type' => 'text',
@@ -86,7 +86,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_icon_content_class',
+                'key' => 'component_values_class',
                 'label' => 'Classes',
                 'name' => 'class',
                 'type' => 'text',
@@ -105,7 +105,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_icon_content_tab_settings',
+                'key' => 'component_values_tab_settings',
                 'label' => 'Settings',
                 'name' => '',
                 'type' => 'tab',
@@ -114,7 +114,7 @@ $fields = array(
                 'conditional_logic' => array(
                     array(
                         array(
-                            'field' => 'component_icon_content_global_component',
+                            'field' => 'component_values_global_component',
                             'operator' => '==',
                             'value' => '',
                         ),
@@ -129,9 +129,9 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_icon_content_tagline',
-                'label' => 'Tagline',
-                'name' => 'tagline',
+                'key' => 'component_values_heading',
+                'label' => 'Heading',
+                'name' => 'heading',
                 'type' => 'text',
                 'instructions' => '',
                 'required' => 1,
@@ -148,16 +148,16 @@ $fields = array(
                 'maxlength' => 60,
             ),
             array(
-                'key' => 'component_icon_content_repeater',
+                'key' => 'component_values_repeater',
                 'label' => 'Icon Content Repeater',
-                'name' => 'icon_content_repeater',
+                'name' => 'values_repeater',
                 'type' => 'repeater',
                 'instructions' => '',
                 'required' => 1,
                 'conditional_logic' => 0,
                 'sub_fields' => array(
                     array(
-                        'key' => 'component_icon_content_image',
+                        'key' => 'component_values_image',
                         'label' => 'Image',
                         'name' => 'image',
                         'type' => 'image',
@@ -181,7 +181,7 @@ $fields = array(
                         'mime_types' => 'jpg,bmp,gif,png,svg',
                     ),
                     array(
-                        'key' => 'component_icon_content_title',
+                        'key' => 'component_values_title',
                         'label' => 'Icon Title',
                         'name' => 'title',
                         'type' => 'text',
@@ -200,7 +200,7 @@ $fields = array(
                         'maxlength' => 60,
                     ),
                     array(
-                        'key' => 'component_icon_content_content',
+                        'key' => 'component_values_content',
                         'label' => 'Icon Content',
                         'name' => 'content',
                         'type' => 'wysiwyg',

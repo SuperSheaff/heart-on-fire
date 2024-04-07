@@ -119,6 +119,7 @@ function heartonfire_acf_get_components()
         'services',
         'team',
         'testimonials',
+        'values',
         'video-full'
     );
 

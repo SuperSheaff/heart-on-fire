@@ -7,7 +7,6 @@
 
     //Settings.
     $image              = heartonfire_get_the_field_values($globalComponent, 'image_full', 'image');
- 
 ?>
 
 <?php if ($enableComponent): ?>
