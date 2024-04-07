@@ -14818,6 +14818,15 @@ table tbody tr td {
   width: 100%;
 }
 
+.hof-video-full .hof-video-full--video {
+  height: 320px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+}
+
 .hof-instagram {
   overflow: hidden;
 }

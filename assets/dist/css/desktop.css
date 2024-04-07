@@ -3018,6 +3018,10 @@
     width: 50%;
   }
 
+  .hof-video-full .hof-video-full--video {
+    height: 640px;
+  }
+
   .hof-instagram .hof-instagram--container {
     flex-wrap: nowrap;
   }

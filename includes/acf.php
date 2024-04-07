@@ -118,7 +118,8 @@ function heartonfire_acf_get_components()
         'partners',
         'services',
         'team',
-        'testimonials'
+        'testimonials',
+        'video-full'
     );
 
     return $components;
