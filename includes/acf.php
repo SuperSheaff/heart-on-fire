@@ -103,11 +103,13 @@ function heartonfire_acf_get_components()
     // Available default components
     $components = array(
         'banner-simple',
+        'banner-work',
         'banner',
         'blog',
         'call-to-action',
         'contact',
         'content-simple',
+        'content-work',
         'featured-services',
         'heart-on-fire',
         'icon-content',
@@ -116,6 +118,7 @@ function heartonfire_acf_get_components()
         'image-split',
         'instagram',
         'partners',
+        'project-navigation',
         'services',
         'team',
         'testimonials',

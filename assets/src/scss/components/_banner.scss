@@ -89,4 +89,17 @@
     }
 }
 
+.hof-banner-work {
+    .hof-banner-work--img {
+        height: 320px;   
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            height: 640px;   
+        }
+    }
+}
+
 // --- End of Component CSS --- //

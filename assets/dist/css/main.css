@@ -13965,6 +13965,14 @@ h5 {
   border-bottom: 1px solid #444C3D;
 }
 
+.hof-opacity-50 {
+  opacity: 50%;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
 .hof-btn, .hof-btn-dark-green, .hof-btn-dark-green--outline, .hof-btn-brown--outline, .hof-btn-white, .hof-btn-white--outline, .hof-btn-black, .hof-btn-black--outline {
   border-radius: 0;
   cursor: pointer;
@@ -14324,6 +14332,15 @@ table tbody tr td {
   padding: 2rem 1rem;
   position: absolute;
   text-align: center;
+  width: 100%;
+}
+
+.hof-banner-work .hof-banner-work--img {
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
 }
 
@@ -17104,6 +17121,9 @@ header .hof-btn-dark-green--outline {
   .hof-section-padding-y, .hof-section-padding {
     padding-bottom: 64px;
     padding-top: 64px;
+  }
+  .hof-banner-work .hof-banner-work--img {
+    height: 640px;
   }
   .hof-cta-bar .hof-cta-bar__content {
     margin-bottom: 4rem;

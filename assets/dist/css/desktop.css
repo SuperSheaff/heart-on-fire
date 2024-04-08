@@ -3001,6 +3001,10 @@
     padding-top: 64px;
   }
 
+  .hof-banner-work .hof-banner-work--img {
+    height: 640px;
+  }
+
   .hof-cta-bar .hof-cta-bar__content {
     margin-bottom: 4rem;
   }
