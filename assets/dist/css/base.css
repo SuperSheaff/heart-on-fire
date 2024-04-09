@@ -14152,7 +14152,7 @@ body {
   color: #000000;
   font-family: "Manrope";
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 22px;
 }
 
 body::-webkit-scrollbar {
@@ -14772,12 +14772,96 @@ table tbody tr td {
   margin-bottom: 3rem;
 }
 
-.hof-contact {
-  font-size: 24px;
+.hof-contact .hof-contact--label {
+  color: #F5F3F0;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
 }
 
-.hof-contact a {
-  color: #444C3D;
+.hof-contact input,
+.hof-contact textarea {
+  background-color: transparent;
+  border: 1px solid rgba(245, 243, 240, 0.5);
+  color: #F5F3F0;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.hof-contact .hof-contact--checkbox .wpcf7-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.hof-contact .hof-contact--checkbox input[type=checkbox] {
+  background-color: transparent;
+  border: 1px solid rgba(245, 243, 240, 0.5);
+  height: 16px;
+  width: 16px;
+  margin-bottom: auto;
+  margin-right: 0.5rem;
+  margin-top: auto;
+}
+
+.hof-contact .hof-contact--checkbox input[type=checkbox]:checked {
+  accent-color: #291918;
+}
+
+.hof-contact .hof-contact--checkbox label {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+.hof-contact .hof-contact--checkbox .wpcf7-list-item-label {
+  color: #F5F3F0;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.hof-contact .hof-contact--radio .wpcf7-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.hof-contact .hof-contact--radio input[type=radio] {
+  background-color: transparent;
+  border: 1px solid rgba(245, 243, 240, 0.5);
+  height: 16px;
+  width: 16px;
+  margin-bottom: auto;
+  margin-right: 0.5rem;
+  margin-top: auto;
+}
+
+.hof-contact .hof-contact--radio input[type=radio]:checked {
+  accent-color: #291918;
+}
+
+.hof-contact .hof-contact--radio label {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+.hof-contact .hof-contact--radio .wpcf7-list-item-label {
+  color: #F5F3F0;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.content-area--contact {
+  background-color: #372120;
+  min-height: 100vh;
 }
 
 .hof-featured-services .hof-featured-services__box {
@@ -15001,6 +15085,10 @@ header .hof-btn-dark-green--outline {
   line-height: 1.25rem;
   margin-left: 96px;
   text-transform: uppercase;
+}
+
+.hof-nav__upper .hof-nav__upper--link.white {
+  color: #F5F3F0;
 }
 
 .hof-header__nav--logo svg {

@@ -1,11 +1,100 @@
 // --- Contact Component CSS --- //
 
 .hof-contact {
-    font-size: 24px;
-
-    a {
-        color: $c-dark-green;
+    .hof-contact--label {
+        color: $c-chalk-white;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 2px;
+        text-transform: uppercase;
     }
+
+    input, textarea {
+        background-color: transparent;
+        border: 1px solid rgba($c-chalk-white, $alpha: 0.5);
+        color: $c-chalk-white;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 8px 16px;
+        width: 100%;
+    }
+
+    .hof-contact--checkbox {
+        .wpcf7-list-item {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+        }
+
+        input[type=checkbox] {
+            background-color: transparent;
+            border: 1px solid rgba($c-chalk-white, $alpha: 0.5);
+            height: 16px;
+            width: 16px;
+            margin-bottom: auto;
+            margin-right: 0.5rem;
+            margin-top: auto;
+        }
+
+        input[type=checkbox]:checked {
+            accent-color: $c-dark-brown;
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 0;
+            margin-top: 0.75rem;
+        }
+
+        .wpcf7-list-item-label {
+            color: $c-chalk-white;
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: auto;
+            margin-top: auto;
+        }
+    }
+
+    .hof-contact--radio {
+        .wpcf7-list-item {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+        }
+
+        input[type=radio] {
+            background-color: transparent;
+            border: 1px solid rgba($c-chalk-white, $alpha: 0.5);
+            height: 16px;
+            width: 16px;
+            margin-bottom: auto;
+            margin-right: 0.5rem;
+            margin-top: auto;
+        }
+
+        input[type=radio]:checked {
+            accent-color: $c-dark-brown;
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 0;
+            margin-top: 0.75rem;
+        }
+
+        .wpcf7-list-item-label {
+            color: $c-chalk-white;
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: auto;
+            margin-top: auto;
+        }
+    }
+}
+
+.content-area--contact {
+    background-color: $c-brown;
+    min-height: 100vh;
 }
 
 // --- End of Component CSS --- //

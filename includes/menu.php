@@ -19,7 +19,7 @@
                     <?php /* Upper Nav Logo */ ?>
                     <a href="<?php echo get_home_url(); ?>" class="my-auto hof-header__nav--logo">
                         <?php 
-                            if (is_front_page()) {
+                            if (is_front_page() || is_page('contact')) {
                                 echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg');
                             } else {
                                 echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo.svg');
@@ -30,7 +30,7 @@
                     <?php /* Upper Nav Links */ ?>
                     <div class="d-none d-xl-flex my-auto">
                         <?php foreach ($primaryMenu as $index => $item) : ?>
-                            <a href="<?php echo $item['url']; ?>" class="hof-nav__upper--link">
+                            <a href="<?php echo $item['url']; ?>" class="hof-nav__upper--link <?php if (is_page('contact')) { echo 'white'; } ?>">
                                 <?php echo $item['title']; ?>
                             </a>
                         <?php endforeach; ?>

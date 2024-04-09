@@ -16,7 +16,7 @@ get_header();
 ?>
 
     <?php /* Page for components */ ?>
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area <?php if (is_page('contact')) { echo 'content-area--contact'; } ?>">
         <main id="main" class="site-main">
             <div class="hof-container hof-bg-beige">
                 <?php
