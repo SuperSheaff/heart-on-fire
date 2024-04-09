@@ -1,16 +1,16 @@
 <?php
 
-$compNames = heartonfire_get_the_global_components('heart_on_fire');
+$compNames = heartonfire_get_the_global_components('work');
 
 $fields = array(
-    'component_heart_on_fire' => array(
-        'key' => 'component_heart_on_fire',
-        'name' => 'heart_on_fire',
-        'label' => 'Heart on Fire',
+    'component_work' => array(
+        'key' => 'component_work',
+        'name' => 'work',
+        'label' => 'Work (Portfolio)',
         'display' => 'block',
         'sub_fields' => array(
             array(
-                'key' => 'component_heart_on_fire_tab_general',
+                'key' => 'component_work_tab_general',
                 'label' => 'General',
                 'name' => '',
                 'type' => 'tab',
@@ -26,9 +26,9 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_heart_on_fire_enable',
+                'key' => 'component_work_enable',
                 'label' => 'Enable',
-                'name' => 'heart_on_fire_enable',
+                'name' => 'work_enable',
                 'type' => 'true_false',
                 'instructions' => '',
                 'required' => 0,
@@ -45,9 +45,9 @@ $fields = array(
                 'ui_off_text' => '',
             ),
             array(
-                'key' => 'component_heart_on_fire_global_component',
+                'key' => 'component_work_global_component',
                 'label' => 'Global Component',
-                'name' => 'heart_on_fire_global_component',
+                'name' => 'work_global_component',
                 'type' => 'select',
                 'instructions' => '',
                 'required' => 0,
@@ -67,7 +67,7 @@ $fields = array(
                 'placeholder' => '',
             ),
             array(
-                'key' => 'component_heart_on_fire_id',
+                'key' => 'component_work_id',
                 'label' => 'ID',
                 'name' => 'id',
                 'type' => 'text',
@@ -86,7 +86,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_heart_on_fire_class',
+                'key' => 'component_work_class',
                 'label' => 'Classes',
                 'name' => 'class',
                 'type' => 'text',
@@ -105,7 +105,7 @@ $fields = array(
                 'maxlength' => '',
             ),
             array(
-                'key' => 'component_heart_on_fire_tab_settings',
+                'key' => 'component_work_tab_settings',
                 'label' => 'Settings',
                 'name' => '',
                 'type' => 'tab',
@@ -114,7 +114,7 @@ $fields = array(
                 'conditional_logic' => array(
                     array(
                         array(
-                            'field' => 'component_heart_on_fire_global_component',
+                            'field' => 'component_work_global_component',
                             'operator' => '==',
                             'value' => '',
                         ),
@@ -129,66 +129,74 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
-                'key' => 'component_heart_on_fire_heading',
-                'label' => 'Heading (H2)',
-                'name' => 'heading',
-                'type' => 'text',
+                'key' => 'component_work_repeater',
+                'label' => 'Portfolio Repeater',
+                'name' => 'work_repeater',
+                'type' => 'repeater',
                 'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '50',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => 150,
-            ),
-            array(
-                'key' => 'component_heart_on_fire_content',
-                'label' => 'Content',
-                'name' => 'content',
-                'type' => 'wysiwyg',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '50',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'tabs' => 'all',
-                'toolbar' => 'full',
-                'media_upload' => 1,
-                'delay' => 0,
-            ),
-            array(
-                'key' => 'component_heart_on_fire_image',
-                'label' => 'Image',
-                'name' => 'image',
-                'type' => 'image',
-                'instructions' => 'File size must be less or equal to 2MB',
                 'required' => 1,
                 'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '50',
-                    'class' => '',
-                    'id' => '',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'component_work_item',
+                        'label' => 'Portfolio Item',
+                        'name' => 'item',
+                        'type' => 'page_link',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'post_type' => array(
+                            0 => 'page',
+                        ),
+                        'taxonomy' => '',
+                        'allow_null' => 0,
+                        'allow_archives' => 0,
+                        'multiple' => 0,
+                    ),
+                    array(
+                        'key' => 'component_work_tag_repeater',
+                        'label' => 'Tag Repeater',
+                        'name' => 'tag_repeater',
+                        'type' => 'repeater',
+                        'instructions' => '',
+                        'required' => 1,
+                        'conditional_logic' => 0,
+                        'sub_fields' => array(
+                            array(
+                                'key' => 'component_work_tag',
+                                'label' => 'Tag',
+                                'name' => 'tag',
+                                'type' => 'text',
+                                'instructions' => '',
+                                'required' => 1,
+                                'conditional_logic' => 0,
+                                'wrapper' => array(
+                                    'width' => '100',
+                                    'class' => '',
+                                    'id' => '',
+                                ),
+                                'default_value' => '',
+                                'placeholder' => '',
+                                'prepend' => '',
+                                'append' => '',
+                                'maxlength' => 100,
+                            ),
+                        ),
+                        'min' => 0,
+                        'layout' => 'block',
+                        'button_label' => 'Add Tag',
+                        'collapsed' => ''
+                    ),
                 ),
-                'return_format' => 'url',
-                'preview_size' => 'medium',
-                'library' => 'all',
-                'min_width' => '',
-                'min_height' => '',
-                'min_size' => '',
-                'max_width' => '',
-                'max_height' => '',
-                'max_size' => '',
-                'mime_types' => 'jpg,bmp,gif,png',
+                'min' => 0,
+                'layout' => 'block',
+                'button_label' => 'Add Portfolio item',
+                'collapsed' => ''
             ),
         ),
         'min' => '',

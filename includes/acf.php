@@ -111,7 +111,6 @@ function heartonfire_acf_get_components()
         'content-simple',
         'content-work',
         'featured-services',
-        'heart-on-fire',
         'icon-content',
         'image-content',
         'image-full',
@@ -120,10 +119,10 @@ function heartonfire_acf_get_components()
         'partners',
         'project-navigation',
         'services',
-        'team',
         'testimonials',
         'values',
-        'video-full'
+        'video-full',
+        'work'
     );
 
     return $components;

@@ -1,32 +1,26 @@
 // --- Blog Component CSS --- //
 
 .hof-blog {
-    a {
-        color: $c-dark-green;
-    }
-
-    .hof-blog__card--top {
-        img {
-            height: 256px;
-            object-fit: cover;
-            width: 100%;
-        }
-        
-        .hof-blog__card--content {
-
-        }
-    }
+    color: $c-brown;
 
     .hof-blog__card {
         img {
-            height: 256px;
+            height: 320px;
             object-fit: cover;
             width: 100%;
+
+            @include media-breakpoint-up(md) {
+                height: 480px;
+            }
         }
 
         .hof-blog__card--content {
-
+            color: $c-brown;
         }
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 }
 

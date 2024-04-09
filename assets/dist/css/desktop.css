@@ -2018,14 +2018,50 @@
     margin-bottom: 50px !important;
   }
 
+  .hof-blog .hof-blog__card img {
+    height: 480px;
+  }
+
   .hof-partners .hof-partners-logo-col {
     flex: 0 0 25%;
     max-width: 25%;
     margin: unset;
   }
 
-  .hof-services .hof-services--image {
+  .hof-services .hof-services-carousel--img {
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hof-services .owl-dots {
+    margin-top: 1rem;
+  }
+
+  .hof-work .hof-work--item img {
+    height: 480px;
+  }
+
+  .hof-work .hof-work--item .hof-work--item-text .hof-work--item-text-container {
+    height: 64px;
+    width: unset;
+  }
+
+  .hof-work .hof-work--item .hof-work--item-text .hof-work--item-text-view {
+    bottom: 2rem;
+    left: 0;
+    right: unset;
+    opacity: 0;
+  }
+
+  .hof-work .hof-work--item .hof-work--tag-container {
+    display: flex;
+  }
+
+  .hof-work .hof-work--item:hover .hof-work--item-text-view {
+    bottom: 0;
+    opacity: 1;
   }
 }
 
@@ -2980,8 +3016,8 @@
   }
 
   h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   h5 {
@@ -3007,10 +3043,6 @@
 
   .hof-cta-bar .hof-cta-bar__content {
     margin-bottom: 4rem;
-  }
-
-  .hof-heart-on-fire .hof-heart-on-fire__content {
-    width: 50%;
   }
 
   .hof-image-full .hof-image-full--img {
@@ -3045,6 +3077,10 @@
   .hof-instagram .hof-instagram--box {
     padding-top: 20%;
     width: 20%;
+  }
+
+  .hof-services h1 {
+    font-size: 5.5rem;
   }
 
   .hof-testimonials .owl-dots {

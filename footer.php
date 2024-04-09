@@ -12,6 +12,8 @@
     $socialMedia    = get_field('settings_social_media', 'options');
     $footerLogoUrl  = get_field('settings_logo', 'options')['settings_logo_footer'] ?:get_stylesheet_directory_uri() . '/assets/dist/image/logo/logo--white.png';
     $footerMenu     = heartonfire_generate_nav_menu('menu-footer');
+    $workMenu       = heartonfire_generate_nav_menu('menu-work');
+    $servicesMenu   = heartonfire_generate_nav_menu('menu-services');
 ?>
 
     <?php 
@@ -33,31 +35,29 @@
 
                         <div class="order-3 order-xl-2 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
                             <p class="hof-footer--link-heading">Quick Links</p>
-                            <a href="#" class="hof-footer--link">Home</a>
-                            <a href="#" class="hof-footer--link">About us</a>
-                            <a href="#" class="hof-footer--link">Work</a>
-                            <a href="#" class="hof-footer--link">Services</a>
-                            <a href="#" class="hof-footer--link">Journal</a>
-                            <a href="#" class="hof-footer--link mb-0">Contact</a>
+                            <?php foreach ($footerMenu as $index => $item) : ?>
+                                <a href="<?php echo $item['url']; ?>" class="hof-footer--link">
+                                    <?php echo $item['title']; ?>
+                                </a>
+                            <?php endforeach; ?>
                         </div>
 
                         <div class="order-4 order-xl-3 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
                             <p class="hof-footer--link-heading">Services</p>
-                            <a href="#" class="hof-footer--link">Social Media Management</a>
-                            <a href="#" class="hof-footer--link">Content Creation</a>
-                            <a href="#" class="hof-footer--link">Strategy</a>
-                            <a href="#" class="hof-footer--link">Copywriting</a>
-                            <a href="#" class="hof-footer--link">Email Marketing</a>
-                            <a href="#" class="hof-footer--link mb-0">Influencer Marketing / UGC</a>
+                            <?php foreach ($servicesMenu as $index => $item) : ?>
+                                <a href="<?php echo $item['url']; ?>" class="hof-footer--link">
+                                    <?php echo $item['title']; ?>
+                                </a>
+                            <?php endforeach; ?>
                         </div>
 
                         <div class="order-5 order-xl-4 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
                             <p class="hof-footer--link-heading">Work</p>
-                            <a href="#" class="hof-footer--link">Super Bowl</a>
-                            <a href="#" class="hof-footer--link">What’s doing App</a>
-                            <a href="#" class="hof-footer--link">Kindred Skincare</a>
-                            <a href="#" class="hof-footer--link">Brisbane Skin</a>
-                            <a href="#" class="hof-footer--link mb-0">Take Bioactives</a>
+                            <?php foreach ($workMenu as $index => $item) : ?>
+                                <a href="<?php echo $item['url']; ?>" class="hof-footer--link">
+                                    <?php echo $item['title']; ?>
+                                </a>
+                            <?php endforeach; ?>
                         </div>
 
                         <div class="order-2 order-xl-5 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
@@ -103,7 +103,7 @@
                 </div> 
 
                 <?php /* Footer Lower */ ?>
-                <div class="hof-footer__lower hof-section-padding-x hof-bg-dark-brown py-3 py-xl-4">
+                <div class="hof-footer__lower hof-section-padding-x hof-bg-dark-brown py-3">
                     <div class="d-flex flex-column flex-xl-row justify-content-between">
                         
                         <?php /* Copyright & Email */ ?>
@@ -113,7 +113,7 @@
                         </div>
 
                         <?php /* Social Links */ ?>
-                        <div class="hof-footer__lower--socials mx-xl-auto mb-4 my-xl-auto d-flex order-1 order-xl-2">
+                        <div class="hof-footer__lower--socials mx-auto mr-xl-0 mb-4 my-xl-auto d-flex order-1 order-xl-2">
 
                             <a href="https://osh.studio/" target="_blank" class="mx-auto ml-xl-3 mr-xl-1">
                                 <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-osh.svg'); ?>

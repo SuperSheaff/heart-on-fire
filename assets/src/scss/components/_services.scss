@@ -1,23 +1,57 @@
 // --- Services Component CSS --- //
 
 .hof-services {
-    position: relative;
-    
-    .hof-services--heading {
-        font-family: $ff-p90;
+
+    h1 {
+        font-size: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 5.5rem;
+        }
+
+        .hof-services--name {
+            cursor: pointer;
+            color: $c-light-green;
+
+            &.active {
+                color: $c-brown;
+            }
+        }
     }
 
-    .hof-services__content {
-        font-size: 1rem;
-    }
-    
-    .hof-services--image {
+    .hof-services-carousel--img {
+        height: 320px;
         object-fit: cover;
-        height: 256px;
         width: 100%;
 
         @include media-breakpoint-up(md) {
-            height: 100%;
+            height: 100%; 
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .owl-dots {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        
+        @include media-breakpoint-up(md) {
+            margin-top: 1rem;
+        }
+
+        .owl-dot {
+            border: 2px solid $c-brown;
+            border-radius: 99rem;
+            height: 0.75rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            width: 0.75rem;
+
+            &.active {
+                background-color: $c-brown;
+            }
         }
     }
 }

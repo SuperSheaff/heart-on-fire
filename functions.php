@@ -47,6 +47,8 @@ if (! function_exists('heartonfire_setup')) {
         register_nav_menus(
             array(
                 'menu-primary'  => esc_html__('Primary Menu', 'heartonfire'),
+                'menu-services' => esc_html__('Services Menu', 'heartonfire'),
+                'menu-work'     => esc_html__('Work Menu', 'heartonfire'),
                 'menu-footer'   => esc_html__('Footer Menu', 'heartonfire')
             )
         );

@@ -1,0 +1,109 @@
+// --- Work Component CSS --- //
+
+.hof-work {
+
+    .hof-work--item {
+        color: $c-brown;
+        display: flex;
+        width: 100%;
+
+        img {
+            height: 320px;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            position: relative;
+            width: 100%;
+            z-index: 10;
+            
+            @include media-breakpoint-up(md) {
+                height: 480px;
+            }
+        }
+
+        h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .hof-work--item-text {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .hof-work--item-text-container {
+                height: 28px;
+                position: relative;
+                width: 100%;
+                
+                @include media-breakpoint-up(md) {
+                    height: 64px;
+                    width: unset;
+                }
+            }
+
+            .hof-work--item-text-view {
+                bottom: 0;
+                right: 0;
+                opacity: 1;
+                position: absolute;
+                transition: 0.5s ease-in-out;
+
+                @include media-breakpoint-up(md) {
+                    bottom: 2rem;
+                    left: 0;
+                    right: unset;
+                    opacity: 0;
+                }
+            }
+
+        }
+
+        .hof-work--tag-container {
+            display: none;
+            height: 64px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            position: absolute;
+            right: 0;
+            top: -2rem;
+            transition: 0.5s ease-in-out;
+            opacity: 0;
+            width: 60%;
+
+            @include media-breakpoint-up(md) {
+                display: flex;
+            }
+        }
+
+        .hof-work--tag {
+            border: 1px solid $c-brown;
+            display: inline-block;
+            height: 28px;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+            margin-left: 1rem;
+            padding: 2px 8px;
+        }
+    }
+
+    .hof-work--item:hover {
+        text-decoration: none;
+
+        .hof-work--tag-container {
+            opacity: 1;
+            top: 0;
+        }
+
+        .hof-work--item-text-view {
+            bottom: 0;
+            opacity: 1;
+
+            @include media-breakpoint-up(md) {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+// --- End of Component CSS --- //

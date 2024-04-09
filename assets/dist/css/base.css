@@ -14203,7 +14203,7 @@ h3 {
 
 h4 {
   font-family: "Manrope";
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -14339,6 +14339,10 @@ h5 {
 
 .fw-500 {
   font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
 }
 
 .hof-btn,
@@ -14747,22 +14751,23 @@ table tbody tr td {
   width: 100%;
 }
 
-.hof-blog a {
-  color: #444C3D;
-}
-
-.hof-blog .hof-blog__card--top img {
-  height: 256px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
+.hof-blog {
+  color: #372120;
 }
 
 .hof-blog .hof-blog__card img {
-  height: 256px;
+  height: 320px;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
+}
+
+.hof-blog .hof-blog__card .hof-blog__card--content {
+  color: #372120;
+}
+
+.hof-blog a:hover {
+  text-decoration: none;
 }
 
 .hof-cta-bar .hof-cta-bar__content {
@@ -14893,14 +14898,6 @@ table tbody tr td {
   width: 100%;
 }
 
-.hof-heart-on-fire .hof-heart-on-fire__heading {
-  margin-bottom: 2rem;
-}
-
-.hof-heart-on-fire .hof-heart-on-fire__content {
-  font-size: 24px;
-}
-
 .hof-image-full .hof-image-full--img {
   height: 320px;
   -o-object-fit: cover;
@@ -15015,23 +15012,43 @@ table tbody tr td {
   mix-blend-mode: darken;
 }
 
-.hof-services {
-  position: relative;
+.hof-services h1 {
+  font-size: 2rem;
 }
 
-.hof-services .hof-services--heading {
-  font-family: "Perfectly Nineties";
+.hof-services h1 .hof-services--name {
+  cursor: pointer;
+  color: #CBC69C;
 }
 
-.hof-services .hof-services__content {
-  font-size: 1rem;
+.hof-services h1 .hof-services--name.active {
+  color: #372120;
 }
 
-.hof-services .hof-services--image {
+.hof-services .hof-services-carousel--img {
+  height: 320px;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 256px;
   width: 100%;
+}
+
+.hof-services .owl-dots {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hof-services .owl-dots .owl-dot {
+  border: 2px solid #372120;
+  border-radius: 99rem;
+  height: 0.75rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 0.75rem;
+}
+
+.hof-services .owl-dots .owl-dot.active {
+  background-color: #372120;
 }
 
 .hof-testimonials .hof-testimonial-carousel--item {
@@ -15054,6 +15071,83 @@ table tbody tr td {
 
 .hof-testimonials .owl-dots .owl-dot.active {
   background-color: #372120;
+}
+
+.hof-work .hof-work--item {
+  color: #372120;
+  display: flex;
+  width: 100%;
+}
+
+.hof-work .hof-work--item img {
+  height: 320px;
+  margin-bottom: 1rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.hof-work .hof-work--item h4 {
+  margin-bottom: 0.5rem;
+}
+
+.hof-work .hof-work--item .hof-work--item-text {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hof-work .hof-work--item .hof-work--item-text .hof-work--item-text-container {
+  height: 28px;
+  position: relative;
+  width: 100%;
+}
+
+.hof-work .hof-work--item .hof-work--item-text .hof-work--item-text-view {
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hof-work .hof-work--item .hof-work--tag-container {
+  display: none;
+  height: 64px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: -2rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 60%;
+}
+
+.hof-work .hof-work--item .hof-work--tag {
+  border: 1px solid #372120;
+  display: inline-block;
+  height: 28px;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  padding: 2px 8px;
+}
+
+.hof-work .hof-work--item:hover {
+  text-decoration: none;
+}
+
+.hof-work .hof-work--item:hover .hof-work--tag-container {
+  opacity: 1;
+  top: 0;
+}
+
+.hof-work .hof-work--item:hover .hof-work--item-text-view {
+  bottom: 0;
+  opacity: 1;
 }
 
 header {
