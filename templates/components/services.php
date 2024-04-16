@@ -25,7 +25,7 @@
                 <?php foreach ($services as $key => $service) : ?>
                     <span class="hof-services--name" data-slide="<?php echo $key; ?>">
                         <?php echo $service['name']; ?>
-                        <?php if ($key <= (count($service))) { echo ','; } ?>
+                        <?php if ($key >= (count($service))) { echo ','; } ?>
                     </span>
                 <?php endforeach; ?>
             </h1>

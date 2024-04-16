@@ -20,7 +20,7 @@
         object-position: center;
         width: 100%;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(md) {
             height: 640px;   
             width: 50%;
         }
@@ -35,7 +35,7 @@
         object-position: center;
         width: 100%;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(md) {
             height: 640px;   
             width: 50%;
         }

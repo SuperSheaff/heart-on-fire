@@ -56,7 +56,7 @@
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-image-split <?php echo $componentClass; ?> <?php echo $sectionClass; ?>">
         <div class="px-3 px-lg-4 pb-3 pb-lg-4">
-            <div class="d-flex flex-column flex-lg-row">
+            <div class="d-flex flex-column flex-md-row">
                 <img src="<?php echo $imageOne; ?>" class="hof-image-split--img mb-3 mb-lg-0 <?php echo $imageOneClass; ?>">
                 <img src="<?php echo $imageTwo; ?>" class="hof-image-split--img <?php echo $imageTwoClass; ?>">
             </div>

@@ -16546,6 +16546,15 @@ header {
   .hof-blog .hof-blog__card img {
     height: 480px;
   }
+  .hof-image-split .hof-image-split--img {
+    height: 640px;
+    width: 50%;
+  }
+  .hof-video-image-split .hof-video-image-split--img,
+  .hof-video-image-split .hof-video-image-split--video {
+    height: 640px;
+    width: 50%;
+  }
   .hof-partners .hof-partners-logo-col {
     flex: 0 0 25%;
     max-width: 25%;
@@ -17341,15 +17350,6 @@ header {
   }
   .hof-image-full .hof-image-full--img {
     height: 640px;
-  }
-  .hof-image-split .hof-image-split--img {
-    height: 640px;
-    width: 50%;
-  }
-  .hof-video-image-split .hof-video-image-split--img,
-  .hof-video-image-split .hof-video-image-split--video {
-    height: 640px;
-    width: 50%;
   }
   .hof-video-full .hof-video-full--video {
     height: 640px;
