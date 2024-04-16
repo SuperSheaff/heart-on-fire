@@ -129,6 +129,32 @@ $fields = array(
                 'endpoint' => 0,
             ),
             array(
+                'key' => 'component_image_full_responsive_choice',
+                'label' => 'Responsive Choice',
+                'name' => 'choice',
+                'type' => 'select',
+                'instructions' => 'This setting allows you to customize what device sizes can view this media.',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'multiple'      => 0,
+                'allow_null'    => 0,
+                'wrapper' => array(
+                    'width' => '100',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices'       => array(
+                    'both' => 'Show on Both',
+                    'desktop' => 'Show on Desktop Only',
+                    'mobile' => 'Show on Mobile Only',
+                ),
+                'default_value' => 'both',
+                'ui'            => 0,
+                'ajax'          => 0,
+                'placeholder'   => '',
+                'return_format' => 'value'
+            ),
+            array(
                 'key' => 'component_image_full_image',
                 'label' => 'Image',
                 'name' => 'image',
