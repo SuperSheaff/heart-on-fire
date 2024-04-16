@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header>
-        <?php require_once locate_template('includes/menu.php'); ?>
-        <?php require_once locate_template('includes/navigation.php'); ?>
+        <?php require_once locate_template('includes/main-navigation.php'); ?>
+        <?php require_once locate_template('includes/mobile-navigation.php'); ?>
     </header>
     

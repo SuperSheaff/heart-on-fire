@@ -15,17 +15,17 @@ body {
     line-height: 22px;
 
     &::-webkit-scrollbar {
-        width: 8px;
+        width: 4px;
     }
     
     &::-webkit-scrollbar-track {
-        background: $c-light-beige;
+        background: $c-beige;
         opacity: 0.4;
         width: 1px;
     }
     
     &::-webkit-scrollbar-thumb {
-        background: $c-dark-green;
+        background: $c-brown;
     }
     
     &::-webkit-scrollbar-thumb:hover {

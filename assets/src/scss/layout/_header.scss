@@ -45,12 +45,23 @@ header {
 .hof-header__nav--logo {
     svg {
         height: 48px;
+
+        .dark-element {
+            transition: 0.3s ease-in-out;
+        }
         
         @include media-breakpoint-up(lg) {
             height: 64px;
         }
     }
 }
+
+.hof-header__nav--logo:hover {
+    .dark-element {
+        fill: $c-pink;
+    }
+}
+
 
 .hof-nav__lower {
     border-bottom: 1px solid $c-dark-green;

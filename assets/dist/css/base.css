@@ -14156,17 +14156,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #FCF4E5;
+  background: #E8E5DE;
   opacity: 0.4;
   width: 1px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #444C3D;
+  background: #372120;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -15187,6 +15187,14 @@ header .hof-btn-dark-green--outline {
 
 .hof-header__nav--logo svg {
   height: 48px;
+}
+
+.hof-header__nav--logo svg .dark-element {
+  transition: 0.3s ease-in-out;
+}
+
+.hof-header__nav--logo:hover .dark-element {
+  fill: #DB9995;
 }
 
 .hof-nav__lower {
