@@ -14801,11 +14801,37 @@ header {
   font-weight: 400;
   line-height: 1.25rem;
   margin-left: 64px;
+  position: relative;
   text-transform: uppercase;
 }
 
 .hof-main-navigation .hof-main-navigation--link.white {
   color: #F5F3F0;
+}
+
+.hof-main-navigation .hof-main-navigation--link.white .hof-main-navigation--duplicate {
+  color: #F5F3F0;
+}
+
+.hof-main-navigation .hof-main-navigation--link:hover {
+  text-decoration: none;
+}
+
+.hof-main-navigation .hof-main-navigation--link:hover .hof-main-navigation--duplicate {
+  filter: blur(100px);
+}
+
+.hof-main-navigation .hof-main-navigation--link .hof-main-navigation--duplicate {
+  color: #372120;
+  font-size: 1.25rem;
+  filter: blur(0px);
+  font-weight: 400;
+  line-height: 1.25rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-transform: uppercase;
+  transition: 1s ease-in-out;
 }
 
 .hof-main-navigation .hof-main-navigation--logo:hover .dark-element {

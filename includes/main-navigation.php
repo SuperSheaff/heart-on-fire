@@ -25,6 +25,9 @@
                     <?php foreach ($primaryMenu as $index => $item) : ?>
                         <a href="<?php echo $item['url']; ?>" class="hof-main-navigation--link <?php if (is_page('contact') || is_404()) { echo 'white'; } ?>">
                             <?php echo $item['title']; ?>
+                            <div class="hof-main-navigation--duplicate">
+                                <?php echo $item['title']; ?>
+                            </div>
                         </a>
                     <?php endforeach; ?>
                 </div>
