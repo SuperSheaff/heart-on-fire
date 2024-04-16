@@ -3037,6 +3037,11 @@
     padding-top: 64px;
   }
 
+  .hof-404 .hof-404--image {
+    height: 480px;
+    width: 50%;
+  }
+
   .hof-banner-work .hof-banner-work--img {
     height: 640px;
   }
@@ -3105,10 +3110,6 @@
 
   .hof-main-navigation .hof-main-navigation--logo svg {
     height: 64px;
-  }
-
-  .hof-main-navigation .hof-main-navigation--burger {
-    display: none;
   }
 }
 
@@ -4091,6 +4092,10 @@
   .hof-partners .hof-partners-logo-col {
     flex: 0 0 20%;
     max-width: 20%;
+  }
+
+  .hof-main-navigation .hof-main-navigation--burger {
+    display: none;
   }
 }
 

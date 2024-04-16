@@ -7988,6 +7988,7 @@ mark,
 }
 
 .img-fluid,
+.hof-404 .hof-404--image,
 .hof-partners .hof-partners-logo-col img {
   max-width: 100%;
   height: auto;
@@ -14265,6 +14266,11 @@ h5 {
   padding-top: 80px;
 }
 
+.hof-404 .hof-404--image {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 ::-moz-selection {
   background-color: rgba(219, 153, 149, 0.25);
 }
@@ -14772,6 +14778,10 @@ table tbody tr td {
 
 .hof-blog a:hover {
   text-decoration: none;
+}
+
+.hof-simple-content a {
+  color: #DB9995;
 }
 
 .hof-cta-bar .hof-cta-bar__content {

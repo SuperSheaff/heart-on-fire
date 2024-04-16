@@ -12,7 +12,7 @@
                 <?php /* Main Navigation Logo */ ?>
                 <a href="<?php echo get_home_url(); ?>" class="my-auto hof-main-navigation--logo">
                     <?php 
-                        if (is_front_page() || is_page('contact')) {
+                        if (is_front_page() || is_page('contact') || is_404()) {
                             echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg');
                         } else {
                             echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo.svg');
@@ -23,14 +23,14 @@
                 <?php /* Main Navigation Links (Desktop Only) */ ?>
                 <div class="d-none d-xl-flex my-auto">
                     <?php foreach ($primaryMenu as $index => $item) : ?>
-                        <a href="<?php echo $item['url']; ?>" class="hof-main-navigation--link <?php if (is_page('contact')) { echo 'white'; } ?>">
+                        <a href="<?php echo $item['url']; ?>" class="hof-main-navigation--link <?php if (is_page('contact') || is_404()) { echo 'white'; } ?>">
                             <?php echo $item['title']; ?>
                         </a>
                     <?php endforeach; ?>
                 </div>
 
                 <?php /* Main Navigation Burger (Mobile Only) */ ?>
-                <div class="hof-main-navigation--burger <?php if (is_front_page() || is_page('contact')) { echo 'white'; } ?>">
+                <div class="hof-main-navigation--burger <?php if (is_front_page() || is_page('contact') || is_404()) { echo 'white'; } ?>">
                     <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-burger.svg'); ?>
                 </div>
 

@@ -17,7 +17,7 @@
 ?>
 
     <?php 
-        if (is_page('contact')) {
+        if (is_page('contact') || is_404() ) {
 
         } else {
     ?>

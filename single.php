@@ -25,7 +25,7 @@ get_header();
                         ?>
                             <div class="hof-navigation-offset"></div>
                             <section class="hof-image-full">
-                                <div class="px-3 px-lg-4 pb-3 pb-lg-4 pt-0">
+                                <div class="px-3 px-lg-4 py-3 pb-lg-4 pt-lg-0">
                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo $heading; ?>" class="hof-image-full--img">
                                 </div>
                             </section>

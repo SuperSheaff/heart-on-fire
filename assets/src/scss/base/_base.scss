@@ -177,6 +177,19 @@ h5 {
     }
 }
 
+.hof-404 {
+    .hof-404--image {
+        @extend .img-fluid;
+        
+        object-fit: cover;
+
+        @include media-breakpoint-up(lg) {
+            height: 480px;
+            width: 50%;
+        }
+    }
+}
+
 ::selection {
     background-color: rgba($color: #DB9995, $alpha: 0.25);
 }
