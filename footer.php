@@ -29,7 +29,7 @@
                     <div class="d-flex flex-column flex-xl-row justify-content-between hof-color-white">
 
                         <?php /* Footer Logo */ ?>
-                        <a href="<?php echo get_home_url(); ?>" class="order-1 order-xl-1 mb-5 mb-xl-auto mx-auto mx-xl-0 hof-header__nav--logo">
+                        <a href="<?php echo get_home_url(); ?>" class="order-1 order-xl-1 mb-5 mb-xl-auto mx-auto mx-xl-0 hof-main-navigation--logo">
                             <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg'); ?>
                         </a>
 

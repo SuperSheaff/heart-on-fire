@@ -28,7 +28,7 @@
     }
 
     .hof-banner--img-col {
-        @extend .col-xl-6;
+        @extend .col-xl-5;
 
         height: 100%;
         left: 0;
@@ -48,9 +48,14 @@
 
     .hof-banner--image-desktop {
         display: none;
+        width: 100%;
 
         @include media-breakpoint-up(xl) {
             display: block;
+        }
+        
+        @include media-breakpoint-up(xxl) {
+            width: unset;
         }
     }
 

@@ -4,6 +4,14 @@
 
     .hof-testimonial-carousel--item {
         text-align: left;
+
+        @include media-breakpoint-up(lg) {
+            height: 640px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 464px;
+        }
     }
 
     .owl-dots {

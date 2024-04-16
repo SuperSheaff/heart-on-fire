@@ -21,14 +21,14 @@
                     $testimonialCompany     = $testimonial['company'];
                     ?>
                     <div class="hof-testimonial-carousel--item p-4 hof-color-brown hof-bg-white">
-                        <div class="row">
-                            <div class="mb-4 mb-xl-0 col-xl-8">
+                        <div class="row h-100">
+                            <div class="mb-4 mb-xl-0 col-xl-8 d-flex flex-column">
                                 <?php if ($tagline) : ?>
                                     <p class="hof-tagline">
                                         <?php echo $tagline; ?>
                                     </p>
                                 <?php endif; ?>
-                                <h2 class="h1 mb-0">
+                                <h2 class="h1 mt-auto mb-0">
                                     <?php echo $testimonialBigText; ?>
                                 </h2>
                             </div>

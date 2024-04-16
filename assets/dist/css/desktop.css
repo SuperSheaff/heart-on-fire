@@ -3033,7 +3033,7 @@
 
   h5 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .hof-section-padding-x,
@@ -3099,17 +3099,21 @@
     font-size: 5.5rem;
   }
 
+  .hof-testimonials .hof-testimonial-carousel--item {
+    height: 640px;
+  }
+
   .hof-testimonials .owl-dots {
     margin-top: 2rem;
+  }
+
+  .hof-main-navigation--logo svg {
+    height: 64px;
   }
 
   .hof-main-navigation {
     padding-bottom: 32px;
     padding-top: 32px;
-  }
-
-  .hof-main-navigation .hof-main-navigation--logo svg {
-    height: 64px;
   }
 }
 
@@ -3185,13 +3189,13 @@
     max-width: 33.33333%;
   }
 
-  .col-xl-5 {
+  .col-xl-5,
+  .hof-banner .hof-banner--img-col {
     flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
 
   .col-xl-6,
-  .hof-banner .hof-banner--img-col,
   .hof-banner .hof-banner--text-col {
     flex: 0 0 50%;
     max-width: 50%;
@@ -4094,7 +4098,15 @@
     max-width: 20%;
   }
 
+  .hof-testimonials .hof-testimonial-carousel--item {
+    height: 464px;
+  }
+
   .hof-main-navigation .hof-main-navigation--burger {
+    display: none;
+  }
+
+  .hof-mobile-navigation {
     display: none;
   }
 }
@@ -5026,5 +5038,13 @@
 
   .text-xxl-center {
     text-align: center !important;
+  }
+
+  .hof-banner .hof-banner--image-desktop {
+    width: unset;
+  }
+
+  .hof-main-navigation .hof-main-navigation--link {
+    margin-left: 96px;
   }
 }

@@ -28,7 +28,7 @@
 
             </div>
 
-            <div class="hof-banner--text-col col-xl-6 hof-color-brown my-xl-auto">
+            <div class="hof-banner--text-col col-xl-6 offset-xl-1 hof-color-brown my-xl-auto">
                 <?php if ($heading) : ?>
                     <h1 class="mb-4">
                         <?php echo $heading; ?>

@@ -8152,8 +8152,8 @@ pre code {
 .col-xl-3,
 .col-xl-4,
 .col-xl-5,
-.col-xl-6,
 .hof-banner .hof-banner--img-col,
+.col-xl-6,
 .hof-banner .hof-banner--text-col,
 .col-xl-7,
 .col-xl-8,
@@ -14624,7 +14624,7 @@ h5 {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: disc;
   margin: 0;
   padding: 16px 0 16px 35px;
 }
@@ -14632,22 +14632,6 @@ ul {
 ul li {
   margin-bottom: 5px;
   position: relative;
-}
-
-ul li:last-child {
-  margin: 0;
-}
-
-ul li:after {
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
-  content: "";
-  height: 10px;
-  left: -24px;
-  position: absolute;
-  top: 12px;
-  width: 10px;
 }
 
 ol {
@@ -14730,6 +14714,7 @@ table tbody tr td {
 
 .hof-banner .hof-banner--image-desktop {
   display: none;
+  width: 100%;
 }
 
 .hof-banner .hof-banner--image-mobile {
@@ -14878,6 +14863,11 @@ table tbody tr td {
   margin-top: auto;
 }
 
+.hof-contact .wpcf7 form.invalid .wpcf7-response-output {
+  border-color: #F5F3F0 !important;
+  color: #F5F3F0 !important;
+}
+
 .content-area--contact {
   background-color: #372120;
   min-height: 100vh;
@@ -14886,6 +14876,7 @@ table tbody tr td {
 .hof-featured-services .hof-featured-services__box {
   height: 368px;
   margin-bottom: 1rem;
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
@@ -14896,6 +14887,8 @@ table tbody tr td {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+  transform: scale(1);
+  transition: 0.2s cubic-bezier(0.6, 0.6, 0.6, 1);
   width: 100%;
 }
 
@@ -14910,6 +14903,11 @@ table tbody tr td {
   top: 5rem;
   padding: 1rem 4rem;
   width: 100%;
+  z-index: 10;
+}
+
+.hof-featured-services .hof-featured-services__box:hover .hof-featured-services__box--img {
+  transform: scale(1.1);
 }
 
 .hof-image-full .hof-image-full--img {
@@ -15189,6 +15187,14 @@ header {
   z-index: 100;
 }
 
+.hof-main-navigation--logo svg {
+  height: 48px;
+}
+
+.hof-main-navigation--logo svg .dark-element {
+  transition: 0.3s ease-in-out;
+}
+
 .hof-main-navigation {
   padding-bottom: 16px;
   padding-top: 16px;
@@ -15199,20 +15205,12 @@ header {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25rem;
-  margin-left: 96px;
+  margin-left: 64px;
   text-transform: uppercase;
 }
 
 .hof-main-navigation .hof-main-navigation--link.white {
   color: #F5F3F0;
-}
-
-.hof-main-navigation .hof-main-navigation--logo svg {
-  height: 48px;
-}
-
-.hof-main-navigation .hof-main-navigation--logo svg .dark-element {
-  transition: 0.3s ease-in-out;
 }
 
 .hof-main-navigation .hof-main-navigation--logo:hover .dark-element {
@@ -15239,7 +15237,6 @@ header {
   height: 100%;
   position: fixed;
   top: 0;
-  transition: 0.3s ease-in-out;
   right: -105vw;
   width: 100%;
   z-index: 100;

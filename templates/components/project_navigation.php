@@ -20,12 +20,9 @@
                     <div class="col-md-6 text-left d-none d-md-flex">
                         <a href="<?php echo $prev; ?>">
                             <div class="d-flex">
-                                <div class="mt-auto">
-                                    <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-left.svg'); ?>
-                                </div>
                                 <div class="mr-auto">
                                     <div class="hof-tagline hof-color-brown">
-                                        Previous Project
+                                        < Previous Project
                                     </div>
                                     <h2 class="hof-color-brown mb-0">
                                         <?php echo get_the_title(url_to_postid($prev)); ?>
@@ -40,14 +37,11 @@
                             <div class="d-flex">
                                 <div class="mx-auto mr-md-0">
                                     <div class="hof-tagline hof-color-brown">
-                                        Next Project
+                                        Next Project >
                                     </div>
                                     <h2 class="hof-color-brown mb-0">
                                         <?php echo get_the_title(url_to_postid($next)); ?>
                                     </h2>
-                                </div>
-                                <div class="mt-auto d-none d-md-block">
-                                    <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-right.svg'); ?>
                                 </div>
                             </div>
                         </a>

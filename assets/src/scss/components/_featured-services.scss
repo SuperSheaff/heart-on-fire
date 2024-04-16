@@ -5,6 +5,7 @@
     .hof-featured-services__box {
         height: 368px;
         margin-bottom: 1rem;
+        overflow: hidden;
         position: relative;
         width: 100%;
 
@@ -17,6 +18,8 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            transform: scale(1);
+            transition: 0.2s cubic-bezier(0.6, 0.6, 0.6, 1);
             width: 100%;
         }
 
@@ -31,8 +34,13 @@
             top: 5rem;
             padding: 1rem 4rem;
             width: 100%;
+            z-index: 10;
+        }
 
-            
+        &:hover {
+            .hof-featured-services__box--img {
+                transform: scale(1.1);
+            }
         }
     }
 }

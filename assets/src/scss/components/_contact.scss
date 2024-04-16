@@ -90,6 +90,11 @@
             margin-top: auto;
         }
     }
+
+    .wpcf7 form.invalid .wpcf7-response-output {
+        border-color: $c-chalk-white !important;
+        color: $c-chalk-white !important;
+    }
 }
 
 .content-area--contact {

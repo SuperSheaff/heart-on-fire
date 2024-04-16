@@ -105,7 +105,7 @@ h5 {
 
     @include media-breakpoint-up(lg) {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -180,7 +180,7 @@ h5 {
 .hof-404 {
     .hof-404--image {
         @extend .img-fluid;
-        
+
         object-fit: cover;
 
         @include media-breakpoint-up(lg) {
@@ -526,29 +526,13 @@ h5 {
 // --- Unordered List CSS --- //
 
 ul {
-    list-style-type: none;
+    list-style-type: disc;
     margin: 0;
     padding: 16px 0 16px 35px;
 
     li {
         margin-bottom: 5px;
         position: relative;
-
-        &:last-child {
-            margin: 0;
-        }
-
-        &:after {
-            background-color: transparent;
-            border: 1px solid $c-white;
-            border-radius: 50%;
-            content: "";
-            height: 10px;
-            left: -24px;
-            position: absolute;
-            top: 12px;
-            width: 10px;
-        }
     }
 }
 

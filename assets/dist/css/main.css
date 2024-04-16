@@ -8031,7 +8031,7 @@ pre code {
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
-.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .hof-banner .hof-banner--img-col, .hof-banner .hof-banner--text-col, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .hof-banner .hof-banner--img-col, .col-xl-6, .hof-banner .hof-banner--text-col, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl,
 .col-xxl-auto {
   position: relative;
@@ -14220,7 +14220,7 @@ h5 {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: disc;
   margin: 0;
   padding: 16px 0 16px 35px;
 }
@@ -14228,22 +14228,6 @@ ul {
 ul li {
   margin-bottom: 5px;
   position: relative;
-}
-
-ul li:last-child {
-  margin: 0;
-}
-
-ul li:after {
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
-  content: "";
-  height: 10px;
-  left: -24px;
-  position: absolute;
-  top: 12px;
-  width: 10px;
 }
 
 ol {
@@ -14326,6 +14310,7 @@ table tbody tr td {
 
 .hof-banner .hof-banner--image-desktop {
   display: none;
+  width: 100%;
 }
 
 .hof-banner .hof-banner--image-mobile {
@@ -14473,6 +14458,11 @@ table tbody tr td {
   margin-top: auto;
 }
 
+.hof-contact .wpcf7 form.invalid .wpcf7-response-output {
+  border-color: #F5F3F0 !important;
+  color: #F5F3F0 !important;
+}
+
 .content-area--contact {
   background-color: #372120;
   min-height: 100vh;
@@ -14481,6 +14471,7 @@ table tbody tr td {
 .hof-featured-services .hof-featured-services__box {
   height: 368px;
   margin-bottom: 1rem;
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
@@ -14491,6 +14482,8 @@ table tbody tr td {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  transform: scale(1);
+  transition: 0.2s cubic-bezier(0.6, 0.6, 0.6, 1);
   width: 100%;
 }
 
@@ -14505,6 +14498,11 @@ table tbody tr td {
   top: 5rem;
   padding: 1rem 4rem;
   width: 100%;
+  z-index: 10;
+}
+
+.hof-featured-services .hof-featured-services__box:hover .hof-featured-services__box--img {
+  transform: scale(1.1);
 }
 
 .hof-image-full .hof-image-full--img {
@@ -14784,6 +14782,14 @@ header {
   z-index: 100;
 }
 
+.hof-main-navigation--logo svg {
+  height: 48px;
+}
+
+.hof-main-navigation--logo svg .dark-element {
+  transition: 0.3s ease-in-out;
+}
+
 .hof-main-navigation {
   padding-bottom: 16px;
   padding-top: 16px;
@@ -14794,20 +14800,12 @@ header {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25rem;
-  margin-left: 96px;
+  margin-left: 64px;
   text-transform: uppercase;
 }
 
 .hof-main-navigation .hof-main-navigation--link.white {
   color: #F5F3F0;
-}
-
-.hof-main-navigation .hof-main-navigation--logo svg {
-  height: 48px;
-}
-
-.hof-main-navigation .hof-main-navigation--logo svg .dark-element {
-  transition: 0.3s ease-in-out;
 }
 
 .hof-main-navigation .hof-main-navigation--logo:hover .dark-element {
@@ -14834,7 +14832,6 @@ header {
   height: 100%;
   position: fixed;
   top: 0;
-  transition: 0.3s ease-in-out;
   right: -105vw;
   width: 100%;
   z-index: 100;
@@ -17328,7 +17325,7 @@ header {
   }
   h5 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .hof-section-padding-x, .hof-section-padding {
     padding-left: 32px;
@@ -17378,15 +17375,18 @@ header {
   .hof-services h1 {
     font-size: 5.5rem;
   }
+  .hof-testimonials .hof-testimonial-carousel--item {
+    height: 640px;
+  }
   .hof-testimonials .owl-dots {
     margin-top: 2rem;
+  }
+  .hof-main-navigation--logo svg {
+    height: 64px;
   }
   .hof-main-navigation {
     padding-bottom: 32px;
     padding-top: 32px;
-  }
-  .hof-main-navigation .hof-main-navigation--logo svg {
-    height: 64px;
   }
 }
 
@@ -17444,11 +17444,11 @@ header {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
-  .col-xl-5 {
+  .col-xl-5, .hof-banner .hof-banner--img-col {
     flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
-  .col-xl-6, .hof-banner .hof-banner--img-col, .hof-banner .hof-banner--text-col {
+  .col-xl-6, .hof-banner .hof-banner--text-col {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -18146,7 +18146,13 @@ header {
     flex: 0 0 20%;
     max-width: 20%;
   }
+  .hof-testimonials .hof-testimonial-carousel--item {
+    height: 464px;
+  }
   .hof-main-navigation .hof-main-navigation--burger {
+    display: none;
+  }
+  .hof-mobile-navigation {
     display: none;
   }
 }
@@ -18864,6 +18870,12 @@ header {
   }
   .text-xxl-center {
     text-align: center !important;
+  }
+  .hof-banner .hof-banner--image-desktop {
+    width: unset;
+  }
+  .hof-main-navigation .hof-main-navigation--link {
+    margin-left: 96px;
   }
 }
 
