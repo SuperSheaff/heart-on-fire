@@ -137,7 +137,7 @@ $fields = array(
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '100',
+                    'width' => '25',
                     'class' => '',
                     'id' => '',
                 ),
@@ -155,7 +155,7 @@ $fields = array(
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '100',
+                    'width' => '25',
                     'class' => '',
                     'id' => '',
                 ),
@@ -189,7 +189,7 @@ $fields = array(
                 'name' => 'banner_work_repeater',
                 'type' => 'repeater',
                 'instructions' => '',
-                'required' => 1,
+                'required' => 0,
                 'conditional_logic' => 0,
                 'sub_fields' => array(
                     array(

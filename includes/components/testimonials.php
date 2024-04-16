@@ -173,7 +173,7 @@ $fields = array(
                         'placeholder' => '',
                         'prepend' => '',
                         'append' => '',
-                        'maxlength' => 100,
+                        'maxlength' => '',
                     ),
                     array(
                         'key' => 'component_testimonial_small_text',
@@ -192,7 +192,7 @@ $fields = array(
                         'placeholder' => '',
                         'prepend' => '',
                         'append' => '',
-                        'maxlength' => 60,
+                        'maxlength' => '',
                     ),
                     array(
                         'key' => 'component_testimonial_name',
@@ -211,7 +211,7 @@ $fields = array(
                         'placeholder' => '',
                         'prepend' => '',
                         'append' => '',
-                        'maxlength' => 60,
+                        'maxlength' => '',
                     ),
                     array(
                         'key' => 'component_testimonial_company',
@@ -230,7 +230,7 @@ $fields = array(
                         'placeholder' => '',
                         'prepend' => '',
                         'append' => '',
-                        'maxlength' => 60,
+                        'maxlength' => '',
                     ),
                 ),
                 'min' => 0,
