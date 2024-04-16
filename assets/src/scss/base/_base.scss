@@ -31,6 +31,10 @@ body {
     &::-webkit-scrollbar-thumb:hover {
         background: $c-light-beige;
     }
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 // --- Typography CSS --- //

@@ -13809,6 +13809,10 @@ body::-webkit-scrollbar-thumb:hover {
   background: #FCF4E5;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 a:hover {
   color: #444C3D;
 }
@@ -14771,23 +14775,12 @@ header {
   z-index: 100;
 }
 
-header .hof-btn-dark-green,
-header .hof-btn-dark-green--outline {
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.hof-nav .hof-nav__link {
-  color: #444C3D;
-  font-weight: 500;
-}
-
-.hof-nav__upper {
+.hof-main-navigation {
   padding-bottom: 16px;
   padding-top: 16px;
 }
 
-.hof-nav__upper .hof-nav__upper--link {
+.hof-main-navigation .hof-main-navigation--link {
   color: #372120;
   font-size: 1.25rem;
   font-weight: 400;
@@ -14796,92 +14789,60 @@ header .hof-btn-dark-green--outline {
   text-transform: uppercase;
 }
 
-.hof-nav__upper .hof-nav__upper--link.white {
+.hof-main-navigation .hof-main-navigation--link.white {
   color: #F5F3F0;
 }
 
-.hof-header__nav--logo svg {
+.hof-main-navigation .hof-main-navigation--logo svg {
   height: 48px;
 }
 
-.hof-header__nav--logo svg .dark-element {
+.hof-main-navigation .hof-main-navigation--logo svg .dark-element {
   transition: 0.3s ease-in-out;
 }
 
-.hof-header__nav--logo:hover .dark-element {
+.hof-main-navigation .hof-main-navigation--logo:hover .dark-element {
   fill: #DB9995;
 }
 
-.hof-nav__lower {
-  border-bottom: 1px solid #444C3D;
-  padding-bottom: 16px;
-  padding-top: 16px;
+.hof-main-navigation .hof-main-navigation--burger svg {
+  fill: #372120;
 }
 
-.hof-navigation {
-  background-color: #444C3D;
-  height: 100vh;
-  left: -105vw;
+.hof-main-navigation .hof-main-navigation--burger.white svg {
+  fill: #F5F3F0;
+}
+
+.hof-main-navigation .hof-main-navigation--close,
+.hof-main-navigation .hof-main-navigation--burger {
+  cursor: pointer;
+}
+
+.hof-mobile-navigation {
+  background-color: #291918;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: fixed;
   top: 0;
-  width: 100vw;
-  opacity: 0;
+  transition: 0.3s ease-in-out;
+  right: -105vw;
+  width: 100%;
   z-index: 100;
 }
 
-.hof-navigation.open {
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn;
-  animation-duration: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-timing-function: ease;
-  -webkit-animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  left: 0;
+.hof-mobile-navigation.open {
+  right: 0;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1.1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.hof-navigation .hof-navigation__upper,
-.hof-navigation .hof-navigation__lower {
-  padding-bottom: 16px;
-  padding-top: 16px;
-}
-
-.hof-navigation .hof-navigation__middle--link {
-  color: #FFFFFF;
+.hof-mobile-navigation .hof-mobile-navigation__middle--link {
+  color: #F5F3F0;
   display: inline-block;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Perfectly Nineties";
-  margin-bottom: 2rem;
-  transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-}
-
-.hof-navigation .hof-navigation__middle--link:hover {
-  color: #DB9995;
-  text-decoration: none;
-}
-
-.hof-navigation--close,
-.hof-navigation--open {
-  cursor: pointer;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 3rem;
 }
 
 .hof-footer .hof-footer--link-heading {
@@ -17407,20 +17368,15 @@ header .hof-btn-dark-green--outline {
   .hof-testimonials .owl-dots {
     margin-top: 2rem;
   }
-  .hof-nav__upper {
+  .hof-main-navigation {
     padding-bottom: 32px;
     padding-top: 32px;
   }
-  .hof-header__nav--logo svg {
+  .hof-main-navigation .hof-main-navigation--logo svg {
     height: 64px;
   }
-  .hof-navigation .hof-navigation__upper,
-  .hof-navigation .hof-navigation__lower {
-    padding-bottom: 32px;
-    padding-top: 32px;
-  }
-  .hof-navigation .hof-navigation__middle--link {
-    font-size: 6rem;
+  .hof-main-navigation .hof-main-navigation--burger {
+    display: none;
   }
 }
 

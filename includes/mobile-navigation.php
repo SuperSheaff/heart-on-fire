@@ -5,37 +5,36 @@
 
 ?>
 
-<div class="hof-navigation d-flex flex-column">
+<div class="hof-mobile-navigation">
 
-    <?php /* Upper Navigation */ ?>
-    <div class="hof-navigation__upper">
-        <div class="hof-section-padding-x">
-            <div class="d-flex justify-content-between">
+    <?php /* Mobile Navigation - Upper*/ ?>
+    <div class="hof-main-navigation hof-bg-brown">
+        <div class="hof-container">
+            <div class="hof-section-padding-x">
+                <div class="d-flex justify-content-between">
 
-                <?php /* Upper Nav Logo */ ?>
-                <a href="<?php echo get_home_url(); ?>" class="my-auto hof-header__nav--logo">
-                    <?php 
-                        if (is_front_page()) {
-                            echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg');
-                        } else {
-                            echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo.svg');
-                        }
-                    ?>
-                </a>
+                    <?php /* Mobile Navigation Logo */ ?>
+                    <a href="<?php echo get_home_url(); ?>" class="my-auto hof-main-navigation--logo">
+                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg'); ?>
+                    </a>
+                    
+                    <?php /* Mobile Navigation Close */ ?>
+                    <div class="hof-main-navigation--close <?php if (is_front_page() || is_page('contact')) { echo 'white'; } ?>">
+                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-close.svg'); ?>
+                    </div>
 
-                <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-close.svg'); ?>
-                
+                </div>
             </div>
         </div>
     </div>
 
-    <?php /* Middle Navigation */ ?>
-    <div class="hof-navigation__middle my-auto">
-        <div class="">
-            <div class="d-flex flex-column">
+    <?php /* Mobile Navigation - Middle */ ?>
+    <div class="hof-mobile-navigation__middle my-auto">
+        <div class="hof-container">
+            <div class="hof-section-padding-x d-flex flex-column">
 
                 <?php foreach ($primaryMenu as $index => $item) : ?>
-                    <a href="<?php echo $item['url']; ?>" class="hof-navigation__middle--link mx-lg-auto">
+                    <a href="<?php echo $item['url']; ?>" class="hof-mobile-navigation__middle--link mx-lg-auto">
                         <?php echo $item['title']; ?>
                     </a>
                 <?php endforeach; ?>
@@ -44,38 +43,38 @@
         </div>
     </div>
 
-    <?php /* Lower Navigation */ ?>
-    <div class="hof-navigation__lower">
-        <div class="container px-lg-0">
-            <div class="d-flex justify-content-center">
-
-                <?php if (! empty($socialMedia['settings_facebook'])) { ?>
-                        <a href="<?php echo $socialMedia['settings_facebook']['url']; ?>" class="my-auto mx-3"
-                        <?php echo ($socialMedia['settings_facebook']['target']) ? 'target="_blank"' : ''; ?>>
-                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-facebook.svg'); ?>
-                    </a>
-                <?php } ?>
+    <?php /* Mobile Navigation - Lower */ ?>
+    <div class="hof-mobile-navigation__lower hof-bg-brown">
+        <div class="hof-container">
+            <div class="hof-section-padding d-flex justify-content-around">
+                        
                 <?php if (! empty($socialMedia['settings_instagram'])) { ?>
-                    <a href="<?php echo $socialMedia['settings_instagram']['url']; ?>" class="my-auto mx-3"
+                    <a href="<?php echo $socialMedia['settings_instagram']['url']; ?>" class=""
                         <?php echo ($socialMedia['settings_instagram']['target']) ? 'target="_blank"' : ''; ?>>
                         <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-instagram.svg'); ?>
                     </a>
                 <?php } ?>
-                <?php if (! empty($socialMedia['settings_linkedin'])) { ?>
-                    <a href="<?php echo $socialMedia['settings_linkedin']['url']; ?>" class="my-auto mx-3"
-                        <?php echo ($socialMedia['settings_linkedin']['target']) ? 'target="_blank"' : ''; ?>>
-                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-pinterest.svg'); ?>
+                <?php if (! empty($socialMedia['settings_facebook'])) { ?>
+                    <a href="<?php echo $socialMedia['settings_facebook']['url']; ?>" class=""
+                        <?php echo ($socialMedia['settings_facebook']['target']) ? 'target="_blank"' : ''; ?>>
+                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-facebook.svg'); ?>
                     </a>
                 <?php } ?>
-                <?php if (! empty($socialMedia['settings_twitter'])) { ?>
-                    <a href="<?php echo $socialMedia['settings_twitter']['url']; ?>" class="my-auto mx-3"
-                        <?php echo ($socialMedia['settings_twitter']['target']) ? 'target="_blank"' : ''; ?>>
-                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-mail.svg'); ?>
+                <?php if (! empty($socialMedia['settings_tiktok'])) { ?>
+                    <a href="<?php echo $socialMedia['settings_tiktok']['url']; ?>" class=""
+                        <?php echo ($socialMedia['settings_tiktok']['target']) ? 'target="_blank"' : ''; ?>>
+                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-tiktok.svg'); ?>
+                    </a>
+                <?php } ?>
+                <?php if (! empty($socialMedia['settings_linkedin'])) { ?>
+                    <a href="<?php echo $socialMedia['settings_linkedin']['url']; ?>" class=""
+                        <?php echo ($socialMedia['settings_linkedin']['target']) ? 'target="_blank"' : ''; ?>>
+                        <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-linkedin.svg'); ?>
                     </a>
                 <?php } ?>
 
             </div>
         </div>
+        
     </div>
-
 </div>

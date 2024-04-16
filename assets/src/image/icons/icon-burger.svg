@@ -1,5 +1,3 @@
-<svg width="46" height="28" class="hof-navigation--open my-auto" viewBox="0 0 46 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line y1="1" x2="46" y2="1" stroke="#444C3D" stroke-width="2"/>
-    <line y1="14" x2="46" y2="14" stroke="#444C3D" stroke-width="2"/>
-    <line y1="27" x2="46" y2="27" stroke="#444C3D" stroke-width="2"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 48V42.6667H56V48H8ZM8 34.6667V29.3333H56V34.6667H8ZM8 21.3333V16H56V21.3333H8Z"/>
 </svg>

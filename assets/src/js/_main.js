@@ -55,13 +55,15 @@ $(document).ready(function () {
     $('.hof-services--name').removeClass('active').filter('[data-slide="' + currentItemIndex + '"]').addClass('active');
   }
 
-  // navigation
-  $('.hof-navigation--open').click(function () {
-    $('.hof-navigation').addClass('open');
+  // Handle Mobile Navigation Menu
+  $('.hof-main-navigation--burger').click(function () {
+    $('.hof-mobile-navigation').addClass('open');
+    $('body').addClass('noscroll');
   })
 
-  $('.hof-navigation--close').click(function () {
-    $('.hof-navigation').removeClass('open');
+  $('.hof-main-navigation--close').click(function () {
+    $('.hof-mobile-navigation').removeClass('open');
+    $('body').removeClass('noscroll');
   })
   
 });

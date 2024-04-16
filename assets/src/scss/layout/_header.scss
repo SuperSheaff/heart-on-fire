@@ -4,22 +4,9 @@ header {
     position: absolute;
     width: 100%;
     z-index: 100;
-
-    .hof-btn-dark-green,
-    .hof-btn-dark-green--outline {
-        font-size: 16px;
-        font-weight: 700;
-    }
 }
 
-.hof-nav {
-    .hof-nav__link {
-        color: $c-dark-green;
-        font-weight: 500;
-    }
-}
-
-.hof-nav__upper {
+.hof-main-navigation {
     padding-bottom: 16px;
     padding-top: 16px;
 
@@ -28,7 +15,7 @@ header {
         padding-top: 32px;
     }
 
-    .hof-nav__upper--link {
+    .hof-main-navigation--link {
         color: $c-brown;   
         font-size: 1.25rem;
         font-weight: 400;
@@ -40,111 +27,74 @@ header {
             color: $c-chalk-white;   
         }
     }
-}
 
-.hof-header__nav--logo {
-    svg {
-        height: 48px;
-
+    .hof-main-navigation--logo {
+        svg {
+            height: 48px;
+    
+            .dark-element {
+                transition: 0.3s ease-in-out;
+            }
+            
+            @include media-breakpoint-up(lg) {
+                height: 64px;
+            }
+        }
+    }
+    
+    .hof-main-navigation--logo:hover {
         .dark-element {
-            transition: 0.3s ease-in-out;
+            fill: $c-pink;
         }
-        
+    }
+
+    .hof-main-navigation--burger {
+        svg {
+            fill: $c-brown;
+        }
+
+        &.white {
+            svg {
+                fill: $c-chalk-white;
+            }
+        }
+
         @include media-breakpoint-up(lg) {
-            height: 64px;
+            display: none;
         }
     }
-}
 
-.hof-header__nav--logo:hover {
-    .dark-element {
-        fill: $c-pink;
+    .hof-main-navigation--close,
+    .hof-main-navigation--burger {
+        cursor: pointer;
     }
 }
 
-
-.hof-nav__lower {
-    border-bottom: 1px solid $c-dark-green;
-    padding-bottom: 16px;
-    padding-top: 16px;
-}
-
-.hof-navigation {
-    background-color: $c-dark-green;
-    height: 100vh;
-    left: -105vw;
+.hof-mobile-navigation {
+    background-color: $c-dark-brown;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: fixed;
     top: 0;
-    width: 100vw;
-    opacity: 0;
+    transition: 0.3s ease-in-out;
+    right: -105vw;
+    width: 100%;
     z-index: 100;
 
     &.open {
-        animation-name: fadeIn;
-        -webkit-animation-name: fadeIn;
-        animation-duration: 0.3s;
-        -webkit-animation-duration: 0.3s;
-        animation-timing-function: ease;
-        -webkit-animation-timing-function: ease;
-        animation-fill-mode: forwards;
-        -webkit-animation-fill-mode: forwards;
-
-        left: 0;
+        right: 0;
     }
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-      
-        to {
-            opacity: 1.1;
-        }
-    }
-
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-      
-        to {
-            opacity: 1;
-        }
-    }
-
-    .hof-navigation__upper,
-    .hof-navigation__lower {
-        padding-bottom: 16px;
-        padding-top: 16px;
-
-        @include media-breakpoint-up(lg) {
-            padding-bottom: 32px;
-            padding-top: 32px;
-        }
-    }
-
-    .hof-navigation__middle--link {
-        color: $c-white;
+    .hof-mobile-navigation__middle--link {
+        color: $c-chalk-white;
         display: inline-block;
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: $ff-p90;
-        margin-bottom: 2rem;
-        transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
-        
-        @include media-breakpoint-up(lg) {
-            font-size: 6rem;
-        }
-
-        &:hover {
-            color: $c-pink;
-            text-decoration: none;
-        }
+        font-weight: 400;
+        line-height: 3rem;
+        margin-bottom: 3rem;
     }
-}
-
-.hof-navigation--close,
-.hof-navigation--open {
-    cursor: pointer;
 }
 
 // --- End of Header Section CSS --- //
