@@ -73,7 +73,9 @@
 
     .hof-banner--text-col {
         @extend .col-xl-6;
+        @extend .offset-xxl-1;
         
+
         background-color: $c-beige;
         bottom: 0;
         left: 0;
@@ -90,6 +92,18 @@
             position: relative;
             text-align: left;
             width: unset;
+            margin-top: auto;
+            margin-bottom: 4rem;
+            margin-left: 2rem;
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-top: auto;
+            margin-bottom: auto;
+            flex: 0 0 50%;
+            max-width: 50%;
         }
     }
 }

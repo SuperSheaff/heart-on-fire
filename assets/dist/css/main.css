@@ -18164,6 +18164,11 @@ header {
     position: relative;
     text-align: left;
     width: unset;
+    margin-top: auto;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
   .hof-featured-services .hof-featured-services__box {
     margin-bottom: 0;
@@ -18318,7 +18323,7 @@ header {
   .offset-xxl-0 {
     margin-left: 0;
   }
-  .offset-xxl-1 {
+  .offset-xxl-1, .hof-banner .hof-banner--text-col {
     margin-left: 8.33333%;
   }
   .offset-xxl-2 {
@@ -18900,6 +18905,12 @@ header {
   }
   .hof-banner .hof-banner--image-desktop {
     width: unset;
+  }
+  .hof-banner .hof-banner--text-col {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   .hof-main-navigation .hof-main-navigation--link {
     margin-left: 96px;
