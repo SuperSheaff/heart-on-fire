@@ -27,6 +27,20 @@
     }
 }
 
+.hof-video-image-split {
+    .hof-video-image-split--img,
+    .hof-video-image-split--video {
+        height: 320px;   
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            height: 640px;   
+            width: 50%;
+        }
+    }
+}
 
 .hof-video-full {
     .hof-video-full--video {
@@ -37,6 +51,20 @@
 
         @include media-breakpoint-up(lg) {
             height: 640px;   
+        }
+    }
+}
+
+.hof-video-vertical {
+    .hof-video-vertical--video {
+        width: 100%;   
+        object-fit: cover;
+        object-position: center;
+        height: 640px;
+
+        @include media-breakpoint-up(lg) {
+            height: 640px;   
+            width: 360px;   
         }
     }
 }

@@ -122,6 +122,8 @@ function heartonfire_acf_get_components()
         'testimonials',
         'values',
         'video-full',
+        'video-image-split',
+        'video-vertical',
         'work'
     );
 

@@ -14916,6 +14916,16 @@ table tbody tr td {
   width: 100%;
 }
 
+.hof-video-image-split .hof-video-image-split--img,
+.hof-video-image-split .hof-video-image-split--video {
+  height: 320px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+}
+
 .hof-video-full .hof-video-full--video {
   height: 320px;
   -o-object-fit: cover;
@@ -14923,6 +14933,15 @@ table tbody tr td {
   -o-object-position: center;
   object-position: center;
   width: 100%;
+}
+
+.hof-video-vertical .hof-video-vertical--video {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  height: 640px;
 }
 
 .hof-icon-content .hof-icon-content--icon {
