@@ -14818,7 +14818,8 @@ header {
 }
 
 .hof-main-navigation .hof-main-navigation--link:hover .hof-main-navigation--duplicate {
-  filter: blur(100px);
+  color: #FFFFFF;
+  filter: blur(16px);
 }
 
 .hof-main-navigation .hof-main-navigation--link .hof-main-navigation--duplicate {
@@ -14831,7 +14832,7 @@ header {
   top: 0;
   position: absolute;
   text-transform: uppercase;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .hof-main-navigation .hof-main-navigation--logo:hover .dark-element {

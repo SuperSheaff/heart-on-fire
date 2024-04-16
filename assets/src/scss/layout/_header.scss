@@ -54,7 +54,8 @@ header {
             text-decoration: none;
 
             .hof-main-navigation--duplicate {
-                filter: blur(100px);
+                color: $c-white;   
+                filter: blur(16px);
             }
         }
 
@@ -68,7 +69,7 @@ header {
             top: 0;
             position: absolute;
             text-transform: uppercase;
-            transition: 1s ease-in-out;
+            transition: 0.2s ease-in-out;
         }
     }
 
