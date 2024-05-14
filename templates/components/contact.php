@@ -35,7 +35,8 @@
                         </div>
 
                         <div class="hof-tagline hof-color-white mb-0">General Enquiries</div>
-                        <p class="hof-color-white">hello@byablo.com.au</p>
+                        <a href="mailto:hello@byablo.com.au" class="hof-color-white">hello@byablo.com.au</a>
+                        <p class="hof-color-white">0407 853 635</p>
 
                         <div class="hof-tagline hof-color-white mb-0">Client Application</div>
                         <p class="hof-color-white">Please fill out the questionnaire</p>
