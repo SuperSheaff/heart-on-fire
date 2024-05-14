@@ -42,7 +42,7 @@
                             <?php endforeach; ?>
                         </div>
 
-                        <div class="order-4 order-xl-3 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
+                        <div class="order-4 order-xl-3 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-none d-lg-flex flex-column">
                             <p class="hof-footer--link-heading">Services</p>
                             <?php foreach ($servicesMenu as $index => $item) : ?>
                                 <a href="<?php echo $item['url']; ?>" class="hof-footer--link">
@@ -51,7 +51,7 @@
                             <?php endforeach; ?>
                         </div>
 
-                        <div class="order-5 order-xl-4 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
+                        <div class="order-5 order-xl-4 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-none d-lg-flex flex-column">
                             <p class="hof-footer--link-heading">Work</p>
                             <?php foreach ($workMenu as $index => $item) : ?>
                                 <a href="<?php echo $item['url']; ?>" class="hof-footer--link">
@@ -60,7 +60,7 @@
                             <?php endforeach; ?>
                         </div>
 
-                        <div class="order-2 order-xl-5 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
+                        <div class="order-2 order-xl-5 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-none d-lg-flex flex-column">
                             <p class="hof-footer--link-heading">NEWSLETTER</p>
                             <p class="hof-footer--text">
                                 Want to receive love letters &<br>free advice?
@@ -120,30 +120,30 @@
                         <?php /* Social Links */ ?>
                         <div class="hof-footer__lower--socials mx-auto mr-xl-0 mb-4 my-xl-auto d-flex order-1 order-xl-2">
 
-                            <a href="https://osh.studio/" target="_blank" class="mx-auto ml-xl-3 mr-xl-1">
+                            <a href="https://osh.studio/" target="_blank" class="mx-2 ml-xl-3 mr-xl-1">
                                 <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-osh.svg'); ?>
                             </a>
 
                             <?php if (! empty($socialMedia['settings_instagram'])) { ?>
-                                <a href="<?php echo $socialMedia['settings_instagram']['url']; ?>" class="mx-auto ml-xl-3 mr-xl-0"
+                                <a href="<?php echo $socialMedia['settings_instagram']['url']; ?>" class="mx-2 ml-xl-3 mr-xl-0"
                                     <?php echo ($socialMedia['settings_instagram']['target']) ? 'target="_blank"' : ''; ?>>
                                     <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-instagram.svg'); ?>
                                 </a>
                             <?php } ?>
                             <?php if (! empty($socialMedia['settings_facebook'])) { ?>
-                                <a href="<?php echo $socialMedia['settings_facebook']['url']; ?>" class="mx-auto ml-xl-3 mr-xl-0"
+                                <a href="<?php echo $socialMedia['settings_facebook']['url']; ?>" class="mx-2 ml-xl-3 mr-xl-0"
                                     <?php echo ($socialMedia['settings_facebook']['target']) ? 'target="_blank"' : ''; ?>>
                                     <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-facebook.svg'); ?>
                                 </a>
                             <?php } ?>
                             <?php if (! empty($socialMedia['settings_tiktok'])) { ?>
-                                <a href="<?php echo $socialMedia['settings_tiktok']['url']; ?>" class="mx-auto ml-xl-3 mr-xl-0"
+                                <a href="<?php echo $socialMedia['settings_tiktok']['url']; ?>" class="mx-2 ml-xl-3 mr-xl-0"
                                     <?php echo ($socialMedia['settings_tiktok']['target']) ? 'target="_blank"' : ''; ?>>
                                     <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-tiktok.svg'); ?>
                                 </a>
                             <?php } ?>
                             <?php if (! empty($socialMedia['settings_linkedin'])) { ?>
-                                <a href="<?php echo $socialMedia['settings_linkedin']['url']; ?>" class="mx-auto ml-xl-3 mr-xl-0"
+                                <a href="<?php echo $socialMedia['settings_linkedin']['url']; ?>" class="mx-2 ml-xl-3 mr-xl-0"
                                     <?php echo ($socialMedia['settings_linkedin']['target']) ? 'target="_blank"' : ''; ?>>
                                     <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-linkedin.svg'); ?>
                                 </a>

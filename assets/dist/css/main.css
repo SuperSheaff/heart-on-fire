@@ -18161,6 +18161,7 @@ header {
     bottom: unset;
     left: unset;
     padding: unset;
+    padding-right: 2rem;
     position: relative;
     text-align: left;
     width: unset;

@@ -38,7 +38,7 @@
                         <p class="hof-color-white">hello@byablo.com.au</p>
 
                         <div class="hof-tagline hof-color-white mb-0">Client Application</div>
-                        <p class="hof-color-white">Please fill out the questionnaire to your right</p>
+                        <p class="hof-color-white">Please fill out the questionnaire</p>
 
                         <div class="hof-tagline hof-color-white mb-0">Location</div>
                         <p class="hof-color-white">Brisbane, Queensland</p>
