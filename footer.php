@@ -33,7 +33,7 @@
                             <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/logo/logo--white.svg'); ?>
                         </a>
 
-                        <div class="order-3 order-xl-2 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
+                        <div class="order-3 order-xl-2 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
                             <p class="hof-footer--link-heading">Quick Links</p>
                             <?php foreach ($footerMenu as $index => $item) : ?>
                                 <a href="<?php echo $item['url']; ?>" class="hof-footer--link">
@@ -60,7 +60,7 @@
                             <?php endforeach; ?>
                         </div>
 
-                        <div class="order-2 order-xl-5 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-none d-lg-flex flex-column">
+                        <div class="order-2 order-xl-5 mb-5 mb-xl-0 mx-auto mx-xl-0 text-center text-xl-left d-flex flex-column">
                             <p class="hof-footer--link-heading">NEWSLETTER</p>
                             <p class="hof-footer--text">
                                 Want to receive love letters &<br>free advice?
