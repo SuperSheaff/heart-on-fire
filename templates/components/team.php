@@ -16,7 +16,7 @@
         <div class="hof-container">
             <div class="hof-section-padding">
                 <?php if ($heading) : ?>
-                    <h2 class="h1 hof-color-brown text-left mb-5 pb-5">
+                    <h2 class="h1 hof-color-brown text-left mb-5">
                         <?php echo $heading; ?>
                     </h2>
                 <?php endif; ?>
