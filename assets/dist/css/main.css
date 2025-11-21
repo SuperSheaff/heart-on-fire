@@ -17332,9 +17332,6 @@ header {
   .hof-services h1 {
     font-size: 5.5rem;
   }
-  .hof-testimonials .hof-testimonial-carousel--item {
-    height: 640px;
-  }
   .hof-testimonials .owl-dots {
     margin-top: 2rem;
   }
@@ -18108,9 +18105,6 @@ header {
   .hof-partners .hof-partners-logo-col {
     flex: 0 0 20%;
     max-width: 20%;
-  }
-  .hof-testimonials .hof-testimonial-carousel--item {
-    height: 464px;
   }
   .hof-main-navigation .hof-main-navigation--burger {
     display: none;
