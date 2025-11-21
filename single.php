@@ -17,7 +17,7 @@ get_header();
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <div class="hof-container hof-bg-beige">
+            <div class="hof-container">
                 <?php
                 if (have_posts()) :
                     while (have_posts()) :
@@ -30,8 +30,8 @@ get_header();
                                 </div>
                             </section>
                             <section class="hof-simple-content hof-color-brown">
-                                <div class="px-3 px-lg-4 pb-3 pb-lg-4 pt-0">
-                                    <div class="row">
+                                <div class="px-3 px-lg-5 pb-3 pb-lg-4 pt-0">
+                                    <div class="row px-lg-5">
                                         <div class="col-12 col-lg-8 mx-auto">
                                             <p class="fw-700"><?php echo get_the_date(); ?></p>
                                             <h1 class="h2 ff-manrope mb-5"><?php echo the_title(); ?></h1>
