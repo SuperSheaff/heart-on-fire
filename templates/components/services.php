@@ -41,7 +41,7 @@
                         <div id="<?php echo esc_attr($headingId); ?>">
                             <h5 class="mb-0">
                                 <button
-                                    class="hof-color-dark-brown <?php echo $isFirst ? '' : 'collapsed'; ?>"
+                                    class="hof-color-dark-brown collapsed"
                                     data-toggle="collapse"
                                     data-target="#<?php echo esc_attr($collapseId); ?>"
                                     aria-expanded="<?php echo $isFirst ? 'true' : 'false'; ?>"
@@ -54,7 +54,7 @@
 
                         <div
                             id="<?php echo esc_attr($collapseId); ?>"
-                            class="collapse <?php echo $isFirst ? 'show' : ''; ?>"
+                            class="collapse"
                             aria-labelledby="<?php echo esc_attr($headingId); ?>"
                             data-parent="#<?php echo esc_attr($accordionId); ?>"
                         >
@@ -69,7 +69,6 @@
         </div>
 
     <?php endif; ?>
-
 
     <?php if (!empty($featuredServices)) : ?>
         <div class="hof-featured-services-row">
