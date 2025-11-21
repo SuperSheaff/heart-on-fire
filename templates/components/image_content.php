@@ -20,7 +20,7 @@
             <div class="hof-section-padding">
                 <div class="row">
 
-                    <div class="col-12 col-md-6 col-xl-4 text-center text-md-left h-100 d-flex flex-column">
+                    <div class="col-12 col-md-6 col-xl-4 text-center text-md-left d-flex flex-column">
 
                         <?php if ($tagline) : ?>
                             <p class="hof-tagline hof-color-brown">
