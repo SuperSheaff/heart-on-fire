@@ -20,7 +20,7 @@
             <div class="hof-section-padding">
                 <div class="row">
 
-                    <div class="col-12 col-md-6 col-xl-5 my-md-auto mb-4 text-center text-md-left">
+                    <div class="col-12 col-md-6 my-md-auto mb-4 text-center text-md-left">
 
                         <?php if ($tagline) : ?>
                             <p class="hof-tagline hof-color-brown">
@@ -29,7 +29,7 @@
                         <?php endif; ?>
 
                         <?php if ($heading) : ?>
-                            <h3 class="hof-color-brown">
+                            <h3 class="h1 hof-color-brown">
                                 <?php echo $heading; ?>
                             </h3>
                         <?php endif; ?>
@@ -45,7 +45,7 @@
                         <?php endif; ?>
                     </div>
 
-                    <div class="col-12 col-md-5 col-xl-4 offset-md-1 offset-xl-3">
+                    <div class="col-12 col-md-5 col-xl-4 offset-md-1 offset-xl-2">
                         <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-image-content--image img-fluid <?php echo $imageColumnClass; ?>">
                     </div>
 

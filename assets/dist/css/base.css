@@ -14238,7 +14238,7 @@ h5 {
 }
 
 .hof-bg-blue {
-  background-color: #BAC5CB;
+  background-color: #BAC5CB !important;
 }
 
 .hof-bg-light-green {

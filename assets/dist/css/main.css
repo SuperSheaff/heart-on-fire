@@ -13850,7 +13850,7 @@ h5 {
 }
 
 .hof-bg-blue {
-  background-color: #BAC5CB;
+  background-color: #BAC5CB !important;
 }
 
 .hof-bg-light-green {
@@ -17255,7 +17255,7 @@ header {
     text-align: center !important;
   }
   h1, .h1 {
-    font-size: 5.5rem;
+    font-size: 4rem;
     letter-spacing: -3px;
     margin-bottom: 2rem;
   }

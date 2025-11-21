@@ -55,7 +55,7 @@ h1,
     text-transform: uppercase;
 
     @include media-breakpoint-up(lg) {
-        font-size: 5.5rem;
+        font-size: 4rem;
         letter-spacing: -3px;
         margin-bottom: 2rem;
     }
@@ -216,7 +216,7 @@ h5 {
 }
 
 .hof-bg-blue {
-    background-color: $c-blue;
+    background-color: $c-blue !important;
 }
 
 .hof-bg-light-green {
