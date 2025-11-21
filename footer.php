@@ -23,7 +23,7 @@
     ?>
 
         <footer class="hof-footer">
-            <div class="hof-container">
+            <div class="">
 
                 <div class="hof-section-padding hof-bg-brown">
                     <div class="d-flex flex-column flex-xl-row justify-content-between hof-color-white">

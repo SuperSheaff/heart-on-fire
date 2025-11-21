@@ -5,7 +5,7 @@
 ?>
 
 <nav class="hof-main-navigation">
-    <div class="hof-container">
+    <div class="">
         <div class="hof-section-padding-x">
             <div class="d-flex justify-content-between">
 
