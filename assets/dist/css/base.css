@@ -15196,12 +15196,12 @@ table tbody tr td {
 .hof-work .hof-work--item {
   color: #372120;
   display: flex;
+  position: relative;
   width: 100%;
 }
 
 .hof-work .hof-work--item img {
   height: 320px;
-  margin-bottom: 1rem;
   -o-object-fit: cover;
   object-fit: cover;
   position: relative;
@@ -15209,65 +15209,23 @@ table tbody tr td {
   z-index: 10;
 }
 
-.hof-work .hof-work--item h4 {
-  margin-bottom: 0.5rem;
-}
-
 .hof-work .hof-work--item .hof-work--item-text {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.hof-work .hof-work--item .hof-work--item-text .hof-work--item-text-container {
-  height: 28px;
-  position: relative;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  z-index: 20;
 }
 
-.hof-work .hof-work--item .hof-work--item-text .hof-work--item-text-view {
-  bottom: 0;
-  right: 0;
-  opacity: 1;
+.hof-work .hof-work--item .hof-work--item-text .hof-work--item-text-inner {
+  position: relative;
+}
+
+.hof-work .hof-work--item .hof-work--item-text h4 {
+  color: #FFFFFF;
   position: absolute;
-  transition: 0.5s ease-in-out;
-}
-
-.hof-work .hof-work--item .hof-work--tag-container {
-  display: none;
-  height: 64px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  position: absolute;
-  right: 0;
-  top: -2rem;
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 60%;
-}
-
-.hof-work .hof-work--item .hof-work--tag {
-  border: 1px solid #372120;
-  display: inline-block;
-  height: 28px;
-  font-size: 14px;
-  margin-bottom: 0.5rem;
-  margin-left: 1rem;
-  padding: 2px 8px;
-}
-
-.hof-work .hof-work--item:hover {
-  text-decoration: none;
-}
-
-.hof-work .hof-work--item:hover .hof-work--tag-container {
-  opacity: 1;
-  top: 0;
-}
-
-.hof-work .hof-work--item:hover .hof-work--item-text-view {
-  bottom: 0;
-  opacity: 1;
+  left: 32px;
+  bottom: 32px;
+  margin-bottom: 0rem;
 }
 
 header {
@@ -15330,7 +15288,7 @@ header {
 }
 
 .hof-main-navigation .hof-main-navigation--logo:hover .dark-element {
-  fill: #DB9995;
+  fill: #BAC5CB;
 }
 
 .hof-main-navigation .hof-main-navigation--burger svg {

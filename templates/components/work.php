@@ -11,8 +11,10 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-work <?php echo $componentClass; ?>">
+        <div class="hof-navigation-offset"></div>
         <div class="hof-container">
             <div class="p-3 p-xl-4">
+                <div class="text-center hof-tagline mb-5">[A TASTE OF OUR WORK]</div>
                 <div class="row">
 
                     <?php foreach ($workRepeater as $work) :
@@ -30,27 +32,9 @@
                                 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $workID ), 'single-post-thumbnail' ); ?>
                                 <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(); ?>" class="hof-work--img">
                             <?php endif; ?>
-
-                            <div class="hof-work--item-text">
-
-                                <div class="hof-work--item-text-container d-flex flex-column">
-                                    <h4><?php echo $workTitle; ?></h4>
-                                    <div class="hof-work--item-text-view">View work</div>
+                                <div class="hof-work--item-text">
+                                    <h4 class="h2"><?php echo $workTitle; ?></h4>
                                 </div>
-
-                                <div class="hof-work--tag-container">
-                                    <?php foreach ($workTags as $tag) :
-                                        $tagName       = $tag['tag'];
-                                    ?>
-
-                                        <div class="hof-work--tag">
-                                            <?php echo $tagName; ?>
-                                        </div>
-
-                                    <?php endforeach; ?>
-                                </div>
-
-                            </div>
                         </a>
                     </div>
 
