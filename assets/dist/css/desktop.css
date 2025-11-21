@@ -2994,7 +2994,6 @@
   .hof-services .hof-accordion button,
   .hof-services .hof-accordion button:after {
     font-size: 4rem;
-    letter-spacing: -3px;
     margin-bottom: 2rem;
   }
 
@@ -3002,7 +3001,6 @@
   .h2,
   .hof-services .hof-featured-service__title {
     font-size: 3rem;
-    letter-spacing: -3px;
     line-height: 1;
     margin-bottom: 1.5rem;
   }
