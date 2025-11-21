@@ -25,7 +25,7 @@
                         <div class="col-12 col-lg-4">
                             <div class="d-flex justify-content-between">
                                 <div class="hof-team--name my-auto">
-                                    <p class="mb-0" style="font-size: 24px;"><?php echo $team_member['name']; ?></p>
+                                    <p class="mb-0" style="font-size: 32px;"><?php echo $team_member['name']; ?></p>
                                 </div>
                                 <div class="hof-team--name">
                                     <p class="text-right mb-0"><?php echo $team_member['role_1']; ?></p>    
@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                             <p><?php echo $team_member['bio']; ?></p>
-                            <img src="<?php echo $team_member['image']; ?>" alt="<?php echo $heading; ?>" class="img-fluid">
+                            <img src="<?php echo $team_member['image']; ?>" alt="<?php echo $heading; ?>" class="w-100 img-fluid">
                         </div>
                     <?php endforeach; ?>
                 </div>
