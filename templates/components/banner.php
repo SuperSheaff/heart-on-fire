@@ -15,7 +15,7 @@
     <section id="<?php echo $componentId; ?>" class="hof-banner hof-bg-dark-brown <?php echo $componentClass; ?>">
         <div class="hof-container">
             <div class="hof-banner--row position-relative">
-                <div class="hof-banner--text-col hof-banner--height hof-color-white d-flex pb-4">
+                <div class="hof-banner--text-col hof-banner--height hof-color-white d-flex pb-4 pb-xl-5">
                     <div class="mt-auto">
                         <?php if ($heading) : ?>
                             <h1 class="mb-4 h2">
