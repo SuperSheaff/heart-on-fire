@@ -12,14 +12,16 @@
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-banner-simple <?php echo $componentClass; ?>">
         <div class="hof-navigation-offset"></div>
-        <div class="hof-section-padding">
-            <div class="row">
-                <div class="col-xl-8">
-                    <?php if ($heading) : ?>
-                        <h1 class="h2 mb-0 hof-color-brown">
-                            <?php echo $heading; ?>
-                        </h1>
-                    <?php endif; ?>
+        <div class="hof-container">
+            <div class="hof-section-padding">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <?php if ($heading) : ?>
+                            <h1 class="h2 mb-0 hof-color-brown">
+                                <?php echo $heading; ?>
+                            </h1>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>

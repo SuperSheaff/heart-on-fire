@@ -13,26 +13,28 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-content-simple <?php echo $componentClass; ?>">
-        <div class="hof-section-padding">
-            <div class="row">
-                <div class="col-lg-8 col-xl-6 mx-auto text-center hof-color-brown">
+        <div class="hof-container">
+            <div class="hof-section-padding">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-6 mx-auto text-center hof-color-brown">
 
-                    <?php if ($tagline) : ?>
-                        <p class="hof-tagline hof-color-brown text-center">
-                            <?php echo $tagline; ?>
-                        </p>
-                    <?php endif; ?>
+                        <?php if ($tagline) : ?>
+                            <p class="hof-tagline hof-color-brown text-center">
+                                <?php echo $tagline; ?>
+                            </p>
+                        <?php endif; ?>
 
-                    <?php if ($heading) : ?>
-                        <h2 class="hof-content-simple__heading mb-xl-4">
-                            <?php echo $heading; ?>
-                        </h2>
-                    <?php endif; ?>
+                        <?php if ($heading) : ?>
+                            <h2 class="hof-content-simple__heading mb-xl-4">
+                                <?php echo $heading; ?>
+                            </h2>
+                        <?php endif; ?>
 
-                    <?php if ($content) : ?>
-                        <?php echo $content; ?>
-                    <?php endif; ?>
+                        <?php if ($content) : ?>
+                            <?php echo $content; ?>
+                        <?php endif; ?>
 
+                    </div>
                 </div>
             </div>
         </div>

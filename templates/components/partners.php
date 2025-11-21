@@ -13,24 +13,26 @@
 <?php if ($enableComponent): ?>
     
     <section id="<?php echo $componentId; ?>" class="hof-partners <?php echo $componentClass; ?>">
-        <div class="hof-section-padding">
+        <div class="hof-container">
+            <div class="hof-section-padding">
 
-            <?php if ($tagline) : ?>
-                <p class="hof-tagline hof-color-brown text-center mb-4">
-                    <?php echo $tagline; ?>
-                </p>
-            <?php endif; ?>
+                <?php if ($tagline) : ?>
+                    <p class="hof-tagline hof-color-brown text-center mb-4">
+                        <?php echo $tagline; ?>
+                    </p>
+                <?php endif; ?>
 
-            <div class="row">
-                <?php foreach ($partners as $partner) :
-                    $partnerImage    = $partner['image'];
-                    ?>
-                    <div class="hof-partners-logo-col mb-3">    
-                        <img src="<?php echo $partnerImage; ?>" alt="Partner Logo" class="hof-partners--logo ">
-                    </div>
-                <?php endforeach; ?>
+                <div class="row">
+                    <?php foreach ($partners as $partner) :
+                        $partnerImage    = $partner['image'];
+                        ?>
+                        <div class="hof-partners-logo-col mb-3">    
+                            <img src="<?php echo $partnerImage; ?>" alt="Partner Logo" class="hof-partners--logo ">
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
             </div>
-
         </div>
     </section>
 <?php endif; ?>

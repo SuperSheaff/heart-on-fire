@@ -11,52 +11,54 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-work <?php echo $componentClass; ?>">
-        <div class="p-3 p-xl-4">
-            <div class="row">
+        <div class="hof-container">
+            <div class="p-3 p-xl-4">
+                <div class="row">
 
-                <?php foreach ($workRepeater as $work) :
+                    <?php foreach ($workRepeater as $work) :
 
-                    $workLink       = $work['item'];
-                    $workID         = url_to_postid($workLink);
-                    $workTitle      = get_the_title($workID);
-                    $workTags       = $work['tag_repeater'];
-                ?>
+                        $workLink       = $work['item'];
+                        $workID         = url_to_postid($workLink);
+                        $workTitle      = get_the_title($workID);
+                        $workTags       = $work['tag_repeater'];
+                    ?>
 
-                <div class="col-12 col-xl-6 mb-4">
-                    <a href="<?php echo $workLink; ?>" class="hof-work--item d-flex flex-column">
+                    <div class="col-12 col-xl-6 mb-4">
+                        <a href="<?php echo $workLink; ?>" class="hof-work--item d-flex flex-column">
 
-                        <?php if (has_post_thumbnail( $workID ) ): ?>
-                            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $workID ), 'single-post-thumbnail' ); ?>
-                            <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(); ?>" class="hof-work--img">
-                        <?php endif; ?>
+                            <?php if (has_post_thumbnail( $workID ) ): ?>
+                                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $workID ), 'single-post-thumbnail' ); ?>
+                                <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(); ?>" class="hof-work--img">
+                            <?php endif; ?>
 
-                        <div class="hof-work--item-text">
+                            <div class="hof-work--item-text">
 
-                            <div class="hof-work--item-text-container d-flex flex-column">
-                                <h4><?php echo $workTitle; ?></h4>
-                                <div class="hof-work--item-text-view">View work</div>
+                                <div class="hof-work--item-text-container d-flex flex-column">
+                                    <h4><?php echo $workTitle; ?></h4>
+                                    <div class="hof-work--item-text-view">View work</div>
+                                </div>
+
+                                <div class="hof-work--tag-container">
+                                    <?php foreach ($workTags as $tag) :
+                                        $tagName       = $tag['tag'];
+                                    ?>
+
+                                        <div class="hof-work--tag">
+                                            <?php echo $tagName; ?>
+                                        </div>
+
+                                    <?php endforeach; ?>
+                                </div>
+
                             </div>
+                        </a>
+                    </div>
 
-                            <div class="hof-work--tag-container">
-                                <?php foreach ($workTags as $tag) :
-                                    $tagName       = $tag['tag'];
-                                ?>
+                        
 
-                                    <div class="hof-work--tag">
-                                        <?php echo $tagName; ?>
-                                    </div>
+                    <?php endforeach; ?>
 
-                                <?php endforeach; ?>
-                            </div>
-
-                        </div>
-                    </a>
                 </div>
-
-                    
-
-                <?php endforeach; ?>
-
             </div>
         </div>
     </section>

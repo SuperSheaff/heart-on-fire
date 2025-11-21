@@ -72,13 +72,15 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-video-image-split <?php echo $componentClass; ?> <?php echo $sectionClass; ?>">
-        <div class="px-3 px-lg-4 pb-3 pb-lg-4">
-            <div class="d-flex flex-column flex-md-row">
-                <video class="hof-video-image-split--video <?php echo $videoClass; ?> <?php echo $videoLayoutClass; ?>" autoplay loop muted>
-                    <source src="<?php echo $video; ?>" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <img src="<?php echo $image; ?>" class="hof-video-image-split--img <?php echo $imageClass; ?> <?php echo $imageLayoutClass; ?>">
+        <div class="hof-container">
+            <div class="px-3 px-lg-4 pb-3 pb-lg-4">
+                <div class="d-flex flex-column flex-md-row">
+                    <video class="hof-video-image-split--video <?php echo $videoClass; ?> <?php echo $videoLayoutClass; ?>" autoplay loop muted>
+                        <source src="<?php echo $video; ?>" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <img src="<?php echo $image; ?>" class="hof-video-image-split--img <?php echo $imageClass; ?> <?php echo $imageLayoutClass; ?>">
+                </div>
             </div>
         </div>
     </section>

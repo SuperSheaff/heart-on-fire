@@ -24,11 +24,13 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-video-full <?php echo $componentClass; ?> <?php echo $sectionClass; ?>">
-        <div class="px-3 px-lg-4 pb-3 pb-lg-4 pt-0">
-            <video class="hof-video-full--video" autoplay loop muted>
-                <source src="<?php echo $video; ?>" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="hof-container">
+            <div class="px-3 px-lg-4 pb-3 pb-lg-4 pt-0">
+                <video class="hof-video-full--video" autoplay loop muted>
+                    <source src="<?php echo $video; ?>" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </section>
 <?php endif; ?>

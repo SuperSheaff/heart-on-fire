@@ -12,36 +12,39 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-values <?php echo $componentClass; ?>">
-        <div class="hof-section-padding">
+        <div class="hof-container">
 
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <?php if ($heading) : ?>
-                        <h2 class="hof-color-brown text-center text-lg-left">
-                            <?php echo $heading; ?>
-                        </h2>
-                    <?php endif; ?>
-                </div>
+            <div class="hof-section-padding">
 
-                <div class="col-12 col-lg-6">
-                    <div class="row">
-                        <?php foreach ($icons as $key => $icon) :
-                            $iconImage      = $icon['image'];
-                            $iconTitle      = $icon['title'];
-                            $iconContent    = $icon['content'];
-                            ?>
-                            <div class="col-lg-6 mx-auto mb-3 d-flex flex-column text-center text-lg-left">    
-                                <img src="<?php echo $iconImage; ?>" alt="<?php echo $iconTitle; ?>" class="hof-values--icon mx-auto ml-md-0 mb-3">
-                                <h5 class="hof-color-brown mb-3 mb-xl-4"><?php echo $iconTitle; ?></h5>
-                                <div class="hof-values--content hof-color-brown">
-                                    <?php echo $iconContent; ?>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <?php if ($heading) : ?>
+                            <h2 class="hof-color-brown text-center text-lg-left">
+                                <?php echo $heading; ?>
+                            </h2>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <?php foreach ($icons as $key => $icon) :
+                                $iconImage      = $icon['image'];
+                                $iconTitle      = $icon['title'];
+                                $iconContent    = $icon['content'];
+                                ?>
+                                <div class="col-lg-6 mx-auto mb-3 d-flex flex-column text-center text-lg-left">    
+                                    <img src="<?php echo $iconImage; ?>" alt="<?php echo $iconTitle; ?>" class="hof-values--icon mx-auto ml-md-0 mb-3">
+                                    <h5 class="hof-color-brown mb-3 mb-xl-4"><?php echo $iconTitle; ?></h5>
+                                    <div class="hof-values--content hof-color-brown">
+                                        <?php echo $iconContent; ?>
+                                    </div>
                                 </div>
-                            </div>
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
 <?php endif; ?>
