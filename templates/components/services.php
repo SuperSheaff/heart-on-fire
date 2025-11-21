@@ -15,16 +15,17 @@
 <section id="<?php echo esc_attr($componentId); ?>" class="hof-services <?php echo esc_attr($componentClass); ?>">
     <div class="hof-navigation-offset"></div>
 
-    <?php if ($tagline) : ?>
-        <p class="hof-tagline hof-color-brown text-center mb-5">
-            <?php echo esc_html($tagline); ?>
-        </p>
-    <?php endif; ?>
+
 
     <?php if (!empty($services)) : ?>
         <?php $accordionId = $componentId . '_accordion'; ?>
 
         <div class="hof-section-padding">
+            <?php if ($tagline) : ?>
+                <p class="hof-tagline hof-color-brown text-center mb-5">
+                    <?php echo esc_html($tagline); ?>
+                </p>
+            <?php endif; ?>
             <div class="accordion  pt-0" id="<?php echo esc_attr($accordionId); ?>">
 
                 <?php foreach ($services as $key => $service) :
