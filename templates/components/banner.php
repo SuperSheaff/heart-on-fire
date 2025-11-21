@@ -16,24 +16,22 @@
         <div class="hof-container">
             <div class="hof-banner--row position-relative">
                 <div class="hof-banner--text-col hof-banner--height hof-color-white d-flex pb-4 pb-xl-5">
-                    <div class="hof-section-padding">
-                        <div class="mt-auto">
-                            <?php if ($heading) : ?>
-                                <h1 class="mb-4 h2">
-                                    <?php echo $heading; ?>
-                                </h1>
-                            <?php endif; ?>
-                            <?php if ($subheading) : ?>
-                                <h5 class="mb-4">
-                                    <?php echo $subheading; ?>
-                                </h5>
-                            <?php endif; ?>
-                            <?php if ($cta) : ?>
-                                <a href="<?php echo $cta['url']; ?>" class="hof-btn-white--outline" target="<?php echo $cta['target']; ?>">
-                                    <?php echo $cta['title']; ?>
-                                </a>
-                            <?php endif; ?>
-                        </div>
+                    <div class="mt-auto hof-section-padding">
+                        <?php if ($heading) : ?>
+                            <h1 class="mb-4 h2">
+                                <?php echo $heading; ?>
+                            </h1>
+                        <?php endif; ?>
+                        <?php if ($subheading) : ?>
+                            <h5 class="mb-4">
+                                <?php echo $subheading; ?>
+                            </h5>
+                        <?php endif; ?>
+                        <?php if ($cta) : ?>
+                            <a href="<?php echo $cta['url']; ?>" class="hof-btn-white--outline" target="<?php echo $cta['target']; ?>">
+                                <?php echo $cta['title']; ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
