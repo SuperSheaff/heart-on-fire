@@ -7465,6 +7465,7 @@ readers do not read off random characters that represent icons */
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1200px;
   --breakpoint-xxl: 1440px;
+  --breakpoint-xxxl: 1920px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -8012,7 +8013,8 @@ pre code {
 .container-md,
 .container-lg,
 .container-xl,
-.container-xxl {
+.container-xxl,
+.container-xxxl {
   width: 100%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
@@ -8123,7 +8125,21 @@ pre code {
 .col-xxl-11,
 .col-xxl-12,
 .col-xxl,
-.col-xxl-auto {
+.col-xxl-auto,
+.col-xxxl-1,
+.col-xxxl-2,
+.col-xxxl-3,
+.col-xxxl-4,
+.col-xxxl-5,
+.col-xxxl-6,
+.col-xxxl-7,
+.col-xxxl-8,
+.col-xxxl-9,
+.col-xxxl-10,
+.col-xxxl-11,
+.col-xxxl-12,
+.col-xxxl,
+.col-xxxl-auto {
   position: relative;
   width: 100%;
   padding-right: 0.75rem;
@@ -10900,7 +10916,8 @@ input[type="button"].btn-block {
 .navbar .container-md,
 .navbar .container-lg,
 .navbar .container-xl,
-.navbar .container-xxl {
+.navbar .container-xxl,
+.navbar .container-xxxl {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -10992,7 +11009,8 @@ input[type="button"].btn-block {
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
 .navbar-expand > .container-xl,
-.navbar-expand > .container-xxl {
+.navbar-expand > .container-xxl,
+.navbar-expand > .container-xxxl {
   padding-right: 0;
   padding-left: 0;
 }
@@ -11017,7 +11035,8 @@ input[type="button"].btn-block {
 .navbar-expand > .container-md,
 .navbar-expand > .container-lg,
 .navbar-expand > .container-xl,
-.navbar-expand > .container-xxl {
+.navbar-expand > .container-xxl,
+.navbar-expand > .container-xxxl {
   flex-wrap: nowrap;
 }
 
@@ -15278,7 +15297,8 @@ header {
   .navbar-expand-sm > .container-md,
   .navbar-expand-sm > .container-lg,
   .navbar-expand-sm > .container-xl,
-  .navbar-expand-sm > .container-xxl {
+  .navbar-expand-sm > .container-xxl,
+  .navbar-expand-sm > .container-xxxl {
     padding-right: 0;
     padding-left: 0;
   }
@@ -15303,7 +15323,8 @@ header {
   .navbar-expand-md > .container-md,
   .navbar-expand-md > .container-lg,
   .navbar-expand-md > .container-xl,
-  .navbar-expand-md > .container-xxl {
+  .navbar-expand-md > .container-xxl,
+  .navbar-expand-md > .container-xxxl {
     padding-right: 0;
     padding-left: 0;
   }
@@ -15328,7 +15349,8 @@ header {
   .navbar-expand-lg > .container-md,
   .navbar-expand-lg > .container-lg,
   .navbar-expand-lg > .container-xl,
-  .navbar-expand-lg > .container-xxl {
+  .navbar-expand-lg > .container-xxl,
+  .navbar-expand-lg > .container-xxxl {
     padding-right: 0;
     padding-left: 0;
   }
@@ -15353,7 +15375,8 @@ header {
   .navbar-expand-xl > .container-md,
   .navbar-expand-xl > .container-lg,
   .navbar-expand-xl > .container-xl,
-  .navbar-expand-xl > .container-xxl {
+  .navbar-expand-xl > .container-xxl,
+  .navbar-expand-xl > .container-xxxl {
     padding-right: 0;
     padding-left: 0;
   }
@@ -15378,7 +15401,34 @@ header {
   .navbar-expand-xxl > .container-md,
   .navbar-expand-xxl > .container-lg,
   .navbar-expand-xxl > .container-xl,
-  .navbar-expand-xxl > .container-xxl {
+  .navbar-expand-xxl > .container-xxl,
+  .navbar-expand-xxl > .container-xxxl {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1919.98px) {
+  .table-responsive-xxxl {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-responsive-xxxl > .table-bordered {
+    border: 0;
+  }
+
+  .navbar-expand-xxxl > .container,
+  .navbar-expand-xxxl > .hof-container,
+  .navbar-expand-xxxl > .container-fluid,
+  .navbar-expand-xxxl > .container-sm,
+  .navbar-expand-xxxl > .container-md,
+  .navbar-expand-xxxl > .container-lg,
+  .navbar-expand-xxxl > .container-xl,
+  .navbar-expand-xxxl > .container-xxl,
+  .navbar-expand-xxxl > .container-xxxl {
     padding-right: 0;
     padding-left: 0;
   }
