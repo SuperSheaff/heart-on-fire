@@ -22,7 +22,7 @@
                 <?php endif; ?>
                 <div class="row">
                     <?php foreach ($team as $key => $team_member) : ?>
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-4 d-flex flex-column">
                             <div class="d-flex justify-content-between">
                                 <div class="hof-team--name my-auto">
                                     <p class="mb-0" style="font-size: 32px;"><?php echo $team_member['name']; ?></p>
@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                             <p><?php echo $team_member['bio']; ?></p>
-                            <img src="<?php echo $team_member['image']; ?>" alt="<?php echo $heading; ?>" class="w-100 img-fluid">
+                            <img src="<?php echo $team_member['image']; ?>" alt="<?php echo $heading; ?>" class="w-100 img-fluid mt-auto">
                         </div>
                     <?php endforeach; ?>
                 </div>
