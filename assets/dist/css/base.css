@@ -14095,24 +14095,6 @@ body {
   line-height: 22px;
 }
 
-body::-webkit-scrollbar {
-  width: 4px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #E8E5DE;
-  opacity: 0.4;
-  width: 1px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #372120;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: #FCF4E5;
-}
-
 body.noscroll {
   overflow: hidden;
 }
@@ -15143,7 +15125,7 @@ header {
 .hof-main-navigation .hof-main-navigation--link {
   color: #372120;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.25rem;
   margin-left: 64px;
   position: relative;
@@ -15171,7 +15153,7 @@ header {
   color: #372120;
   font-size: 1.25rem;
   filter: blur(0px);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.25rem;
   left: 0;
   top: 0;
@@ -15218,7 +15200,7 @@ header {
   display: inline-block;
   font-size: 3rem;
   font-family: "Manrope";
-  font-weight: 400;
+  font-weight: 300;
   line-height: 3rem;
   margin-bottom: 3rem;
 }
