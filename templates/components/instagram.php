@@ -27,7 +27,7 @@
             <div class="hof-instagram--container">
 
                 <?php if ($heading) : ?>
-                    <div class="hof-instagram--box-1">
+                    <div class="hof-instagram--box-1 hof-bg-blue">
                         <div class="hof-instagram--box-inner">
                             <div class="hof-instagram--heading m-auto">
                                 <?php echo $heading; ?>
