@@ -12,11 +12,19 @@
 ?>
 
 <?php if ($enableComponent): ?>
-    <section id="<?php echo $componentId; ?>" class="hof-contact hof-bg-brown <?php echo $componentClass; ?>">
+    <section id="<?php echo $componentId; ?>" class="hof-contact 
+        <?php 
+            if (is_page('contact')) {
+                echo 'hof-bg-dark-brown ';
+            } else {
+                echo 'hof-bg-blue' ;
+            }
+        ?>
+        <?php echo $componentClass; ?>">
         <div class="hof-navigation-offset"></div>
         <div class="hof-container">
             <div class="p-3 p-xl-4">
-                <div class="hof-bg-dark-brown p-3 p-xl-4">
+                <div class="p-3 p-xl-4">
                     <div class="row">
 
                         <div class="col-md-6">

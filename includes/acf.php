@@ -102,6 +102,7 @@ function heartonfire_acf_get_components()
 {
     // Available default components
     $components = array(
+        'about',
         'banner-simple',
         'banner-work',
         'banner',
@@ -119,6 +120,7 @@ function heartonfire_acf_get_components()
         'partners',
         'project-navigation',
         'services',
+        'team',
         'testimonials',
         'values',
         'video-full',
