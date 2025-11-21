@@ -11,6 +11,18 @@
             margin-bottom: 4rem;
         }
     }
+
+    .hof-cta-bar--img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .hof-cta-bar--btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 }
 
 // --- End of Component CSS --- //

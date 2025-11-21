@@ -13920,7 +13920,7 @@ h5 {
      object-position: center;
 }
 
-.hof-btn, .hof-btn-dark-green, .hof-btn-dark-green--outline, .hof-btn-brown--outline, .hof-btn-white, .hof-btn-white--outline, .hof-btn-black, .hof-btn-black--outline {
+.hof-btn, .hof-btn-dark-green, .hof-btn-dark-green--outline, .hof-btn-brown, .hof-btn-brown--outline, .hof-btn-white, .hof-btn-white--outline, .hof-btn-black, .hof-btn-black--outline {
   border-radius: 0;
   cursor: pointer;
   display: inline-block;
@@ -13933,19 +13933,19 @@ h5 {
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
-.hof-btn svg, .hof-btn-dark-green svg, .hof-btn-dark-green--outline svg, .hof-btn-brown--outline svg, .hof-btn-white svg, .hof-btn-white--outline svg, .hof-btn-black svg, .hof-btn-black--outline svg {
+.hof-btn svg, .hof-btn-dark-green svg, .hof-btn-dark-green--outline svg, .hof-btn-brown svg, .hof-btn-brown--outline svg, .hof-btn-white svg, .hof-btn-white--outline svg, .hof-btn-black svg, .hof-btn-black--outline svg {
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
-.hof-btn svg path, .hof-btn-dark-green svg path, .hof-btn-dark-green--outline svg path, .hof-btn-brown--outline svg path, .hof-btn-white svg path, .hof-btn-white--outline svg path, .hof-btn-black svg path, .hof-btn-black--outline svg path {
+.hof-btn svg path, .hof-btn-dark-green svg path, .hof-btn-dark-green--outline svg path, .hof-btn-brown svg path, .hof-btn-brown--outline svg path, .hof-btn-white svg path, .hof-btn-white--outline svg path, .hof-btn-black svg path, .hof-btn-black--outline svg path {
   transition: 0.3s cubic-bezier(0.6, 0.6, 0.6, 1);
 }
 
-.hof-btn:hover, .hof-btn-dark-green:hover, .hof-btn-dark-green--outline:hover, .hof-btn-brown--outline:hover, .hof-btn-white:hover, .hof-btn-white--outline:hover, .hof-btn-black:hover, .hof-btn-black--outline:hover {
+.hof-btn:hover, .hof-btn-dark-green:hover, .hof-btn-dark-green--outline:hover, .hof-btn-brown:hover, .hof-btn-brown--outline:hover, .hof-btn-white:hover, .hof-btn-white--outline:hover, .hof-btn-black:hover, .hof-btn-black--outline:hover {
   text-decoration: none;
 }
 
-.hof-btn.btn-with-icon, .btn-with-icon.hof-btn-dark-green, .btn-with-icon.hof-btn-dark-green--outline, .btn-with-icon.hof-btn-brown--outline, .btn-with-icon.hof-btn-white, .btn-with-icon.hof-btn-white--outline, .btn-with-icon.hof-btn-black, .btn-with-icon.hof-btn-black--outline {
+.hof-btn.btn-with-icon, .btn-with-icon.hof-btn-dark-green, .btn-with-icon.hof-btn-dark-green--outline, .btn-with-icon.hof-btn-brown, .btn-with-icon.hof-btn-brown--outline, .btn-with-icon.hof-btn-white, .btn-with-icon.hof-btn-white--outline, .btn-with-icon.hof-btn-black, .btn-with-icon.hof-btn-black--outline {
   padding: 8px 24px;
 }
 
@@ -14001,6 +14001,33 @@ h5 {
 
 .hof-btn-dark-green--outline:hover svg path {
   stroke: #FCF4E5;
+}
+
+.hof-btn-brown {
+  background-color: #372120;
+  border: 1px solid #372120;
+  color: #FFFFFF;
+}
+
+.hof-btn-brown svg {
+  stroke: #FFFFFF;
+}
+
+.hof-btn-brown svg path {
+  stroke: #FFFFFF;
+}
+
+.hof-btn-brown:hover {
+  background-color: #FFFFFF;
+  color: #372120;
+}
+
+.hof-btn-brown:hover svg {
+  stroke: #372120;
+}
+
+.hof-btn-brown:hover svg path {
+  stroke: #372120;
 }
 
 .hof-btn-brown--outline {
@@ -14303,6 +14330,18 @@ table tbody tr td {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 3rem;
+}
+
+.hof-cta-bar .hof-cta-bar--img {
+  height: 400px;
+  width: 100%;
+}
+
+.hof-cta-bar .hof-cta-bar--btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hof-contact .hof-contact--label {

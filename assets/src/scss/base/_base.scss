@@ -373,6 +373,35 @@ h5 {
     }
 }
 
+.hof-btn-brown {
+    @extend .hof-btn;
+
+    background-color: $c-brown;
+    border: 1px solid $c-brown;
+    color: $c-white;
+
+    svg {
+        stroke: $c-white;
+
+        path {
+            stroke: $c-white;
+        }
+    }
+
+    &:hover {
+        background-color: $c-white;
+        color: $c-brown;
+
+        svg {
+            stroke: $c-brown;
+
+            path {
+                stroke: $c-brown;
+            }
+        }
+    }
+}
+
 .hof-btn-brown--outline {
     @extend .hof-btn;
 

@@ -6,27 +6,19 @@
     $globalComponent    = get_sub_field('component_call_to_action_global_component');
 
     //Settings.
-    $heading            = heartonfire_get_the_field_values($globalComponent, 'call_to_action', 'heading');
     $primaryCta         = heartonfire_get_the_field_values($globalComponent, 'call_to_action', 'primary_cta');
+    $image              = heartonfire_get_the_field_values($globalComponent, 'call_to_action', 'image');
 ?>
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-cta-bar <?php echo $componentClass; ?>">
         <div class="hof-container">
-            <div class="hof-section-padding text-center">
+            <div class="hof-section-padding text-center position-relative">
 
-                <div class="mb-4">
-                    <?php echo file_get_contents(get_stylesheet_directory_uri() . '/assets/src/image/icons/icon-heart.svg'); ?>
-                </div>
-
-                <?php if ($heading) : ?>
-                    <h3 class="hof-cta-bar__heading hof-color-brown">
-                        <?php echo $heading; ?>
-                    </h3>
-                <?php endif; ?>
+                <img src="<?php echo $image; ?>" class="hof-cta-bar--img hof-img-crop position-relative">
 
                 <?php if ($primaryCta) : ?>
-                    <a href="<?php echo $primaryCta['url']; ?>" class="hof-btn-brown--outline" target="<?php echo $primaryCta['target']; ?>">
+                    <a href="<?php echo $primaryCta['url']; ?>" class="hof-cta-bar--btn hof-btn-brown" target="<?php echo $primaryCta['target']; ?>">
                         <?php echo $primaryCta['title']; ?>
                     </a>
                 <?php endif; ?>
