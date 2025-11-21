@@ -26,7 +26,7 @@
                         $testimonialName        = $testimonial['name'];
                         $testimonialCompany     = $testimonial['company'];
                         ?>
-                        <div class="hof-testimonial-carousel--item p-4 hof-color-brown">
+                        <div class="hof-testimonial-carousel--item hof-color-brown">
                             <div class="row h-100">
                                 <div class="col-lg-4 col-xl-3 mt-xl-auto">
                                     <p><?php echo $testimonialSmallText; ?></p>
