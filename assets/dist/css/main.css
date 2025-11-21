@@ -14315,6 +14315,10 @@ table tbody tr td {
   color: #372120;
 }
 
+.hof-blog .hof-blog__card {
+  text-transform: uppercase;
+}
+
 .hof-blog .hof-blog__card img {
   height: 320px;
   -o-object-fit: cover;

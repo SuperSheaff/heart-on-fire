@@ -31,7 +31,7 @@
                                                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo the_title(); ?>" class="mb-3">
                                                     <div class="hof-blog__card--content">
                                                         <p class="mb-0"><?php echo get_the_date(); ?></p>
-                                                        <h4 class="mb-0"><?php echo the_title(); ?></h4>
+                                                        <h4 class="mb-0 h2"><?php echo the_title(); ?></h4>
                                                     </div>
                                                 </div>
                                             </a>

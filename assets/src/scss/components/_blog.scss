@@ -4,6 +4,8 @@
     color: $c-brown;
 
     .hof-blog__card {
+        text-transform: uppercase;
+        
         img {
             height: 320px;
             object-fit: cover;
