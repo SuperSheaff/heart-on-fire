@@ -3174,7 +3174,8 @@
     max-width: 8.33333%;
   }
 
-  .col-xl-2 {
+  .col-xl-2,
+  .hof-partners .hof-partners-logo-col {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;
   }
@@ -4098,11 +4099,6 @@
   .hof-featured-services .hof-featured-services__box {
     margin-bottom: 0;
     height: 768px;
-  }
-
-  .hof-partners .hof-partners-logo-col {
-    flex: 0 0 20%;
-    max-width: 20%;
   }
 
   .hof-main-navigation .hof-main-navigation--burger {

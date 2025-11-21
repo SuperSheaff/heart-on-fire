@@ -17,8 +17,7 @@
         }
 
         @include media-breakpoint-up(xl) {
-            flex: 0 0 20%;
-            max-width: 20%;
+            @extend .col-xl-2;
         }
 
         img {
