@@ -21,7 +21,13 @@
             }
         ?>
         <?php echo $componentClass; ?>">
+        <?php 
+            if (is_page('contact')) {
+        ?>
         <div class="hof-navigation-offset"></div>
+        <?php 
+            }
+        ?>
         <div class="hof-container">
             <div class="p-3 p-xl-4">
                 <div class="p-3 p-xl-4">
