@@ -7,74 +7,28 @@
 
     // Settings.
     $tagline            = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'tagline');
+    $services           = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'services_repeater');
 
-    // Links.
-    $firstLink          = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'first_link');
-    $secondLink         = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'second_link');
-    $thirdLink          = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'third_link');
-    $fourthLink         = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'fourth_link');
-
-    // Images.
-    $firstImage          = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'first_image');
-    $secondImage         = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'second_image');
-    $thirdImage          = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'third_image');
-    $fourthImage         = heartonfire_get_the_field_values($globalComponent, 'featured_services', 'fourth_image');
 ?>
 
 <?php if ($enableComponent): ?>
-    <section id="<?php echo $componentId; ?>" class="hof-featured-services <?php echo $componentClass; ?>">
+    <section id="<?php echo $componentId; ?>" class="hof-featured-services hof-bg-blue <?php echo $componentClass; ?>">
         <div class="hof-container">
             <div class="hof-section-padding">
 
                 <?php if ($tagline) : ?>
-                    <p class="hof-tagline hof-color-brown text-center">
+                    <p class="hof-tagline hof-color-brown text-right mb-5 pb-5">
                         <?php echo $tagline; ?>
                     </p>
                 <?php endif; ?>
 
-                <div class="row">
-
-                    <?php if ($firstLink) : ?>
-                        <div class="col-12 col-md-4">
-                            <a href="<?php echo $firstLink['url']; ?>" class="" target="<?php echo $firstLink['target']; ?>">
-                                <div class="hof-featured-services__box">
-                                    <div class="hof-featured-services__box--title">
-                                        <?php echo $firstLink['title']; ?>
-                                    </div>
-                                    <img class="hof-featured-services__box--img" src="<?php echo $firstImage; ?>" alt="<?php echo $firstLink['title']; ?>">
-                                </div>
-                            </a>
-                        </div>
-                    <?php endif; ?>
-
-                    <?php if ($secondLink) : ?>
-                        <div class="col-12 col-md-4">
-                            <a href="<?php echo $secondLink['url']; ?>" class="" target="<?php echo $secondLink['target']; ?>">
-                                <div class="hof-featured-services__box">
-                                    <div class="hof-featured-services__box--title">
-                                        <?php echo $secondLink['title']; ?>
-                                    </div>
-                                    <img class="hof-featured-services__box--img" src="<?php echo $secondImage; ?>" alt="<?php echo $secondLink['title']; ?>">
-                                </div>
-                            </a>
-                        </div>
-                    <?php endif; ?>
-
-                    <?php if ($thirdLink) : ?>
-                        <div class="col-12 col-md-4">
-                            <a href="<?php echo $thirdLink['url']; ?>" class="" target="<?php echo $thirdLink['target']; ?>">
-                                <div class="hof-featured-services__box">
-                                    <div class="hof-featured-services__box--title">
-                                        <?php echo $thirdLink['title']; ?>
-                                    </div>
-                                    <img class="hof-featured-services__box--img" src="<?php echo $thirdImage; ?>" alt="<?php echo $thirdLink['title']; ?>">
-                                </div>
-                            </a>
-                        </div>
-                    <?php endif; ?>
-
+                <div>
+                    <?php foreach ($services as $key => $service) : ?>
+                        <h3 class="hof-featured-services--name h1 mb-0">
+                            <?php echo $service['name']; ?>
+                        </h3>
+                    <?php endforeach; ?>
                 </div>
-
             </div>
         </div>
     </section>
