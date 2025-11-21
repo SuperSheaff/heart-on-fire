@@ -20,7 +20,7 @@
             <div class="hof-section-padding">
                 <div class="row">
 
-                    <div class="col-12 col-md-6 my-md-auto mb-4 text-center text-md-left">
+                    <div class="col-12 col-md-6 col-xl-4 my-md-auto mb-4 text-center text-md-left h-100 d-flex flex-column">
 
                         <?php if ($tagline) : ?>
                             <p class="hof-tagline hof-color-brown">
@@ -29,7 +29,7 @@
                         <?php endif; ?>
 
                         <?php if ($heading) : ?>
-                            <h3 class="h1 hof-color-brown">
+                            <h3 class="h1 hof-color-brown mt-auto">
                                 <?php echo $heading; ?>
                             </h3>
                         <?php endif; ?>
@@ -39,13 +39,13 @@
                         <?php endif; ?>
 
                         <?php if ($cta) : ?>
-                            <a href="<?php echo $cta['url']; ?>" class="hof-btn-brown--outline mt-4" target="<?php echo $cta['target']; ?>">
+                            <a href="<?php echo $cta['url']; ?>" class="hof-btn-brown--outline mt-auto mr-auto" target="<?php echo $cta['target']; ?>">
                                 <?php echo $cta['title']; ?>
                             </a>
                         <?php endif; ?>
                     </div>
 
-                    <div class="col-12 col-md-5 col-xl-4 offset-md-1 offset-xl-2">
+                    <div class="col-12 col-md-5 col-xl-4 offset-md-1 offset-xl-4">
                         <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-image-content--image w-100 h-100 hof-img-crop img-fluid">
                     </div>
 
