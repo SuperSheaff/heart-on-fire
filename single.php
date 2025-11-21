@@ -33,7 +33,7 @@ get_header();
                                 <div class="px-3 px-lg-5 pb-3 pb-lg-4 pt-0">
                                     <div class="row px-lg-5">
                                         <div class="col-12 col-lg-8 mx-auto">
-                                            <p class="fw-700"><?php echo get_the_date(); ?></p>
+                                            <p class="fw-700 text-uppercase"><?php echo get_the_date(); ?></p>
                                             <h1 class="h2 ff-manrope mb-5"><?php echo the_title(); ?></h1>
                                             <?php echo the_content(); ?>
                                         </div>

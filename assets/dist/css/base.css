@@ -14205,6 +14205,10 @@ h5 {
   font-family: "Manrope";
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .hof-container {
   padding-left: 0;
   padding-right: 0;
