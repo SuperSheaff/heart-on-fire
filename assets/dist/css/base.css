@@ -14865,6 +14865,98 @@ table tbody tr td {
   color: #F5F3F0 !important;
 }
 
+.hof-contact .hof-form-light .hof-contact--label {
+  color: #372120;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.hof-contact .hof-form-light input,
+.hof-contact .hof-form-light textarea {
+  background-color: transparent;
+  border: 1px solid rgba(55, 33, 32, 0.5);
+  color: #372120;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.hof-contact .hof-form-light .hof-contact--checkbox .wpcf7-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.hof-contact .hof-form-light .hof-contact--checkbox input[type=checkbox] {
+  background-color: transparent;
+  border: 1px solid rgba(55, 33, 32, 0.5);
+  height: 16px;
+  width: 16px;
+  margin-bottom: auto;
+  margin-right: 0.5rem;
+  margin-top: auto;
+}
+
+.hof-contact .hof-form-light .hof-contact--checkbox input[type=checkbox]:checked {
+  accent-color: #FFFFFF;
+}
+
+.hof-contact .hof-form-light .hof-contact--checkbox label {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+.hof-contact .hof-form-light .hof-contact--checkbox .wpcf7-list-item-label {
+  color: #372120;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.hof-contact .hof-form-light .hof-contact--radio .wpcf7-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.hof-contact .hof-form-light .hof-contact--radio input[type=radio] {
+  background-color: transparent;
+  border: 1px solid rgba(55, 33, 32, 0.5);
+  height: 16px;
+  width: 16px;
+  margin-bottom: auto;
+  margin-right: 0.5rem;
+  margin-top: auto;
+}
+
+.hof-contact .hof-form-light .hof-contact--radio input[type=radio]:checked {
+  accent-color: #FFFFFF;
+}
+
+.hof-contact .hof-form-light .hof-contact--radio label {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+.hof-contact .hof-form-light .hof-contact--radio .wpcf7-list-item-label {
+  color: #372120;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.hof-contact .hof-form-light .wpcf7 form.invalid .wpcf7-response-output {
+  border-color: #372120 !important;
+  color: #372120 !important;
+}
+
 .content-area--contact {
   background-color: #372120;
   min-height: 100vh;
