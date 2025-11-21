@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -7809,7 +7811,10 @@ h4,
 h5,
 h6,
 .h1,
+.hof-services .hof-accordion button,
+.hof-services .hof-accordion button:after,
 .h2,
+.hof-services .hof-featured-service__title,
 .h3,
 .h4,
 .h5,
@@ -7820,12 +7825,15 @@ h6,
 }
 
 h1,
-.h1 {
+.h1,
+.hof-services .hof-accordion button,
+.hof-services .hof-accordion button:after {
   font-size: 2.5rem;
 }
 
 h2,
-.h2 {
+.h2,
+.hof-services .hof-featured-service__title {
   font-size: 2rem;
 }
 
@@ -14124,7 +14132,9 @@ a:hover {
 }
 
 h1,
-.h1 {
+.h1,
+.hof-services .hof-accordion button,
+.hof-services .hof-accordion button:after {
   font-family: "Manrope";
   font-size: 3rem;
   font-weight: 300;
@@ -14134,7 +14144,8 @@ h1,
 }
 
 h2,
-.h2 {
+.h2,
+.hof-services .hof-featured-service__title {
   font-family: "Manrope";
   font-size: 2rem;
   font-weight: 300;
@@ -15143,6 +15154,67 @@ table tbody tr td {
 
 .hof-services h1 .hof-services--name.active {
   color: #372120;
+}
+
+.hof-services .hof-accordion button {
+  background: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: 1px solid #291918;
+  padding: 32px 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  text-align: left !important;
+  outline: none !important;
+  position: relative;
+  width: 100%;
+}
+
+.hof-services .hof-accordion button:after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+  transition: 0.2s ease;
+}
+
+.hof-services .hof-accordion button:not(.collapsed)::after {
+  content: "–";
+  /* en-dash for nice minus */
+}
+
+.hof-services .hof-featured-service {
+  overflow: hidden;
+}
+
+.hof-services .hof-featured-service img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.hof-services .hof-featured-service span {
+  margin-bottom: 0;
+}
+
+.hof-services .hof-featured-service__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.hof-services .hof-featured-service:hover img {
+  transform: scale(1.02);
+  transition: 0.25s ease;
 }
 
 .hof-services .hof-services-carousel--img {

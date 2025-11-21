@@ -5,69 +5,116 @@
     $enableComponent    = get_sub_field('component_services_enable');
     $globalComponent    = get_sub_field('component_services_global_component');
 
-    //Settings.
+    // Settings.
     $tagline            = heartonfire_get_the_field_values($globalComponent, 'services', 'tagline');
     $services           = heartonfire_get_the_field_values($globalComponent, 'services', 'services_repeater');
+    $featuredServices   = heartonfire_get_the_field_values($globalComponent, 'services', 'services_featured_repeater');
 ?>
 
 <?php if ($enableComponent): ?>
-    <section id="<?php echo $componentId; ?>" class="hof-services <?php echo $componentClass; ?>">
-        <div class="hof-navigation-offset"></div>
+<section id="<?php echo esc_attr($componentId); ?>" class="hof-services <?php echo esc_attr($componentClass); ?>">
+    <div class="hof-navigation-offset"></div>
+
+    <?php if ($tagline) : ?>
+        <p class="hof-tagline hof-color-brown text-center mb-5">
+            <?php echo esc_html($tagline); ?>
+        </p>
+    <?php endif; ?>
+
+    <?php if (!empty($services)) : ?>
+        <?php $accordionId = $componentId . '_accordion'; ?>
 
         <div class="hof-section-padding">
-            <?php if ($tagline) : ?>
-                <p class="hof-tagline hof-color-brown text-center">
-                    <?php echo $tagline; ?>
-                </p>
-            <?php endif; ?>
+            <div class="accordion  pt-0" id="<?php echo esc_attr($accordionId); ?>">
 
-            <h1 class="hof-color-brown text-center mb-0">
-                <?php foreach ($services as $key => $service) : ?>
-                    <span class="hof-services--name" data-slide="<?php echo $key; ?>">
-                        <?php echo $service['name']; ?>
-                    </span>
-                <?php endforeach; ?>
-            </h1>
-        </div>
+                <?php foreach ($services as $key => $service) :
 
-        <div class="owl-carousel hof-services-carousel">
+                    $serviceTitle   = $service['title'] ?? '';
+                    $serviceContent = $service['content'] ?? '';
 
-            <?php foreach ($services as $key => $service) :
-                $serviceName        = $service['name'];
-                $serviceTitle       = $service['title'];
-                $serviceContent     = $service['content'];
-                $serviceImage       = $service['image'];
-                $serviceCTA         = $service['cta'];
+                    $headingId  = $accordionId . '_heading_' . $key;
+                    $collapseId = $accordionId . '_collapse_' . $key;
+
+                    $isFirst = ($key === 0);
                 ?>
-                <div class="hof-services-carousel--item hof-color-white hof-bg-dark-green">
+                    <div class="hof-accordion">
+                        <div id="<?php echo esc_attr($headingId); ?>">
+                            <h5 class="mb-0">
+                                <button
+                                    class="hof-color-dark-brown <?php echo $isFirst ? '' : 'collapsed'; ?>"
+                                    data-toggle="collapse"
+                                    data-target="#<?php echo esc_attr($collapseId); ?>"
+                                    aria-expanded="<?php echo $isFirst ? 'true' : 'false'; ?>"
+                                    aria-controls="<?php echo esc_attr($collapseId); ?>"
+                                >
+                                    <?php echo esc_html($serviceTitle); ?>
+                                </button>
+                            </h5>
+                        </div>
 
-                    <div class="row">
-
-                        <div class="mb-4 mb-xl-0 col-md-6">
-                            <div class="p-3 p-lg-4 p-xl-5">
-                                <p class="hof-tagline">
-                                    <?php echo $serviceName; ?>
-                                </p>
-                                <h3 class="mb-0">
-                                    <?php echo $serviceTitle; ?>
-                                </h3>
+                        <div
+                            id="<?php echo esc_attr($collapseId); ?>"
+                            class="collapse <?php echo $isFirst ? 'show' : ''; ?>"
+                            aria-labelledby="<?php echo esc_attr($headingId); ?>"
+                            data-parent="#<?php echo esc_attr($accordionId); ?>"
+                        >
+                            <div>
                                 <?php echo $serviceContent; ?>
-                                <a href="<?php echo $serviceCTA['url']; ?>" class="hof-btn-white--outline mt-4" target="<?php echo $serviceCTA['target']; ?>">
-                                    <?php echo $serviceCTA['title']; ?>
-                                </a>
                             </div>
                         </div>
+                    </div>
+                <?php endforeach; ?>
 
-                        <div class="col-md-5 offset-md-1 position-relative">
-                            <img src="<?php echo $serviceImage; ?>" alt="<?php echo $serviceName; ?>" class="hof-services-carousel--img">
-                        </div>
-                    </div>  
-                    
-                </div>
-            <?php endforeach; ?>
-
+            </div>
         </div>
 
-        <div class="pb-3 pb-xl-4"></div>
-    </section>
+    <?php endif; ?>
+
+
+    <?php if (!empty($featuredServices)) : ?>
+        <div class="hof-featured-services-row">
+            <div class="row">
+
+                <?php foreach ($featuredServices as $featured) :
+
+                    $featTitle = $featured['title'] ?? '';
+                    $featImage = $featured['image'] ?? '';
+                    $featLink  = $featured['link'] ?? null; // ACF link field (array)
+
+                    $url    = is_array($featLink) && !empty($featLink['url']) ? $featLink['url'] : '';
+                    $target = is_array($featLink) && !empty($featLink['target']) ? $featLink['target'] : '_self';
+                ?>
+                    <div class="col-md-4 mb-0 px-0">
+                        <?php if ($url) : ?>
+                            <a href="<?php echo esc_url($url); ?>"
+                            target="<?php echo esc_attr($target); ?>"
+                            class="hof-featured-service d-block position-relative">
+                                <img src="<?php echo esc_url($featImage); ?>"
+                                    alt="<?php echo esc_attr($featTitle); ?>"
+                                    class="img-fluid w-100">
+                                <?php if ($featTitle) : ?>
+                                    <span class="hof-featured-service__title">
+                                        <?php echo esc_html($featTitle); ?>
+                                    </span>
+                                <?php endif; ?>
+                            </a>
+                        <?php else : ?>
+                            <div class="hof-featured-service d-block position-relative">
+                                <img src="<?php echo esc_url($featImage); ?>"
+                                    alt="<?php echo esc_attr($featTitle); ?>"
+                                    class="img-fluid w-100">
+                                <?php if ($featTitle) : ?>
+                                    <span class="hof-featured-service__title">
+                                        <?php echo esc_html($featTitle); ?>
+                                    </span>
+                                <?php endif; ?>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
+        </div>
+    <?php endif; ?>
+</section>
 <?php endif; ?>
