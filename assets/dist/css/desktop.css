@@ -446,7 +446,6 @@
 
   .modal-dialog-centered::before {
     height: calc(100vh - 3.5rem);
-    height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
   }
@@ -3011,12 +3010,14 @@
   h1,
   .h1 {
     font-size: 5.5rem;
+    letter-spacing: -3px;
     margin-bottom: 2rem;
   }
 
   h2,
   .h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+    letter-spacing: -3px;
     line-height: 1;
     margin-bottom: 1.5rem;
   }
@@ -3184,7 +3185,8 @@
     max-width: 25%;
   }
 
-  .col-xl-4 {
+  .col-xl-4,
+  .hof-banner .hof-banner--text-col {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
@@ -3195,8 +3197,7 @@
     max-width: 41.66667%;
   }
 
-  .col-xl-6,
-  .hof-banner .hof-banner--text-col {
+  .col-xl-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -4294,8 +4295,7 @@
     margin-left: 0;
   }
 
-  .offset-xxl-1,
-  .hof-banner .hof-banner--text-col {
+  .offset-xxl-1 {
     margin-left: 8.33333%;
   }
 

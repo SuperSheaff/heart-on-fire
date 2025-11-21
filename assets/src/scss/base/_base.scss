@@ -47,34 +47,39 @@ a {
 
 h1, 
 .h1 {
-    font-family: $ff-p90;
+    font-family: $ff-manrope;
     font-size: 3rem;
     font-weight: 400;
     line-height: 1;
     margin-bottom: 1.5rem;
+    text-transform: uppercase;
 
     @include media-breakpoint-up(lg) {
         font-size: 5.5rem;
+        letter-spacing: -3px;
         margin-bottom: 2rem;
     }
 }
 
 h2,
 .h2 {
-    font-family: $ff-p90;
+    font-family: $ff-manrope;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1.25rem;
+    text-transform: uppercase;
+
 
     @include media-breakpoint-up(lg) {
-        font-size: 4rem;
+        font-size: 3rem;
+        letter-spacing: -3px;
         line-height: 1;
         margin-bottom: 1.5rem;
     }
 }
 
 h3 {
-    font-family: $ff-p90;
+    font-family: $ff-manrope;
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -127,7 +132,7 @@ h5 {
 }
 
 .ff-p90 {
-    font-family: $ff-p90;
+    font-family: $ff-manrope;
 }
 
 .ff-manrope {

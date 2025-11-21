@@ -146,7 +146,7 @@ function watchFiles()
   gulp.watch('./*.html', html);
 }
 
-const start = gulp.series(clean, images, fonts, css, scripts, html);
+const start = gulp.series(clean, fonts, css, scripts, html);
 const watch = gulp.parallel(watchFiles, browserSync);
 
 // export tasks

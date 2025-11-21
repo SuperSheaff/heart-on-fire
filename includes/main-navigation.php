@@ -23,7 +23,7 @@
                 <?php /* Main Navigation Links (Desktop Only) */ ?>
                 <div class="d-none d-xl-flex my-auto">
                     <?php foreach ($primaryMenu as $index => $item) : ?>
-                        <a href="<?php echo $item['url']; ?>" class="hof-main-navigation--link <?php if (is_page('contact') || is_404()) { echo 'white'; } ?>">
+                        <a href="<?php echo $item['url']; ?>" class="hof-main-navigation--link <?php if (is_front_page() || is_page('contact') || is_404()) { echo 'white'; } ?>">
                             <?php echo $item['title']; ?>
                             <div class="hof-main-navigation--duplicate">
                                 <?php echo $item['title']; ?>

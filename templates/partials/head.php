@@ -11,8 +11,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_site_icon_url(32); ?>">
 <link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_site_icon_url(96); ?>">
 <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_site_icon_url(16); ?>">
-<link rel="preload" href="<?php echo (get_stylesheet_directory_uri().'/assets/dist/fonts/PerfectlyNineties-Regular.woff') ?>" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="<?php echo (get_stylesheet_directory_uri().'/assets/dist/fonts/PerfectlyNineties-Italic.woff') ?>" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="<?php echo (get_stylesheet_directory_uri().'/assets/dist/fonts/Manrope-Bold.woff') ?>" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="<?php echo (get_stylesheet_directory_uri().'/assets/dist/fonts/Manrope-SemiBold.woff') ?>" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="<?php echo (get_stylesheet_directory_uri().'/assets/dist/fonts/Manrope-Medium.woff') ?>" as="font" type="font/woff" crossorigin>

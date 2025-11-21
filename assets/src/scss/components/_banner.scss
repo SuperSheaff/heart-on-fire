@@ -72,11 +72,8 @@
     }
 
     .hof-banner--text-col {
-        @extend .col-xl-6;
-        @extend .offset-xxl-1;
-        
+        @extend .col-xl-4;
 
-        background-color: $c-beige;
         bottom: 0;
         left: 0;
         padding: 2rem 1rem;
