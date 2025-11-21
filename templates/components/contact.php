@@ -35,7 +35,7 @@
                                 }
                             ?>">
                             <div class="hof-tagline  mb-3">
-                                Get in touch
+                                [Get in touch]
                             </div>
                             <?php if ($heading) : ?>
                                 <h1 class="hof-contact__heading">
