@@ -13913,6 +13913,13 @@ h5 {
   font-weight: 700;
 }
 
+.hof-img-crop {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .hof-btn, .hof-btn-dark-green, .hof-btn-dark-green--outline, .hof-btn-brown--outline, .hof-btn-white, .hof-btn-white--outline, .hof-btn-black, .hof-btn-black--outline {
   border-radius: 0;
   cursor: pointer;

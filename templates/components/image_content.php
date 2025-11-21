@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="col-12 col-md-5 col-xl-4 offset-md-1 offset-xl-2">
-                        <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-image-content--image img-fluid <?php echo $imageColumnClass; ?>">
+                        <img src="<?php echo $image; ?>" alt="<?php echo $heading; ?>" class="hof-image-content--image w-100 h-100 hof-img-crop img-fluid">
                     </div>
 
                 </div>

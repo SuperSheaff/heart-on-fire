@@ -14301,6 +14301,13 @@ h5 {
   font-weight: 700;
 }
 
+.hof-img-crop {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
 .hof-btn,
 .hof-btn-dark-green,
 .hof-btn-dark-green--outline,
