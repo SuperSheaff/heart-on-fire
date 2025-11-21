@@ -11,12 +11,14 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-content-work <?php echo $componentClass; ?>">
-        <div class="hof-section-padding">
-            <div class="row">
-                <div class="col-lg-8 col-xl-5 offset-lg-3 offset-xl-6 hof-color-brown">
-                    <?php if ($content) : ?>
-                        <?php echo $content; ?>
-                    <?php endif; ?>
+        <div class="hof-container">
+            <div class="hof-section-padding">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-5 offset-lg-3 offset-xl-6 hof-color-brown">
+                        <?php if ($content) : ?>
+                            <?php echo $content; ?>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>

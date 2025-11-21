@@ -13,7 +13,6 @@
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-values <?php echo $componentClass; ?>">
         <div class="hof-container">
-
             <div class="hof-section-padding">
 
                 <div class="row">

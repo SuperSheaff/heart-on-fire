@@ -13,7 +13,7 @@
 
 <?php if ($enableComponent): ?>
     <section id="<?php echo $componentId; ?>" class="hof-banner hof-bg-dark-brown <?php echo $componentClass; ?>">
-        <div class="">
+        <div class="hof-container">
             <div class="hof-banner--row position-relative">
                 <div class="hof-banner--text-col hof-banner--height hof-color-white d-flex pb-4">
                     <div class="mt-auto">
