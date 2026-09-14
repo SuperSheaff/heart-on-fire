@@ -22,7 +22,7 @@
                 <?php endif; ?>
                 <div class="row">
                     <?php foreach ($team as $key => $team_member) : ?>
-                        <div class="col-12 col-lg-4 d-flex flex-column mb-5">
+                        <div class="col-12 col-lg-6 d-flex flex-column mb-5">
                             <div class="d-flex justify-content-between">
                                 <div class="hof-team--name my-auto">
                                     <p class="mb-0" style="font-size: 32px;"><?php echo $team_member['name']; ?></p>
